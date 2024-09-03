@@ -1,0 +1,4 @@
+flask
+better_profanity
+jieba
+flask_basicauth

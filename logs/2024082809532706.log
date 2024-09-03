@@ -1,0 +1,8 @@
+[] [(None, None, None), (None, None, None), ('19700101000000', 'root', 'root'), ('2024082115580428', 'admin2', None), (None, None, None), (None, None, None), (None, None, None), (None, None, None)] []
+ * Serving Flask app 'main'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8081
+ * Running on http://172.30.75.28:8081
+[33mPress CTRL+C to quit[0m

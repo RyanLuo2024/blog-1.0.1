@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  type="text/css" href="/static/style.css">
+    <title>即将跳转</title>
+</head>
+<body>
+    <div id="msg"></div>
+    <script>
+    window.onload=function(){
+            var div=document.getElementById("msg");
+            var time=5;
+            var timer=setInterval(function(){
+                if(time==0){
+                    location.href="/";
+                }else{
+                    div.innerHTML="将在 "+time+" 秒后跳转";
+                    time--; 
+                }
+            },1000)
+    }
+    </script>
+    
+    <br>
+    <a href="/">立即跳转</a>
+</body>
+</html>

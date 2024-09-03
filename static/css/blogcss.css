@@ -1,0 +1,105 @@
+a {
+	padding: 0 20px;
+	color: #202020;
+	text-decoration: none;
+}
+header a:hover {
+	color: #333;
+}
+footer {
+	text-align: center;
+	margin-top: 250px;
+}
+#content {
+	padding: 30px 40px;
+}
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;   
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin-left: 90px;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.form {
+	width: 1010px;
+	height: 200px;
+}
+.input {
+	border: 0;
+	border-radius: 5px;
+	background-color: rgba(241,241,241,.98);
+	width: 205px;
+	height: 20px;
+	padding: 10px;
+}
+.textarea {
+	border: 0;
+	border-radius: 5px;
+	background-color: rgba(241,241,241,.98);
+	width: 355px;
+	height: 100px;
+	padding: 10px;
+	resize:none;
+	margin-top: 20px;
+}
+.cushy-box {
+    position: relative;
+    width: 800px; /* 可以根据需要调整宽度 */
+    height: 200px; /* 可以根据需要调整高度 */
+    margin: 20px; /* 外边距，根据需要调整 */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px; /* 圆角边框 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #525252; /* 文本颜色 */
+    font-size: 16px; /* 文本大小 */
+    font-weight: 500; /* 字体粗细 */
+    text-align: start; /* 文本居中 */
+    overflow: hidden; /* 隐藏溢出的内容 */
+}
+
+/* 可以添加动画效果，类似于.box .circle的动画 */
+/* .cushy-box {
+    animation: animate 10s linear infinite;
+} */
+
+/* 确保.cushy-box也使用关键帧动画 */
+@keyframes animate {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+#editor {
+    background-color: #fff;
+    min-width: 900px;
+    min-height: 2000px;
+} 
+#editor2 {
+    background-color: #fff;
+    min-width: 900px;
+    min-height: 2000px;
+    border-style: none;
+}
