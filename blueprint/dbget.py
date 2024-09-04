@@ -9,7 +9,7 @@ except :
     except:raise Exception("db connet error")
 
 sql = "SELECT id,title,word,userid FROM articles"
-sql2= "SELECT userid,username,usertype FROM user"
+sql2= "SELECT userid,username,usertype,image FROM user"
 sql3= "SELECT word,touser,user,content FROM pinglun"
 
 def get():

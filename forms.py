@@ -4,7 +4,7 @@ from better_profanity import profanity
 import json
 import config
 from bs4 import BeautifulSoup
-
+import PIL.Image as Image
 """wordid: 生成wordid，随机
    ├——wordid() -> class
    |  ├——shengcheng() -> str 生成id
@@ -124,8 +124,27 @@ def handle():
 """http://host:port/ 主页"""
 @main.app.route("/")
 def index():
+    cookie = flask.request.cookies.get("cookieid")
+    flag=True
+    image = "/static/image/touxiang.png"
+    if (cookie==None) :flag = False
     blog = models.getblog()
-    return flask.render_template("blog/blog.html", posts=blog)
+    import sqlite3
+    try:
+        db = sqlite3.connect("/blueprint/main.db", check_same_thread=False)
+        cursor = db.cursor()
+    except :
+        try :
+            db = sqlite3.connect("main.db", check_same_thread=False)
+            cursor = db.cursor()
+        except:raise Exception("db connet error")
+    cursor.execute("SELECT userid,username,usertype,image FROM user")
+    list = cursor.fetchall()
+    if (flag):
+        for i in list:
+            if cookie == i[1]:
+                    image = i[3]
+    return flask.render_template("blog/blog.html", posts=blog, image=image)
 
 """http://host:port/logout 退出登录 ###cookie###"""
 @main.app.route("/logout")
@@ -218,37 +237,6 @@ def upload():
         文件路径：/static/uploads/"""+hash_object.hexdigest()+f.filename+"   请注意复制"
     return main.render_template('upload.html')
  
-"""http://host:port/change_password 改密码 ###cookie###"""
-@main.app.route('/change_password', methods=['GET', 'POST'])
-def change_password():
-    if flask.request.method == 'POST':
-        username = main.request.cookies.get('cookieid')
-        old_password = flask.request.form['old_password']
-        new_password = flask.request.form['new_password']
-        import sqlite3
-        try:
-            db = sqlite3.connect("/blueprint/main.db", check_same_thread=False)
-            cursor = db.cursor()
-        except :
-            try :
-                db = sqlite3.connect("main.db", check_same_thread=False)
-                cursor = db.cursor()
-            except:raise Exception("db connet error")
-        user = cursor.execute('SELECT * FROM user WHERE username = ?', (username,)).fetchone()
-
-        if user and user['password'] == old_password:
-            cursor.execute('UPDATE user SET password = ? WHERE username = ?', (new_password, username))
-            cursor.close()
-            flask.flash('密码更新成功！')
-        else:
-            flask.flash('用户名或旧密码错误！')
-        return flask.redirect(flask.url_for('change_password'))
-
-    if (main.request.cookies.get('cookieid')!=""):
-        return flask.render_template('change_password.html', users=main.request.cookies.get('cookieid'))
-    else:
-        return flask.render_template("login.html",message="请先登录")
-
 """http://host:port/change_password 我的 ###cookie###"""
 @main.app.route("/me")
 def me():
@@ -261,12 +249,32 @@ def me():
             return main.render_template("blog/me.html",userid=i[0], username=i[1])
     return ""
 
-""""""
 @main.app.route("/about")
 def about():
     a = ""
     return flask.render_template("about.html",yunying=config.RB,beian=config.ICP)
 
+@main.app.route("/setmineimage",methods=['POST','GET'])
+def setimage():
+    if (flask.request.method == 'POST') :
+        im = flask.request.form["image"]
+        cookie = flask.request.cookies.get("cookieid")
+        image = Image.open(im)
+        resized_image = image.resize((500, int(image.size[1] * 500 / image.size[0])))
+        resized_image.save(im)
+        import sqlite3
+        try:
+            db = sqlite3.connect("/blueprint/main.db", check_same_thread=False)
+            cursor = db.cursor()
+        except :
+            try :
+                db = sqlite3.connect("main.db", check_same_thread=False)
+                cursor = db.cursor()
+            except:raise Exception("db connet error")
+        cursor.execute("UPDATE user SET image = ? WHERE username = ?",(im, cookie, ))
+        db.commit()
+        return flask.render_template("index.html")
+    
 main.app.run(
     debug=config.debug,
     host=config.host,

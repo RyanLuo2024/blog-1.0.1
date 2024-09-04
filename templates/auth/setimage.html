@@ -1,0 +1,52 @@
+<title>添加文章</title>
+<link rel="stylesheet" href="/static/css/blogcss.css">
+<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+
+<link rel="stylesheet"  type="text/css" href="/static/css/style.css">
+<link href="/static/css/quill.snow.css" rel="stylesheet">
+<script src="/static/js/quill.js"></script>
+<style>
+    /* 弹窗样式 */
+    .popup {
+        display: none;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+        height: 200px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 20px;
+        z-index: 9999;
+    }
+</style>
+<header>
+    <a href="/">首页</a>
+    <a href="/about">关于本站</a>
+</header>
+<section>
+    <!-- 背景颜色 -->
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="box">
+        <!-- 背景圆 -->
+        <div class="circle" style="--x:0"></div>
+        <div class="circle" style="--x:1"></div>
+        <div class="circle" style="--x:2"></div>
+        <div class="circle" style="--x:3"></div>
+        <div class="circle" style="--x:4"></div>
+        <div class="container2">
+            <form class="form" action="handle" method="post">
+                <h4>修改头像</h4>
+                <input class="input" type="text" name="image" placeholder="头像图片（已上传）">
+                <a href="{{url_for('upload')}}">还没上传？ >>戳这<< </a>
+                <button class="button" type="submit">提交</button>
+            </form>
+            
+            
+        </div>
+    </div>
+</section>
+</body>
