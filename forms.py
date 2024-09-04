@@ -143,7 +143,7 @@ def index():
     if (flag):
         for i in list:
             if cookie == i[1]:
-                    image = i[3]
+                    if(i[3] != None) :image = i[3]
     return flask.render_template("blog/blog.html", posts=blog, image=image)
 
 """http://host:port/logout 退出登录 ###cookie###"""
