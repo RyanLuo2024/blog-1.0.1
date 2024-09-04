@@ -258,9 +258,10 @@ def about():
 def setimage():
     if (flask.request.method == 'POST') :
         im = flask.request.form["image"]
+        im = "."+im
         cookie = flask.request.cookies.get("cookieid")
         image = Image.open(im)
-        resized_image = image.resize((500, int(image.size[1] * 500 / image.size[0])))
+        resized_image = image.resize((80, 80))
         resized_image.save(im)
         import sqlite3
         try:
@@ -274,6 +275,7 @@ def setimage():
         cursor.execute("UPDATE user SET image = ? WHERE username = ?",(im, cookie, ))
         db.commit()
         return flask.render_template("index.html")
+    return flask.render_template("auth/setimage.html")
     
 main.app.run(
     debug=config.debug,
