@@ -127,6 +127,20 @@ def getpinglun():
             
     print("sql say --- Get db 评论 in pinglun , return :",new_table)
     return new_table
+def setpinglun(from_,to,text,word):
+    import sqlite3
+    try:
+        db = sqlite3.connect("/blueprint/main.db", check_same_thread=False)
+        cursor = db.cursor()
+    except :
+        try :
+            db = sqlite3.connect("main.db", check_same_thread=False)
+            cursor = db.cursor()
+        except:raise Exception("db connet error")
+    sql4 = "INSERT into pinglun word,touser,user,content values (?, ?, ?, ?)"
+    sql4_a=(word,to,from_,text)
+    cursor.execute(sql4,sql4_a)
+    db.commit()
 # word = db.word
 # users = db.users
 # pinglun=db.pinglun
