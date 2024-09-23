@@ -38,9 +38,7 @@ def post(postid):
             user =profanity.censor(blog_list[i][3])
             wordid =profanity.censor(blog_list[i][0])
             if user_ == user or user == "root":
-                a ="""<a href="javascript:void(0);" class="reply-icon">
-                                <img src="/static/image/remove.png" alt="回复标识">
-                            </a>"""
+                a ="""<a href="/removeword/"""+ wordid +""""><img src="/static/image/remove.png"></a>"""
             break
     return """
 <html>
@@ -76,7 +74,7 @@ def post(postid):
                             <h1> """+title+"""</h1>
                             <h5> by - """+user+"""</h5>
                             <p> """+words+"""</p>
-                            <a href="/removeword/"""+ wordid +""""><img src="/static/image/remove.png"></a>
+                            """+a+"""
                             <h6>本文id(wordid): """+ wordid +""" </h6>
                         </div>
                        <script>
@@ -89,13 +87,6 @@ def post(postid):
                         },
                         });
                         </script>
-                        <div class="form">
-                        <div class="inputBox">
-                            <textarea name="reply" id="reply" rows="4" placeholder="在这里输入你的回复..."></textarea>
-                            <button type="submit">回复</button>
-                            """+a+"""
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
