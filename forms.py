@@ -29,12 +29,18 @@ class wordid():
 @main.app.route("/post/<postid>")
 def post(postid):
     blog_list=models.getblog()
+    user_ = flask.request.cookies.get("cookieid")
+    a=""
     for i in range(len(blog_list)):
         if postid == blog_list[i][0] or postid == str(blog_list[i][0]): 
             title=profanity.censor(blog_list[i][1])
             words=profanity.censor(blog_list[i][2])
             user =profanity.censor(blog_list[i][3])
             wordid =profanity.censor(blog_list[i][0])
+            if user_ == user or user == "root":
+                a ="""<a href="javascript:void(0);" class="reply-icon">
+                                <img src="/static/image/remove.png" alt="回复标识">
+                            </a>"""
             break
     return """
 <html>
@@ -83,6 +89,13 @@ def post(postid):
                         },
                         });
                         </script>
+                        <div class="form">
+                        <div class="inputBox">
+                            <textarea name="reply" id="reply" rows="4" placeholder="在这里输入你的回复..."></textarea>
+                            <button type="submit">回复</button>
+                            """+a+"""
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -277,6 +290,17 @@ def setimage():
         return flask.render_template("index.html")
     return flask.render_template("auth/setimage.html")
     
+# @main.app.route("/writepinglun",methods=['POST'])
+# def writepinglun():
+#     if (flask.request.method == 'POST'):
+#         word = flask.request.form["word"]
+#         text = flask.request.form["text"]
+#         from_= flask.request.form["from"]
+#         to   = flask.request.form["to"]
+#         models.setpinglun(from_=from_,to=to,text=text,word=word)
+#         return flask.redirect(flask.url_for("/post/"+str(word)))
+#     return "这里什么也没有"
+        
 main.app.run(
     debug=config.debug,
     host=config.host,

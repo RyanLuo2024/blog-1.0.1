@@ -1,30 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>我的作品</title>
-    <canvas style="position: absolute;"></canvas>
-    <script src="/static/js/js1.js"></script>
-    <link rel="stylesheet" href="https://static0.xesimg.com/talcode/bootstrap4.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/static/css/me.css">
-    <link rel="stylesheet" href="/static/css/blogcss.css">
-    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-</head>
-<body>
-    <div class="row dd"><br><br><br><br><br>
-    <p class="change">###服务器###</p>
-    <pre class="">
-        服务器地址：m8687126u6.vicp.fun:53025
-        要求minecraft版本：1.19.4 （带forge）
-        要求mod：worldedit-mod-7.2.14
-    </pre>
-    
-    
-    
-    <!--<a class="link-opacity-90" href="/worldedit-mod-7.jar"> >>>点我下载<<< </a>-->
-    <p>链接:本站地址+/worldedit-mod-7.jar</p>
-    
-    
-</body>
+<html>
+    <head>
+        <link href="../../static/css/quill.snow.css" rel="stylesheet">
+        <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="../../static/css/blogcss.css">
+        <title>blog文章 - """+title+"""</title>
+        <script src="../../static/js/quill.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"  type="text/css" href="../../static/css/style.css">
+    </head>
+    <body>
+        <header>
+    		<a href="/">首页</a>
+            <a href="/about">关于本站</a>
+    	</header>
+        <section>
+            <!-- 背景颜色 -->
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="box">
+                <!-- 背景圆 -->
+                <div class="circle" style="--x:0"></div>
+                <div class="circle" style="--x:1"></div>
+                <div class="circle" style="--x:2"></div>
+                <div class="circle" style="--x:3"></div>
+                <div class="circle" style="--x:4"></div>
+                <div class="container2">
+                    <div class="form">
+                        <div id="editor2">
+                            <h1> """+title+"""</h1>
+                            <h5> by - """+user+"""</h5>
+                            <p> """+words+"""</p>
+                            <a href="/removeword/"""+ wordid +""""><img src="/static/image/remove.png"></a>
+                            <h6>本文id(wordid): """+ wordid +""" </h6>
+                        </div>
+                       <script>
+                       var toolbarOptions = []
+                       const quill = new Quill('#editor2', {
+                        readOnly:true,
+                        theme: 'snow',
+                        modules: {
+                            toolbar: toolbarOptions
+                        },
+                        });
+                        </script>
+                        <div class="form">
+                        <div class="inputBox">
+                            <textarea name="reply" id="reply" rows="4" placeholder="在这里输入你的回复..."></textarea>
+                            <button type="submit">回复</button>
+                            <a href="javascript:void(0);" class="reply-icon">
+                                <img src="/static/image/remove.png" alt="回复标识">
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
 </html>
