@@ -230,7 +230,7 @@ def add_user(username, password):
             cursor = db.cursor()
         except:raise Exception("db connet error")
     a=userid()
-    sql = "INSERT INTO user(username, password, userid) VALUES ('%s','%s','%s')" %(username, password,a.shengzheng())
+    sql = "INSERT INTO user(username, password, userid, type) VALUES ('%s','%s','%s', '%s')" %(username, password,a.shengzheng(),"user")
     print(sql)
     # execute(sql)
     cursor.execute(sql)
