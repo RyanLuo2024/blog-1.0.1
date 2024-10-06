@@ -20,10 +20,12 @@ def getblog():
     import sqlite3
     try:
         db = sqlite3.connect("/blueprint/main.db", check_same_thread=False)
+        print("debug::connet the db.")
         cursor = db.cursor()
     except :
         try :
             db = sqlite3.connect("main.db", check_same_thread=False)
+            print("debug::connet the db.")
             cursor = db.cursor()
         except:raise Exception("db connet error")
 
@@ -48,8 +50,10 @@ def getblog():
     new_table = []
     for i in range(len(word)):
         new_table.append([])
+        print("debug::line 53")
         for j in word[i]:
             new_table[i].append(j)
+            print("debug::line 56")
             
     print("sql say --- Get db blogs in words , return :",new_table)
     return new_table

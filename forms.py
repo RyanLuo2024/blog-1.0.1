@@ -1,4 +1,4 @@
-import main,models,os,hashlib,flask,blueprint,datetime
+import main,models,os,hashlib,flask,blueprint,datetime,sqlite3
 from fakes import*
 from better_profanity import profanity
 import json
@@ -10,6 +10,11 @@ import PIL.Image as Image
    |  ├——shengcheng() -> str 生成id
    |  ├——jiexi() -> datetime.datetime() 解析uid
 """
+def get_db_connection():
+    conn = sqlite3.connect('main.db')
+    conn.row_factory = sqlite3.Row
+    return conn
+
 class wordid():
     def __init__(self):
         pass
@@ -40,7 +45,7 @@ def post(postid):
             if user_ == user or user == "root":
                 a ="""<a href="/removeword/"""+ wordid +""""><img src="/static/image/remove.png"></a>"""
             break
-    return """
+    str_ =  """
 <html>
     <head>
         <link href="/static/css/quill.snow.css" rel="stylesheet">
@@ -76,6 +81,7 @@ def post(postid):
                             <p> """+words+"""</p>
                             """+a+"""
                             <h6>本文id(wordid): """+ wordid +""" </h6>
+                            
                         </div>
                        <script>
                        var toolbarOptions = []
@@ -88,12 +94,58 @@ def post(postid):
                         });
                         </script>
                     </div>
+                    <div class="add">
+                        <h1>添加评论</h1>
+                        <br>
+                        <form action="{{ url_for('add_comment') }}" method="post">
+                            <input type="text" id="word" name="word" style="display: none;"  value=" """+wordid+""" "><br>
+                            <label for="touser">To User:</label>
+                            <input type="text" id="touser" name="touser"><br>
+                            <label for="content">Content:</label>
+                            <input type="text" id="content" name="content"><br>
+                            <input type="submit" value="提交评论">
+                        </form>
+                        <br>
+                    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <div class="list">
+                        <h2>评论列表</h2>
+                        <br>
+                        <ul>
+                            {% for comment in comments %}
+                            <li>
+                                <strong>To User:</strong> {{ comment['touser'] }}<br>
+                                <strong>User:</strong> {{ comment['user'] }}<br>
+                                <strong>Content:</strong> {{ comment['content'] }}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
     </body>
 </html>
     """
+    conn = get_db_connection()
+    comments = conn.execute('SELECT * FROM pinglun').fetchall()
+    # conn.close()
+    return flask.render_template_string(str_, comments=comments)
+
+@main.app.route('/add_comment', methods=['POST'])
+def add_comment():
+    conn = get_db_connection()
+    word = flask.request.form['word']
+    touser = flask.request.form['touser']
+    user = flask.request.cookies.get("cookieid")
+    if user=="" or user==None : return flask.redirect(flask.url_for('user_login'))
+    content = flask.request.form['content']
+    conn.execute('INSERT INTO pinglun (word, touser, user, content) VALUES (?, ?, ?, ?)',
+                 (word, touser, user, content))
+    conn.commit()
+    conn.close()
+    return flask.redirect(flask.url_for('index'))
+
+
 
 """http://host:port/writeblog 写文章 ###cookie###"""
 @main.app.route("/writeblog")
@@ -128,6 +180,7 @@ def handle():
 """http://host:port/ 主页"""
 @main.app.route("/")
 def index():
+    import models
     cookie = flask.request.cookies.get("cookieid")
     flag=True
     image = "/static/image/touxiang.png"
@@ -295,5 +348,5 @@ def setimage():
 main.app.run(
     debug=config.debug,
     host=config.host,
-    port=config.port1
+    port=config.port0
 )

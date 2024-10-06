@@ -1,4 +1,4 @@
-port0=8080
+port0=5000
 port1=8081
 debug=False
 host="0.0.0.0"
