@@ -2,7 +2,7 @@ import main,models,os,hashlib,flask,blueprint,datetime,sqlite3
 from fakes import*
 from better_profanity import profanity
 import json
-import config
+import config,addheimindan
 from bs4 import BeautifulSoup
 import PIL.Image as Image
 """wordid: 生成wordid，随机
@@ -30,9 +30,46 @@ class wordid():
         uid = uid[0:-2]
         return datetime.datetime.strptime(uid,"%Y%m%d%H%M%S") 
 
+@main.app.route("/mepost/<user>")
+def post2(user):
+    if addheimindan.get(flask.request.cookies.get("cookieid")) != False and \
+       addheimindan.get(flask.request.cookies.get("cookieid"))['quanxian']['/'] == False: 
+        return "您已被封禁，无法经行该操作"
+    import sqlite3
+    try:
+        db = sqlite3.connect("/blueprint/main.db", check_same_thread=False)
+        cursor = db.cursor()
+    except :
+        try :
+            db = sqlite3.connect("main.db", check_same_thread=False)
+            cursor = db.cursor()
+        except:raise Exception("db connet error")
+    cursor.execute("SELECT userid,username,usertype,image FROM user")
+    users = cursor.fetchall()
+    lists = models.getblog()
+    userid=""
+    image=""
+    for i in users:
+        if i[1] == user:
+            userid=i[0]
+            image=i[3]
+            break
+    
+    if userid == "":
+        return flask.render_template("error.html")
+    posts = []
+    for i in lists:
+        if (i[3] == user):
+            posts.append(i)
+    print(posts)
+    return flask.render_template("blog/blog.html", posts=posts, image="/"+image, username=flask.request.cookies.get("cookieid"))
+
 """http://host:port/post/<postid>: 文章查看"""
 @main.app.route("/post/<postid>")
 def post(postid):
+    if addheimindan.get(flask.request.cookies.get("cookieid")) != False and \
+       addheimindan.get(flask.request.cookies.get("cookieid"))['quanxian']['post'] == False: 
+        return "您已被封禁，无法经行该操作"
     blog_list=models.getblog()
     user_ = flask.request.cookies.get("cookieid")
     a=""
@@ -77,7 +114,7 @@ def post(postid):
                     <div class="form">
                         <div id="editor2">
                             <h1> """+title+"""</h1>
-                            <h5> by - """+user+"""</h5>
+                            <a href="/me/"""+user+""""> by - """+user+"""</a>
                             <p> """+words+"""</p>
                             """+a+"""
                             <h6>本文id(wordid): """+ wordid +""" </h6>
@@ -100,7 +137,7 @@ def post(postid):
                         <form action="{{ url_for('add_comment') }}" method="post">
                             <input type="text" id="word" name="word" style="display: none;"  value=" """+wordid+""" "><br>
                             <label for="touser">To User:</label>
-                            <input type="text" id="touser" name="touser"><br>
+                            <input type="text" id="touser" name="touser" style="display: none;"><br>
                             <label for="content">Content:</label>
                             <input type="text" id="content" name="content"><br>
                             <input type="submit" value="提交评论">
@@ -113,7 +150,6 @@ def post(postid):
                         <ul>
                             {% for comment in comments %}
                             <li>
-                                <strong>To User:</strong> {{ comment['touser'] }}<br>
                                 <strong>User:</strong> {{ comment['user'] }}<br>
                                 <strong>Content:</strong> {{ comment['content'] }}
                             </li>
@@ -133,6 +169,9 @@ def post(postid):
 
 @main.app.route('/add_comment', methods=['POST'])
 def add_comment():
+    if addheimindan.get(flask.request.cookies.get("cookieid")) != False and \
+       addheimindan.get(flask.request.cookies.get("cookieid"))['quanxian']['add_comment'] == False: 
+        return "您已被封禁，无法经行该操作"
     conn = get_db_connection()
     word = flask.request.form['word']
     touser = flask.request.form['touser']
@@ -145,17 +184,21 @@ def add_comment():
     conn.close()
     return flask.redirect(flask.url_for('index'))
 
-
-
 """http://host:port/writeblog 写文章 ###cookie###"""
 @main.app.route("/writeblog")
 def writeblog():
+    if addheimindan.get(flask.request.cookies.get("cookieid")) != False and \
+       addheimindan.get(flask.request.cookies.get("cookieid"))['quanxian']['writeblog'] == False: 
+        return "您已被封禁，无法经行该操作"
     if (main.request.cookies.get("cookieid") == None): flask.redirect(flask.url_for("login"))
     return main.render_template("auth/blogwrite.html")
 
 """http://host:port/handle 处理文章 ###cookie###"""
 @main.app.route('/handle', methods=['POST'])
 def handle():
+    if addheimindan.get(flask.request.cookies.get("cookieid")) != False and \
+       addheimindan.get(flask.request.cookies.get("cookieid"))['quanxian']['handle'] == False: 
+        return "您已被封禁，无法经行该操作"
     title = main.request.form.get("title")
     word = main.request.form.get("content")
     print(title,word)
@@ -180,6 +223,9 @@ def handle():
 """http://host:port/ 主页"""
 @main.app.route("/")
 def index():
+    if addheimindan.get(flask.request.cookies.get("cookieid")) != False and \
+       addheimindan.get(flask.request.cookies.get("cookieid"))['quanxian']['/'] == False: 
+        return "您已被封禁，无法经行该操作"
     import models
     cookie = flask.request.cookies.get("cookieid")
     flag=True
@@ -201,7 +247,7 @@ def index():
         for i in list:
             if cookie == i[1]:
                     if(i[3] != None) :image = i[3]
-    return flask.render_template("blog/blog.html", posts=blog, image=image)
+    return flask.render_template("blog/blog.html", posts=blog, image=image, username=cookie)
 
 """http://host:port/logout 退出登录 ###cookie###"""
 @main.app.route("/logout")
@@ -282,6 +328,9 @@ def register():
 hash_object = hashlib.md5()
 @main.app.route('/upload', methods=['POST', 'GET'])
 def upload():
+    if addheimindan.get(flask.request.cookies.get("cookieid")) != False and \
+       addheimindan.get(flask.request.cookies.get("cookieid"))['quanxian']['upload'] == False: 
+        return "您已被封禁，无法经行该操作"
     if main.request.method == 'POST':
         f = main.request.files['file']
         basepath = os.path.dirname(__file__)
@@ -295,15 +344,21 @@ def upload():
     return main.render_template('upload.html')
  
 """http://host:port/change_password 我的 ###cookie###"""
-@main.app.route("/me")
-def me():
+@main.app.route("/me/<user>")
+def me(user):
+    cenghu = "Ta"
+    fengjing=""
     x =  main.request.cookies.get("cookieid")
     a = models.getuser()
+    if (user == x):
+        cenghu = "您"
+    if (addheimindan.get(user) != False):
+        fengjing = cenghu+"已被加入黑名单！"
     print(x)
     if (x==None) :return flask.redirect(flask.url_for("user_login"))
     for i in a:
         if (i[1]==x):
-            return main.render_template("blog/me.html",userid=i[0], username=i[1])
+            return main.render_template("blog/me.html",userid=i[0], username=i[1],cenghu=cenghu, fengjing=fengjing)
     return ""
 
 @main.app.route("/about")
@@ -312,7 +367,7 @@ def about():
     return flask.render_template("about.html",yunying=config.RB,beian=config.ICP)
 
 @main.app.route("/setmineimage",methods=['POST','GET'])
-def setimage():
+def setmineimage():
     if (flask.request.method == 'POST') :
         im = flask.request.form["image"]
         im = "."+im
@@ -334,17 +389,32 @@ def setimage():
         return flask.render_template("index.html")
     return flask.render_template("auth/setimage.html")
     
-# @main.app.route("/writepinglun",methods=['POST'])
-# def writepinglun():
-#     if (flask.request.method == 'POST'):
-#         word = flask.request.form["word"]
-#         text = flask.request.form["text"]
-#         from_= flask.request.form["from"]
-#         to   = flask.request.form["to"]
-#         models.setpinglun(from_=from_,to=to,text=text,word=word)
-#         return flask.redirect(flask.url_for("/post/"+str(word)))
-#     return "这里什么也没有"
+@main.app.route("/setadmin",methods=['POST','GET'])
+def settings():
+    if (flask.request.method == 'POST' and flask.request.cookies.get("cookieid")):
+        import sqlite3
+        try:
+            db = sqlite3.connect("/blueprint/main.db", check_same_thread=False)
+            cursor = db.cursor()
+        except :
+            try :
+                db = sqlite3.connect("main.db", check_same_thread=False)
+                cursor = db.cursor()
+            except:raise Exception("db connet error")
+        sql = "UPDATE user SET usertype=\"admin\" WHERE username='%s';" % (flask.request.form["username"])
+        cursor.execute(sql)
+        db.commit()
+        return flask.render_template("index.html")
+    elif flask.request.method=='GET' and flask.request.cookies.get("cookieid"):
+        return flask.render_template("settings.html")
+
+@main.app.route("/setbankimg",methods=['POST','GET'])
+def setbanfimg():
+    if (flask.request.method == 'POST'):
+        FILE = flask.request.form["image"]
         
+
+
 main.app.run(
     debug=config.debug,
     host=config.host,

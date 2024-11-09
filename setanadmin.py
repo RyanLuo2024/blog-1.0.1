@@ -8,7 +8,7 @@ except :
         cursor = db.cursor()
     except:raise Exception("db connet error")
 
-sql = "UPDATE user SET usertype = admin WHERE username='%s';" % (input("username:"))
+sql = "UPDATE user SET usertype=\"admin\" WHERE username='%s';" % (input("username:"))
 cursor.execute(sql)
 db.commit()
 cursor.close()
