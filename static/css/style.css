@@ -151,7 +151,39 @@ section .color:nth-child(3) {
 .container2 {
     position: relative;
     min-width: 900px;
-    min-height: 2000px;
+    min-height: 100px;
+    max-width: 1000px;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;  /* 水平居中 */
+    align-items: flex-start;   /* 垂直靠上 */
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.container3 {
+    position: relative;
+    min-width: 900px;
+    min-height: 500px;
+    max-width: 1000px;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;  /* 水平居中 */
+    align-items: flex-start;   /* 垂直靠上 */
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.container3 {
+    position: relative;
+    min-width: 900px;
+    min-height: 100px;
+    max-width: 1000px;
     background: rgba(255, 255, 255, 0.1);
     display: flex;
     justify-content: center;  /* 水平居中 */
@@ -259,7 +291,7 @@ section .color:nth-child(3) {
 }
 
 /* 多行文本框样式 */
-.form textarea {
+#textarea {
     width: 100%; /* 宽度为容器的100% */
     height: 150px; /* 增加高度，例如150px */
     padding: 10px 20px;
@@ -306,3 +338,40 @@ section .color:nth-child(3) {
 .ql-toolbar div{
     border-style: none;
 }
+
+.add {
+    width: 900px;
+    height: 500px;
+}
+
+.list {
+    width: 900px;
+    height: auto;
+    background-color: #fff;
+}
+
+#content {
+    width: 900px;
+    height: 200px;
+    background-color: #ccc;
+}
+.clear {
+    clear: both;
+}
+
+
+.textarea {
+    margin: 100px auto;
+    width: 100%;
+    text-align: center;
+  }
+
+.textarea textarea {
+   width: 400px;
+    height: 300px;
+  }
+  .numLimit {
+    position: relative;
+    top: -10px;
+    left: -90px;
+  }

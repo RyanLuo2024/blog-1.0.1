@@ -73,6 +73,7 @@ def post(postid):
     blog_list=models.getblog()
     user_ = flask.request.cookies.get("cookieid")
     a=""
+    print(models.getpinglun())
     for i in range(len(blog_list)):
         if postid == blog_list[i][0] or postid == str(blog_list[i][0]): 
             title=profanity.censor(blog_list[i][1])
@@ -129,32 +130,71 @@ def post(postid):
                             toolbar: toolbarOptions
                         },
                         });
+                        var vm = new Vue({
+                        el: '#main-container',
+                        data: {
+                            textareaContent:'',
+                            num: 200,
+                        },
+                        methods: {
+                            monitorInput() {
+                            var txtVal = this.textareaContent.length;
+                            this.num = 200 - txtVal;
+                            }
+                        },
+                        });
+                        
                         </script>
                     </div>
+                </div>
+                <br>
+                <div class="container3">
                     <div class="add">
                         <h1>添加评论</h1>
-                        <br>
                         <form action="{{ url_for('add_comment') }}" method="post">
+                            <script>
+                            $(document).ready(function() {
+                            // 设置最大字数限制
+                            var maxChars = 400;
+
+                            // 监听textarea的input事件
+                            $('#content').on('input', function() {
+                                var currentLength = $(this).val().length;
+                                var remaining = maxChars - currentLength;
+                                $('#remainingChars').text(remaining);
+                            });
+                            });
+                            </script>
                             <input type="text" id="word" name="word" style="display: none;"  value=" """+wordid+""" "><br>
-                            <label for="touser">To User:</label>
                             <input type="text" id="touser" name="touser" style="display: none;"><br>
-                            <label for="content">Content:</label>
-                            <input type="text" id="content" name="content"><br>
-                            <input type="submit" value="提交评论">
+                            <div><label for="content">评论:</label></div>
+                            <textarea maxlength="400" @input="monitorInput" v-model="textareaContent" id="content" placeholder="写点东西吧..." name="content"></textarea>
+                            <div>剩余字数：<span id="remainingChars">400</span></div>
+                            <br>
+                            <div><input type="submit" class="button" value="提交"></div>
                         </form>
                         <br>
-                    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <br>
+                <div class="container3">
                     <div class="list">
                         <h2>评论列表</h2>
                         <br>
-                        <ul>
-                            {% for comment in comments %}
-                            <li>
-                                <strong>User:</strong> {{ comment['user'] }}<br>
-                                <strong>Content:</strong> {{ comment['content'] }}
-                            </li>
-                            {% endfor %}
-                        </ul>
+                        {% for comment in comments %}
+                        
+                            <div class="cushy-box2">
+                                <br style="font-size: 5px;">
+                                <div class="pinguser">
+                                    <strong>内容:</strong><br> {{ comment['content'] }}
+                                </div>
+                                <div class="pingtext" style="width: 700px;text-align: right;font-size:12px;">
+                                    <strong>By - </strong> {{ comment['user'] }}
+                                </div>
+                                <br style="font-size: 5px;">
+                            </div>
+                        {% endfor %}
                     </div>
                 </div>
             </div>
@@ -163,9 +203,14 @@ def post(postid):
 </html>
     """
     conn = get_db_connection()
-    comments = conn.execute('SELECT * FROM pinglun').fetchall()
+    comments = conn.execute('SELECT * FROM pinglun ').fetchall()
+    pingl = []
+    for i in comments:
+        if (i[0]==" "+str(postid)+" "):
+            pingl.append(i)
     # conn.close()
-    return flask.render_template_string(str_, comments=comments)
+    print(pingl)
+    return flask.render_template_string(str_, comments=pingl)
 
 @main.app.route('/add_comment', methods=['POST'])
 def add_comment():
@@ -204,7 +249,8 @@ def handle():
     print(title,word)
     id = wordid()
     import jieba
-    word_search_list = jieba.cut_for_search(BeautifulSoup(word,"html").get_text())
+    word_search_list = jieba.lcut(BeautifulSoup(word,"html").get_text())
+    print(word_search_list)
     word_search_list = {"list":str(word_search_list)}
     import sqlite3
     try:
@@ -343,7 +389,7 @@ def upload():
         文件路径：/static/uploads/"""+hash_object.hexdigest()+f.filename+"   请注意复制"
     return main.render_template('upload.html')
  
-"""http://host:port/change_password 我的 ###cookie###"""
+"""http://host:port/me/<user> 我的 ###cookie###"""
 @main.app.route("/me/<user>")
 def me(user):
     cenghu = "Ta"
@@ -408,11 +454,6 @@ def settings():
     elif flask.request.method=='GET' and flask.request.cookies.get("cookieid"):
         return flask.render_template("settings.html")
 
-@main.app.route("/setbankimg",methods=['POST','GET'])
-def setbanfimg():
-    if (flask.request.method == 'POST'):
-        FILE = flask.request.form["image"]
-        
 
 
 main.app.run(

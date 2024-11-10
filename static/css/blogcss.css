@@ -77,6 +77,28 @@ footer {
     text-align: start; /* 文本居中 */
     overflow: hidden; /* 隐藏溢出的内容 */
 }
+.cushy-box2 {
+    position: relative;
+    width: 700px; /* 可以根据需要调整宽度 */
+    height: auto; /* 可以根据需要调整高度 */
+    margin: 20px; /* 外边距，根据需要调整 */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px; /* 圆角边框 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #525252; /* 文本颜色 */
+    font-size: 16px; /* 文本大小 */
+    font-weight: 500; /* 字体粗细 */
+    
+    display: inline-block;
+    /* float: left; */
+    overflow: hidden; /* 隐藏溢出的内容 */
+}
+
 
 /* 可以添加动画效果，类似于.box .circle的动画 */
 /* .cushy-box {
@@ -100,6 +122,10 @@ footer {
 #editor2 {
     background-color: #fff;
     min-width: 900px;
-    min-height: 2000px;
+    min-height: 10px;
     border-style: none;
 }
+#editor::after {
+    content: "换行";
+    display: block;
+  }
