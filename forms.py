@@ -454,7 +454,41 @@ def settings():
     elif flask.request.method=='GET' and flask.request.cookies.get("cookieid"):
         return flask.render_template("settings.html")
 
-
+@main.app.route("/search",methods=['POST'])
+def search():
+    if (flask.request.method == 'POST'):
+        blog_list=models.getblog()
+        user_ = flask.request.cookies.get("cookieid")
+        a=""
+        lists = []
+        print(models.getpinglun())
+        for i in range(len(blog_list)):
+            if flask.request.form["keyword"] in i[4]["list"]:
+                lists.append(i)
+        import models
+        cookie = flask.request.cookies.get("cookieid")
+        flag=True
+        image = "/static/image/touxiang.png"
+        if (cookie==None) :flag = False
+        blog =lists
+        import sqlite3
+        try:
+            db = sqlite3.connect("/blueprint/main.db", check_same_thread=False)
+            cursor = db.cursor()
+        except :
+            try :
+                db = sqlite3.connect("main.db", check_same_thread=False)
+                cursor = db.cursor()
+            except:raise Exception("db connet error")
+        cursor.execute("SELECT userid,username,usertype,image FROM user")
+        list = cursor.fetchall()
+        if (flag):
+            for i in list:
+                if cookie == i[1]:
+                        if(i[3] != None) :image = i[3]
+        return flask.render_template("blog/blog.html", posts=blog, image=image, username=cookie)
+        
+        
 
 main.app.run(
     debug=config.debug,
