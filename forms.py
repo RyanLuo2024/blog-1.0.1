@@ -227,7 +227,7 @@ def add_comment():
                  (word, touser, user, content))
     conn.commit()
     conn.close()
-    return flask.redirect(flask.url_for('index'))
+    return flask.redirect('/post/'+str(word.replace(" ","")))
 
 """http://host:port/writeblog 写文章 ###cookie###"""
 @main.app.route("/writeblog")
@@ -463,9 +463,13 @@ def search():
         a=""
         lists = []
         print(models.getblog())
+        print(flask.request.form["search"])
+        
         for i in range(len(blog_list)):
-            if flask.request.form["search"] in json.loads(blog_list[i][4])[4]["list"]:
-                lists.append(i)
+            print(json.loads(blog_list[i][4])["list"])
+            print(flask.request.form["search"] in json.loads(blog_list[i][4])["list"])
+            if str(flask.request.form["search"]) in json.loads(blog_list[i][4])["list"]:
+                lists.append(blog_list[i])
         import models
         cookie = flask.request.cookies.get("cookieid")
         flag=True
@@ -487,7 +491,8 @@ def search():
             for i in list:
                 if cookie == i[1]:
                         if(i[3] != None) :image = i[3]
-        return flask.render_template("blog/blog.html", posts=blog, image=image, username=cookie)
+        print(lists)
+        return flask.render_template("blog/blog.html", posts=lists, image=image, username=cookie)
         
         
 
