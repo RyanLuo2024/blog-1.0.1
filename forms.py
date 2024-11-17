@@ -457,13 +457,14 @@ def settings():
 @main.app.route("/search",methods=['POST'])
 def search():
     if (flask.request.method == 'POST'):
+        import models
         blog_list=models.getblog()
         user_ = flask.request.cookies.get("cookieid")
         a=""
         lists = []
-        print(models.getpinglun())
+        print(models.getblog())
         for i in range(len(blog_list)):
-            if flask.request.form["keyword"] in i[4]["list"]:
+            if flask.request.form["search"] in json.loads(blog_list[i][4])[4]["list"]:
                 lists.append(i)
         import models
         cookie = flask.request.cookies.get("cookieid")

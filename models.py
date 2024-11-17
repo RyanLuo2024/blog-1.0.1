@@ -29,7 +29,7 @@ def getblog():
             cursor = db.cursor()
         except:raise Exception("db connet error")
 
-    sql = "SELECT id,title,word,userid FROM articles"
+    sql = "SELECT id,title,word,userid,search FROM articles"
     sql2= "SELECT userid,username,usertype FROM user"
     sql3= "SELECT word,touser,user,content FROM pinglun"
 
