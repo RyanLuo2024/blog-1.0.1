@@ -5,3 +5,4 @@ flask_basicauth
 aspose-words 
 bs4
 pillow
+flask-pagedown
