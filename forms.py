@@ -4,12 +4,13 @@ from better_profanity import profanity
 import json
 import config,addheimindan
 from bs4 import BeautifulSoup
-import PIL.Image as Image
+from flaskext.markdown import Markdown
 """wordid: 生成wordid，随机
    ├——wordid() -> class
    |  ├——shengcheng() -> str 生成id
    |  ├——jiexi() -> datetime.datetime() 解析uid
 """
+Markdown(main.app)
 def get_db_connection():
     conn = sqlite3.connect('main.db')
     conn.row_factory = sqlite3.Row
@@ -223,8 +224,8 @@ def add_comment():
     user = flask.request.cookies.get("cookieid")
     if user=="" or user==None : return flask.redirect(flask.url_for('user_login'))
     content = flask.request.form['content']
-    conn.execute('INSERT INTO pinglun (word, touser, user, content) VALUES (?, ?, ?, ?)',
-                 (word, touser, user, content))
+    conn.execute('INSERT INTO pinglun (word, touser, user, content, like, dislike) VALUES (?, ?, ?, ?, ?, ?)',
+                 (word, touser, user, content, "[]", "[]"))
     conn.commit()
     conn.close()
     return flask.redirect('/post/'+str(word.replace(" ","")))
@@ -240,13 +241,14 @@ def writeblog():
 
 """http://host:port/handle 处理文章 ###cookie###"""
 @main.app.route('/handle', methods=['POST'])
-def handle():
+def handle(): 
     if addheimindan.get(flask.request.cookies.get("cookieid")) != False and \
        addheimindan.get(flask.request.cookies.get("cookieid"))['quanxian']['handle'] == False: 
         return "您已被封禁，无法经行该操作"
     title = main.request.form.get("title")
-    word = main.request.form.get("content")
-    print(title,word)
+    word = main.request.form.get("html")
+    markdown = main.request.form.get("markdown")
+    dislike = like = "[]"
     id = wordid()
     import jieba
     word_search_list = jieba.lcut(BeautifulSoup(word,"html").get_text())
@@ -261,7 +263,8 @@ def handle():
             db = sqlite3.connect("main.db", check_same_thread=False)
             cursor = db.cursor()
         except:raise Exception("db connet error")
-    cursor.execute("insert into articles (title, word, id, userid,search) values (? , ?, ?, ?, ?)", (title ,word, id.shengzheng(), main.request.cookies.get('cookieid'), json.dumps(word_search_list)))
+    cursor.execute("insert into articles (title, word, id, userid, search, markdown, like, dislike) values (? , ?, ?, ?, ?, ?, ?, ?)", 
+                   (title ,word, id.shengzheng(), main.request.cookies.get('cookieid'), json.dumps(word_search_list), markdown, like, dislike))
     db.commit()
     
     return main.render_template("index.html")

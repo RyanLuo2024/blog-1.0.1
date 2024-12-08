@@ -5,6 +5,8 @@
 <link rel="stylesheet"  type="text/css" href="/static/css/style.css">
 <link href="/static/css/quill.snow.css" rel="stylesheet">
 <script src="/static/js/quill.js"></script>
+<link rel="stylesheet" href="{{ url_for('static',filename='editormd/css/editormd.css') }}"/>
+<script src="{{ url_for('static',filename='editormd/editormd.min.js') }}"></script>
 <style>
     /* 弹窗样式 */
     .popup {
@@ -41,7 +43,7 @@
             <form class="form" action="handle" method="post">
                 <h4>添加文章</h4>
                 <input class="input" type="text" name="title" placeholder="标题">
-                <div id="editor">
+                <!-- <div id="editor">
                 </div>
                 <textarea class="textarea" name="content" cols="30" rows="10" placeholder="内容" style="display:none"></textarea>
                 <button class="button" type="submit">提交</button>
@@ -73,14 +75,32 @@
                         });
                         
                     
-                </script> 
+                </script>  -->
+                <div id="test-editormd">
+                    <textarea id="my-editormd-markdown-doc" name="markdown" style="display:none;"></textarea>
+                    <!-- 注意：name属性的值-->
+                    <textarea id="my-editormd-html-code" name="html" style="display:none;"></textarea>
+                </div>
+                <script type="text/javascript">
+                    var testEditor;
+                
+                    $(function () {
+                        testEditor = editormd("test-editormd", {
+                            width: 1300,
+                            height: 800,
+                            syncScrolling: "single",
+                            path: "{{ url_for('static',filename='editormd/lib/') }}",
+                            saveHTMLToTextarea : true
+                        });
+                    });
+                </script>
             </form>
-            <script>
+            <!-- <script>
             $(".button").click(function(){ 
                 var delta = $(".ql-editor").html()
                 //var delta = quill.getContents();
                 $(".textarea").html(delta);}
-            );</script>
+            );</script> -->
             <br><br><br><br>
             
         </div>
