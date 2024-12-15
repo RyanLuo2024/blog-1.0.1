@@ -1,10 +1,21 @@
-import main,models,os,hashlib,flask,blueprint,datetime,sqlite3
+import main,models,os,hashlib,flask,blueprint,datetime,sqlite3,markdown
 from fakes import*
 from better_profanity import profanity
 import json
 import config,addheimindan
 from bs4 import BeautifulSoup
 from flaskext.markdown import Markdown
+from jinja2.utils import markupsafe
+def md2html(mdcontent):
+	
+	exts = ['markdown.extensions.extra', 'markdown.extensions.codehilite','markdown.extensions.tables','markdown.extensions.toc']
+	
+	# with open(filename,'r',encoding='utf-8') as f:
+	# 	mdcontent = f.read()
+	# 	pass	
+	html = markdown.markdown(mdcontent,extensions=exts)
+	content = markupsafe.Markup(html)
+	return content
 """wordid: 生成wordid，随机
    ├——wordid() -> class
    |  ├——shengcheng() -> str 生成id
@@ -78,131 +89,12 @@ def post(postid):
     for i in range(len(blog_list)):
         if postid == blog_list[i][0] or postid == str(blog_list[i][0]): 
             title=profanity.censor(blog_list[i][1])
-            words=profanity.censor(blog_list[i][2])
+            words=md2html(profanity.censor(blog_list[i][2]))
             user =profanity.censor(blog_list[i][3])
             wordid =profanity.censor(blog_list[i][0])
             if user_ == user or user == "root":
                 a ="""<a href="/removeword/"""+ wordid +""""><img src="/static/image/remove.png"></a>"""
             break
-    str_ =  """
-<html>
-    <head>
-        <link href="/static/css/quill.snow.css" rel="stylesheet">
-        <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="/static/css/blogcss.css">
-        <title>blog文章 - """+title+"""</title>
-        <script src="/static/js/quill.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet"  type="text/css" href="/static/css/style.css">
-    </head>
-    <body>
-        <header>
-    		<a href="/">首页</a>
-            <a href="/about">关于本站</a>
-    	</header>
-        <section>
-            <!-- 背景颜色 -->
-            <div class="color"></div>
-            <div class="color"></div>
-            <div class="color"></div>
-            <div class="box">
-                <!-- 背景圆 -->
-                <div class="circle" style="--x:0"></div>
-                <div class="circle" style="--x:1"></div>
-                <div class="circle" style="--x:2"></div>
-                <div class="circle" style="--x:3"></div>
-                <div class="circle" style="--x:4"></div>
-                <div class="container2">
-                    <div class="form">
-                        <div id="editor2">
-                            <h1> """+title+"""</h1>
-                            <a href="/me/"""+user+""""> by - """+user+"""</a>
-                            <p> """+words+"""</p>
-                            """+a+"""
-                            <h6>本文id(wordid): """+ wordid +""" </h6>
-                            
-                        </div>
-                       <script>
-                       var toolbarOptions = []
-                       const quill = new Quill('#editor2', {
-                        readOnly:true,
-                        theme: 'snow',
-                        modules: {
-                            toolbar: toolbarOptions
-                        },
-                        });
-                        var vm = new Vue({
-                        el: '#main-container',
-                        data: {
-                            textareaContent:'',
-                            num: 200,
-                        },
-                        methods: {
-                            monitorInput() {
-                            var txtVal = this.textareaContent.length;
-                            this.num = 200 - txtVal;
-                            }
-                        },
-                        });
-                        
-                        </script>
-                    </div>
-                </div>
-                <br>
-                <div class="container3">
-                    <div class="add">
-                        <h1>添加评论</h1>
-                        <form action="{{ url_for('add_comment') }}" method="post">
-                            <script>
-                            $(document).ready(function() {
-                            // 设置最大字数限制
-                            var maxChars = 400;
-
-                            // 监听textarea的input事件
-                            $('#content').on('input', function() {
-                                var currentLength = $(this).val().length;
-                                var remaining = maxChars - currentLength;
-                                $('#remainingChars').text(remaining);
-                            });
-                            });
-                            </script>
-                            <input type="text" id="word" name="word" style="display: none;"  value=" """+wordid+""" "><br>
-                            <input type="text" id="touser" name="touser" style="display: none;"><br>
-                            <div><label for="content">评论:</label></div>
-                            <textarea maxlength="400" @input="monitorInput" v-model="textareaContent" id="content" placeholder="写点东西吧..." name="content"></textarea>
-                            <div>剩余字数：<span id="remainingChars">400</span></div>
-                            <br>
-                            <div><input type="submit" class="button" value="提交"></div>
-                        </form>
-                        <br>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-                <br>
-                <div class="container3">
-                    <div class="list">
-                        <h2>评论列表</h2>
-                        <br>
-                        {% for comment in comments %}
-                        
-                            <div class="cushy-box2">
-                                <br style="font-size: 5px;">
-                                <div class="pinguser">
-                                    <strong>内容:</strong><br> {{ comment['content'] }}
-                                </div>
-                                <div class="pingtext" style="width: 700px;text-align: right;font-size:12px;">
-                                    <strong>By - </strong> {{ comment['user'] }}
-                                </div>
-                                <br style="font-size: 5px;">
-                            </div>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
-        </section>
-    </body>
-</html>
-    """
     conn = get_db_connection()
     comments = conn.execute('SELECT * FROM pinglun ').fetchall()
     pingl = []
@@ -211,7 +103,7 @@ def post(postid):
             pingl.append(i)
     # conn.close()
     print(pingl)
-    return flask.render_template_string(str_, comments=pingl)
+    return flask.render_template("blog/word.html", comments=pingl, title=title, words=words, user=user, a=a, wordid=wordid)
 
 @main.app.route('/add_comment', methods=['POST'])
 def add_comment():
@@ -236,7 +128,7 @@ def writeblog():
     if addheimindan.get(flask.request.cookies.get("cookieid")) != False and \
        addheimindan.get(flask.request.cookies.get("cookieid"))['quanxian']['writeblog'] == False: 
         return "您已被封禁，无法经行该操作"
-    if (main.request.cookies.get("cookieid") == None): flask.redirect(flask.url_for("login"))
+    if (main.request.cookies.get("cookieid") == None): flask.redirect(flask.url_for("user_login"))
     return main.render_template("auth/blogwrite.html")
 
 """http://host:port/handle 处理文章 ###cookie###"""
