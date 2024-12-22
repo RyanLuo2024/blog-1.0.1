@@ -1,29 +1,20 @@
 import sqlite3
-try:
-    db = sqlite3.connect("/blueprint/main.db", check_same_thread=False)
-    cursor = db.cursor()
-except :
-    try :
-        db = sqlite3.connect("main.db", check_same_thread=False)
-        cursor = db.cursor()
-    except:raise Exception("db connet error")
-
-sql = "SELECT id,title,word,userid FROM articles"
-sql2= "SELECT userid,username,usertype,image FROM user"
-sql3= "SELECT word,touser,user,content FROM pinglun"
-
-def get():
-    cursor.execute(sql)
-    word=cursor.fetchall()
-    cursor.execute(sql2)
-    user=cursor.fetchall()
-    cursor.execute(sql3)
-    pinglun=cursor.fetchall()
-    return word,user,pinglun
-
-word = get()[0]
-user = get()[1]
-pinglun = get()[2]
-print(word,user,pinglun)
-# cursor.close()
-# db.close()
+class db:
+    def __getcursor(self,file):
+        try:
+            db = sqlite3.connect(file, check_same_thread=False)
+            cursor = db.cursor()
+        except :
+            raise Exception("db connet error")
+        return db,cursor
+    def __init__(self,file):
+        self.file = file
+        (self.db, self.cursor) = self.__getcursor()
+    def execute(self,sql,import_=()):
+        self.cursor.execute(sql,import_)
+        self.db.commit()
+    def get_return(self):
+        return self.cursor.fetchall()
+    def close(self):
+        self.cursor.close()
+        self.db.close()

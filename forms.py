@@ -3,9 +3,11 @@ from fakes import*
 from better_profanity import profanity
 import json
 import config,addheimindan
+from blueprint.dbget import db
 from bs4 import BeautifulSoup
 from flaskext.markdown import Markdown
 from jinja2.utils import markupsafe
+from PIL import Image
 def md2html(mdcontent):
 	
 	exts = ['markdown.extensions.extra', 'markdown.extensions.codehilite','markdown.extensions.tables','markdown.extensions.toc']
@@ -49,7 +51,7 @@ def post2(user):
         return "您已被封禁，无法经行该操作"
     import sqlite3
     try:
-        db = sqlite3.connect("/blueprint/main.db", check_same_thread=False)
+        db = sqlite3.connect("/blue# print/main.db", check_same_thread=False)
         cursor = db.cursor()
     except :
         try :
@@ -73,8 +75,60 @@ def post2(user):
     for i in lists:
         if (i[3] == user):
             posts.append(i)
-    print(posts)
+    # print(posts)
     return flask.render_template("blog/blog.html", posts=posts, image="/"+image, username=flask.request.cookies.get("cookieid"))
+
+@main.app.route("/mepost/<user>/search",methods=['GET'])
+def post3(user):
+    from blueprint.dbget import db
+    if addheimindan.get(flask.request.cookies.get("cookieid")) != False and \
+       addheimindan.get(flask.request.cookies.get("cookieid"))['quanxian']['/'] == False: 
+        return "您已被封禁，无法经行该操作"
+    sql = db()
+    sql.execute("SELECT userid,username,usertype,image FROM user")
+    users = sql.get_return()
+    sql.close()
+    lists = models.getblog()
+    userid=""
+    image=""
+    for i in users:
+        if i[1] == user:
+            userid=i[0]
+            image=i[3]
+            break
+    
+    if userid == "":
+        return flask.render_template("error.html")
+    posts = []
+    for i in lists:
+        if (i[3] == user):
+            posts.append(i)
+    # print(posts)
+    blog_list = posts
+    for i in range(len(blog_list)):
+        # print(json.loads(blog_list[i][4])["list"])
+        # print(flask.request.form["search"] in json.loads(blog_list[i][4])["list"])
+        if str(flask.request.form["search"]) in json.loads(blog_list[i][4])["list"]:
+            lists.append(blog_list[i])
+    import models
+    cookie = flask.request.cookies.get("cookieid")
+    flag=True
+    image = "/static/image/touxiang.png"
+    if (cookie==None) :flag = False
+    blog =lists
+    sql = db()
+    sql.execute("SELECT userid,username,usertype,image FROM user")
+    users = sql.get_return()
+    sql.close()
+    if (flag):
+        for i in list:
+            if cookie == i[1]:
+                if(i[3] != None) :image = i[3]
+    # print(lists)
+    # return flask.render_template("blog/blog.html", posts=lists, image=image, username=cookie)
+
+    return flask.render_template("blog/blog.html", posts=lists, image="/"+image, username=flask.request.cookies.get("cookieid"))
+
 
 """http://host:port/post/<postid>: 文章查看"""
 @main.app.route("/post/<postid>")
@@ -85,7 +139,7 @@ def post(postid):
     blog_list=models.getblog()
     user_ = flask.request.cookies.get("cookieid")
     a=""
-    print(models.getpinglun())
+    # print(models.getpinglun())
     for i in range(len(blog_list)):
         if postid == blog_list[i][0] or postid == str(blog_list[i][0]): 
             title=profanity.censor(blog_list[i][1])
@@ -102,7 +156,7 @@ def post(postid):
         if (i[0]==" "+str(postid)+" "):
             pingl.append(i)
     # conn.close()
-    print(pingl)
+    # print(pingl)
     return flask.render_template("blog/word.html", comments=pingl, title=title, words=words, user=user, a=a, wordid=wordid)
 
 @main.app.route('/add_comment', methods=['POST'])
@@ -144,21 +198,13 @@ def handle():
     id = wordid()
     import jieba
     word_search_list = jieba.lcut(BeautifulSoup(word,"html").get_text())
-    print(word_search_list)
+    # print(word_search_list)
     word_search_list = {"list":str(word_search_list)}
-    import sqlite3
-    try:
-        db = sqlite3.connect("/blueprint/main.db", check_same_thread=False)
-        cursor = db.cursor()
-    except :
-        try :
-            db = sqlite3.connect("main.db", check_same_thread=False)
-            cursor = db.cursor()
-        except:raise Exception("db connet error")
-    cursor.execute("insert into articles (title, word, id, userid, search, markdown, like, dislike) values (? , ?, ?, ?, ?, ?, ?, ?)", 
-                   (title ,word, id.shengzheng(), main.request.cookies.get('cookieid'), json.dumps(word_search_list), markdown, like, dislike))
-    db.commit()
-    
+    sql = db()
+    sql.execute("insert into articles (title, word, id, userid, search, markdown, like, dislike) values (? , ?, ?, ?, ?, ?, ?, ?)", 
+                    (title ,word, id.shengzheng(), main.request.cookies.get('cookieid'), json.dumps(word_search_list), markdown, like, dislike))
+    users = sql.get_return()
+    sql.close()
     return main.render_template("index.html")
 
 """http://host:port/ 主页"""
@@ -173,17 +219,10 @@ def index():
     image = "/static/image/touxiang.png"
     if (cookie==None) :flag = False
     blog = models.getblog()
-    import sqlite3
-    try:
-        db = sqlite3.connect("/blueprint/main.db", check_same_thread=False)
-        cursor = db.cursor()
-    except :
-        try :
-            db = sqlite3.connect("main.db", check_same_thread=False)
-            cursor = db.cursor()
-        except:raise Exception("db connet error")
-    cursor.execute("SELECT userid,username,usertype,image FROM user")
-    list = cursor.fetchall()
+    sql = db()
+    sql.execute("SELECT userid,username,usertype,image FROM user")
+    list = sql.get_return()
+    sql.close()
     if (flag):
         for i in list:
             if cookie == i[1]:
@@ -200,27 +239,18 @@ def logout():
 """http://host:port/removeword/<wordid> 删除文章 ###cookie###"""
 @main.app.route("/removeword/<wordid>")
 def removeword(wordid):
-    import sqlite3
-    try:
-        db = sqlite3.connect("/blueprint/main.db", check_same_thread=False)
-        cursor = db.cursor()
-    except :
-        try :
-            db = sqlite3.connect("main.db", check_same_thread=False)
-            cursor = db.cursor()
-        except:raise Exception("db connet error")
+    sql = db()
+    sql.execute("SELECT userid,username,usertype,image FROM user")
     response = main.request.cookies.get("cookieid")
     blog_list=models.getblog()
     if (response=="root"):
-        cursor.execute("DELETE FROM articles WHERE id=?", (int(wordid),))
-        db.commit()
+        sql.execute("DELETE FROM articles WHERE id=?", (int(wordid),))
         return main.render_template("index.html")
     for i in range(len(blog_list)):
         if response == blog_list[i][3] or response == str(blog_list[i][3]): 
-            cursor.execute("DELETE FROM articles WHERE id=?", (int(wordid),))
-            db.commit()
+            sql.execute("DELETE FROM articles WHERE id=?", (int(wordid),))
             return main.render_template("index.html")
-    
+    sql.close()
     return """
 <h1>你无权删除该文章！</h1>
 """
@@ -275,7 +305,7 @@ def upload():
     if main.request.method == 'POST':
         f = main.request.files['file']
         basepath = os.path.dirname(__file__)
-        print('uploading '+f.filename+'... ')
+        # print('uploading '+f.filename+'... ')
         hash_object.update(b"1")
         upload_path = os.path.join(basepath, 'static/uploads',hash_object.hexdigest()+f.filename)
         f.save(upload_path)
@@ -295,7 +325,7 @@ def me(user):
         cenghu = "您"
     if (addheimindan.get(user) != False):
         fengjing = cenghu+"已被加入黑名单！"
-    print(x)
+    # print(x)
     if (x==None) :return flask.redirect(flask.url_for("user_login"))
     for i in a:
         if (i[1]==x):
@@ -307,7 +337,7 @@ def about():
     a = ""
     return flask.render_template("about.html",yunying=config.RB,beian=config.ICP)
 
-@main.app.route("/setmineimage",methods=['POST','GET'])
+@main.app.route("/api/setmineimage",methods=['POST','GET'])
 def setmineimage():
     if (flask.request.method == 'POST') :
         im = flask.request.form["image"]
@@ -316,53 +346,36 @@ def setmineimage():
         image = Image.open(im)
         resized_image = image.resize((80, 80))
         resized_image.save(im)
-        import sqlite3
-        try:
-            db = sqlite3.connect("/blueprint/main.db", check_same_thread=False)
-            cursor = db.cursor()
-        except :
-            try :
-                db = sqlite3.connect("main.db", check_same_thread=False)
-                cursor = db.cursor()
-            except:raise Exception("db connet error")
-        cursor.execute("UPDATE user SET image = ? WHERE username = ?",(im, cookie, ))
-        db.commit()
+        sql = db()
+        sql.execute("UPDATE user SET image = ? WHERE username = ?",(im, cookie, ))
+        sql.close()
         return flask.render_template("index.html")
     return flask.render_template("auth/setimage.html")
     
-@main.app.route("/setadmin",methods=['POST','GET'])
+@main.app.route("/api/setadmin",methods=['POST','GET'])
 def settings():
     if (flask.request.method == 'POST' and flask.request.cookies.get("cookieid")):
-        import sqlite3
-        try:
-            db = sqlite3.connect("/blueprint/main.db", check_same_thread=False)
-            cursor = db.cursor()
-        except :
-            try :
-                db = sqlite3.connect("main.db", check_same_thread=False)
-                cursor = db.cursor()
-            except:raise Exception("db connet error")
-        sql = "UPDATE user SET usertype=\"admin\" WHERE username='%s';" % (flask.request.form["username"])
-        cursor.execute(sql)
-        db.commit()
+        sql = db()
+        sql.execute("UPDATE user SET usertype=\"admin\" WHERE username=?;" , (flask.request.form["username"]))
+        sql.close()
         return flask.render_template("index.html")
     elif flask.request.method=='GET' and flask.request.cookies.get("cookieid"):
         return flask.render_template("settings.html")
 
-@main.app.route("/search",methods=['POST'])
+@main.app.route("/search",methods=['GET'])
 def search():
-    if (flask.request.method == 'POST'):
+    if (flask.request.method == 'GET'):
         import models
         blog_list=models.getblog()
         user_ = flask.request.cookies.get("cookieid")
         a=""
         lists = []
-        print(models.getblog())
-        print(flask.request.form["search"])
+        # # print(models.getblog())
+        # # print(flask.request.form["search"])
         
         for i in range(len(blog_list)):
-            print(json.loads(blog_list[i][4])["list"])
-            print(flask.request.form["search"] in json.loads(blog_list[i][4])["list"])
+            # print(json.loads(blog_list[i][4])["list"])
+            # print(flask.request.form["search"] in json.loads(blog_list[i][4])["list"])
             if str(flask.request.form["search"]) in json.loads(blog_list[i][4])["list"]:
                 lists.append(blog_list[i])
         import models
@@ -371,22 +384,15 @@ def search():
         image = "/static/image/touxiang.png"
         if (cookie==None) :flag = False
         blog =lists
-        import sqlite3
-        try:
-            db = sqlite3.connect("/blueprint/main.db", check_same_thread=False)
-            cursor = db.cursor()
-        except :
-            try :
-                db = sqlite3.connect("main.db", check_same_thread=False)
-                cursor = db.cursor()
-            except:raise Exception("db connet error")
-        cursor.execute("SELECT userid,username,usertype,image FROM user")
-        list = cursor.fetchall()
+        sql = db()
+        sql.execute("SELECT userid,username,usertype,image FROM user")
+        list = sql.get_return()
+        sql.close()
         if (flag):
             for i in list:
                 if cookie == i[1]:
                         if(i[3] != None) :image = i[3]
-        print(lists)
+        # print(lists)
         return flask.render_template("blog/blog.html", posts=lists, image=image, username=cookie)
         
         

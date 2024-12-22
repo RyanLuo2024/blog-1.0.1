@@ -44,7 +44,9 @@
     		<a href="/me/{{username}}" class="profile-pic"><img src="{{image}}" alt="Profile"></a>
             <a href="/writeblog">写文章</a>
             <a href="/about">关于本站</a>
-            <form  method="POST" action="search" style="width: 200; height: 30;background-color: white;"><input type="text" name="search" style="width: 150;"><input type="submit" style="width: 50;height: 30;" value="搜索"></form>
+            <form  method="GET" action="search" style="width: 200; height: 30;background-color: white;">
+                <input type="text" name="search" style="width: 150;"><input type="submit" style="width: 50;height: 30;" value="搜索">
+            </form>
     	</header>
         <section>
             <!-- 背景颜色 -->
