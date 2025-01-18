@@ -1,63 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends "base.html" %}
 
-    <link rel="stylesheet" href="static/css/style.css">
-</head>
-<body>
-    <!-- <div>
-    <h1>用户注册</h1>
-    <form method="POST">
-        <input type="text" name="username" placeholder="请输入用户名" />
-        <br/>
-        <input type="password" name="password" placeholder="请输入密码（小于12位）" />
-        <br/>
+{% block title %}注册{% endblock %}
 
-        {% if message %} {{message}} {% endif %}
-        <br/>
-        <input type="submit" value="注册" />
-        <input type="reset" value="重置" />
-        <a href="{{ url_for('user_login') }}">登录</a>
-    </form>
-    </div>-->
-    <section>
-        <!-- 背景颜色 -->
-        <div class="color"></div>
-        <div class="color"></div>
-        <div class="color"></div>
-        <div class="box">
-            <!-- 背景圆 -->
-            <div class="circle" style="--x:0"></div>
-            <div class="circle" style="--x:1"></div>
-            <div class="circle" style="--x:2"></div>
-            <div class="circle" style="--x:3"></div>
-            <div class="circle" style="--x:4"></div>
-            <!-- 登录框 -->
-            <div class="container">
-                <div class="form">
-                    <h2>注册</h2>
-                    <form method="POST">
-                        <div class="inputBox">
-                            <input type="text" name="username" placeholder="请输入用户名" />
-
-                        </div>
-                        <div class="inputBox">
-                            <input type="password" name="password" placeholder="请输入密码" />
-                            
-                        </div>
-                        <div class="inputBox">
-                            <input type="submit" value="注册">
-                        </div>
-                        <p class="forget">有账户?<a href="{{ url_for('user_login') }}">
-                                登录
-                            </a>{% if message %} {{message}} {% endif %}</p>
-                    </form>
-                </div>
+{% block content %}
+<div class="container">
+    <div class="form">
+        <h2>注册</h2>
+        <form method="POST">
+            <div class="inputBox">
+                <input type="text" name="username" placeholder="请输入用户名" />
             </div>
-        </div>
-    </section>
-
-</body> 
-</html>
+            <div class="inputBox">
+                <input type="password" name="password" placeholder="请输入密码" />
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="注册">
+            </div>
+            <p class="forget">有账户?<a href="{{ url_for('user_login') }}">登录</a>{% if message %} {{message}} {% endif %}</p>
+        </form>
+    </div>
+</div>
+{% endblock %}

@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"  type="text/css" href="/static/style.css">
-    <title>即将跳转</title>
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block title %}更改密码{% endblock %}
+
+{% block content %}
+<div class="container">
     <div id="msg"></div>
     <script>
     window.onload=function(){
@@ -25,5 +22,5 @@
     
     <br>
     <a href="/">立即跳转</a>
-</body>
-</html>
+</div>
+{% endblock %}

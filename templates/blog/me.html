@@ -1,43 +1,18 @@
-<html>
-    <head>
-        <link href="/static/css/quill.snow.css" rel="stylesheet">
-        <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="/static/css/blogcss.css">
-        <title>个人中心</title>
-        <script src="/static/js/quill.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet"  type="text/css" href="/static/css/style.css">
-    </head>
-    <body>
-        <header>
-    		<a href="/">首页</a>
-            <a href="/about">关于本站</a>
-    	</header>
-        <section>
-            <!-- 背景颜色 -->
-            <div class="color"></div>
-            <div class="color"></div>
-            <div class="color"></div>
-            <div class="box">
-                <!-- 背景圆 -->
-                <div class="circle" style="--x:0"></div>
-                <div class="circle" style="--x:1"></div>
-                <div class="circle" style="--x:2"></div>
-                <div class="circle" style="--x:3"></div>
-                <div class="circle" style="--x:4"></div>
-                <div class="container1">
-                    <div class="form">
-                       <h1>个人中心</h1>
-                       {% if isme %}
-                        <a href="/setmineimage">换头像</a>
-                       {% endif %}
-                       <p>{{cenghu}}的id(userid): {{ userid }}</p>
-                       <p>{{cenghu}}的名字(username): {{ username }}</p>
-                       <a href="/mepost/{{username}}">{{cenghu}}的文章</a>
-                       <p>{{fengjing}}</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </body>
-</html>
+{% extends "base.html" %}
+
+{% block title %}个人中心{% endblock %}
+
+{% block content %}
+<div class="container1">
+    <div class="form">
+        <h1>个人中心</h1>
+        {% if isme %}
+            <a href="/setmineimage">换头像</a>
+        {% endif %}
+        <p>{{cenghu}}的id(userid): {{ userid }}</p>
+        <p>{{cenghu}}的名字(username): {{ username }}</p>
+        <a href="/mepost/{{username}}">{{cenghu}}的文章</a>
+        <p>{{fengjing}}</p>
+    </div>
+</div>
+{% endblock %}

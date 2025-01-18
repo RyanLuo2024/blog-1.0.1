@@ -1,4 +1,4 @@
-import main,models,os,hashlib,flask,blueprint,datetime,sqlite3,markdown
+import main,models,os,hashlib,flask,datetime,sqlite3
 from fakes import*
 from better_profanity import profanity
 import json
@@ -6,26 +6,10 @@ import config,addheimindan
 from blueprint.dbget import db
 from bs4 import BeautifulSoup
 from flaskext.markdown import Markdown
-from jinja2.utils import markupsafe
 from PIL import Image
-def md2html(mdcontent):
-	
-	exts = ['markdown.extensions.extra', 'markdown.extensions.codehilite','markdown.extensions.tables','markdown.extensions.toc']
-	
-	# with open(filename,'r',encoding='utf-8') as f:
-	# 	mdcontent = f.read()
-	# 	pass	
-	html = markdown.markdown(mdcontent,extensions=exts)
-	content = markupsafe.Markup(html)
-	return content
-"""wordid: 生成wordid，随机
-   ├——wordid() -> class
-   |  ├——shengcheng() -> str 生成id
-   |  ├——jiexi() -> datetime.datetime() 解析uid
-"""
 Markdown(main.app)
 def get_db_connection():
-    conn = sqlite3.connect('main.db')
+    (db_,conn) = db()
     conn.row_factory = sqlite3.Row
     return conn
 
@@ -49,17 +33,15 @@ def post2(user):
     if addheimindan.get(flask.request.cookies.get("cookieid")) != False and \
        addheimindan.get(flask.request.cookies.get("cookieid"))['quanxian']['/'] == False: 
         return "您已被封禁，无法经行该操作"
-    import sqlite3
-    try:
-        db = sqlite3.connect("/blue# print/main.db", check_same_thread=False)
-        cursor = db.cursor()
-    except :
-        try :
-            db = sqlite3.connect("main.db", check_same_thread=False)
-            cursor = db.cursor()
-        except:raise Exception("db connet error")
-    cursor.execute("SELECT userid,username,usertype,image FROM user")
-    users = cursor.fetchall()
+    import models
+    cookie = flask.request.cookies.get("cookieid")
+    flag=True
+    image = "/static/image/touxiang.png"
+    if (cookie==None) :flag = False
+    sql = db()
+    sql.execute("SELECT userid,username,usertype,image FROM user")
+    users = sql.get_return()
+    sql.close()
     lists = models.getblog()
     userid=""
     image=""
@@ -76,7 +58,7 @@ def post2(user):
         if (i[3] == user):
             posts.append(i)
     # print(posts)
-    return flask.render_template("blog/blog.html", posts=posts, image="/"+image, username=flask.request.cookies.get("cookieid"))
+    return flask.render_template("blog/blog.html", posts=posts, username=flask.request.cookies.get("cookieid"))
 
 @main.app.route("/mepost/<user>/search",methods=['GET'])
 def post3(user):
@@ -127,7 +109,7 @@ def post3(user):
     # print(lists)
     # return flask.render_template("blog/blog.html", posts=lists, image=image, username=cookie)
 
-    return flask.render_template("blog/blog.html", posts=lists, image="/"+image, username=flask.request.cookies.get("cookieid"))
+    return flask.render_template("blog/blog.html", posts=lists, username=flask.request.cookies.get("cookieid"))
 
 
 """http://host:port/post/<postid>: 文章查看"""
@@ -182,8 +164,8 @@ def writeblog():
     if addheimindan.get(flask.request.cookies.get("cookieid")) != False and \
        addheimindan.get(flask.request.cookies.get("cookieid"))['quanxian']['writeblog'] == False: 
         return "您已被封禁，无法经行该操作"
-    if (main.request.cookies.get("cookieid") == None): flask.redirect(flask.url_for("user_login"))
-    return main.render_template("auth/blogwrite.html")
+    if (flask.request.cookies.get("cookieid") == None): flask.redirect(flask.url_for("user_login"))
+    return flask.render_template("auth/blogwrite.html")
 
 """http://host:port/handle 处理文章 ###cookie###"""
 @main.app.route('/handle', methods=['POST'])
@@ -395,8 +377,22 @@ def search():
         # print(lists)
         return flask.render_template("blog/blog.html", posts=lists, image=image, username=cookie)
         
-        
-
+@main.app.route("/api/get/userimage",methods=['GET'])
+def api_get_userimage():
+    import models
+    cookie = flask.request.cookies.get("cookieid")
+    flag=True
+    image = "/static/image/touxiang.png"
+    if (cookie==None) :flag = False
+    sql = db()
+    sql.execute("SELECT userid,username,usertype,image FROM user")
+    list = sql.get_return()
+    sql.close()
+    if (flag):
+        for i in list:
+            if cookie == i[1]:
+                if(i[3] != None) :image = i[3]
+    return """{"type":"200ok","data":{"image":\""""+image+"""\"}}"""
 main.app.run(
     debug=config.debug,
     host=config.host,

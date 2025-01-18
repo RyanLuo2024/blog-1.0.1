@@ -1,119 +1,92 @@
-<html>
-    <head>
-        <link href="/static/css/quill.snow.css" rel="stylesheet">
-        <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="/static/css/blogcss.css">
-        <title>blog文章 - {{ title }}</title>
-        <script src="/static/js/quill.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet"  type="text/css" href="/static/css/style.css">
-    </head>
-    <body>
-        <header>
-    		<a href="/">首页</a>
-            <a href="/about">关于本站</a>
-    	</header>
-        <section>
-            <!-- 背景颜色 -->
-            <div class="color"></div>
-            <div class="color"></div>
-            <div class="color"></div>
-            <div class="box">
-                <!-- 背景圆 -->
-                <div class="circle" style="--x:0"></div>
-                <div class="circle" style="--x:1"></div>
-                <div class="circle" style="--x:2"></div>
-                <div class="circle" style="--x:3"></div>
-                <div class="circle" style="--x:4"></div>
-                <div class="container2">
-                    <div class="form">
-                        <div id="editor2">
-                            <h1> {{ title }} </h1>
-                            <a href="/me/{{ user }}"> by - {{ user }}</a>
-                            <p> {{ words }}</p>
-                            {% if a != ""%}
-                                <a href="/removeword/{{ wordid }}"><img src="/static/image/remove.png"></a>
-                            {% endif %}
-                            <h6>本文id(wordid): {{ wordid }} </h6>
-                            
-                        </div>
-                       <script>
-                       var toolbarOptions = []
-                       const quill = new Quill('#editor2', {
-                        readOnly:true,
-                        theme: 'snow',
-                        modules: {
-                            toolbar: toolbarOptions
-                        },
-                        });
-                        var vm = new Vue({
-                        el: '#main-container',
-                        data: {
-                            textareaContent:'',
-                            num: 200,
-                        },
-                        methods: {
-                            monitorInput() {
-                            var txtVal = this.textareaContent.length;
-                            this.num = 200 - txtVal;
-                            }
-                        },
-                        });
-                        
-                        </script>
-                    </div>
-                </div>
-                <br>
-                <div class="container3">
-                    <div class="add">
-                        <h1>添加评论</h1>
-                        <form action="{{ url_for('add_comment') }}" method="post">
-                            <script>
-                            $(document).ready(function() {
-                            // 设置最大字数限制
-                            var maxChars = 400;
+{% extends "base.html" %}
 
-                            // 监听textarea的input事件
-                            $('#content').on('input', function() {
-                                var currentLength = $(this).val().length;
-                                var remaining = maxChars - currentLength;
-                                $('#remainingChars').text(remaining);
-                            });
-                            });
-                            </script>
-                            <input type="text" id="word" name="word" style="display: none;"  value=" """+wordid+""" "><br>
-                            <input type="text" id="touser" name="touser" style="display: none;"><br>
-                            <div><label for="content">评论:</label></div>
-                            <textarea maxlength="400" @input="monitorInput" v-model="textareaContent" id="content" placeholder="写点东西吧..." name="content"></textarea>
-                            <div>剩余字数：<span id="remainingChars">400</span></div>
-                            <br>
-                            <div><input type="submit" class="button" value="提交"></div>
-                        </form>
-                        <br>
-                    </div>
-                    <div class="clear"></div>
+{% block title %}blog文章 - {{ title }}{% endblock %}
+
+{% block content %}
+<div class="container2">
+    <div class="form">
+        <div id="editor2">
+            <h1> {{ title }} </h1>
+            <a href="/me/{{ user }}"> by - {{ user }}</a>
+            <p> {{ words }}</p>
+            {% if a != ""%}
+                <a href="/removeword/{{ wordid }}"><img src="/static/image/remove.png"></a>
+            {% endif %}
+            <h6>本文id(wordid): {{ wordid }} </h6>       
+        </div>
+    <script>
+        var toolbarOptions = []
+        const quill = new Quill('#editor2', {
+        readOnly:true,
+        theme: 'snow',
+        modules: {
+            toolbar: toolbarOptions
+        },
+        });
+        var vm = new Vue({
+        el: '#main-container',
+        data: {
+            textareaContent:'',
+            num: 200,
+        },
+        methods: {
+            monitorInput() {
+            var txtVal = this.textareaContent.length;
+            this.num = 200 - txtVal;
+            }
+        },
+        });
+        
+        </script>
+    </div>
+</div>
+<br>
+<div class="container3">
+    <div class="add">
+        <h1>添加评论</h1>
+        <form action="{{ url_for('add_comment') }}" method="post">
+            <script>
+            $(document).ready(function() {
+            // 设置最大字数限制
+            var maxChars = 400;
+            // 监听textarea的input事件
+            $('#content').on('input', function() {
+                var currentLength = $(this).val().length;
+                var remaining = maxChars - currentLength;
+                $('#remainingChars').text(remaining);
+            });
+            });
+            </script>
+            <input type="text" id="word" name="word" style="display: none;"  value=" """+wordid+""" "><br>
+            <input type="text" id="touser" name="touser" style="display: none;"><br>
+            <div><label for="content">评论:</label></div>
+            <textarea maxlength="400" @input="monitorInput" v-model="textareaContent" id="content" placeholder="写点东西吧..." name="content"></textarea>
+            <div>剩余字数：<span id="remainingChars">400</span></div>
+            <br>
+            <div><input type="submit" class="button" value="提交"></div>
+        </form>
+        <br>
+    </div>
+    <div class="clear"></div>
+    </div>
+    <br>
+    <div class="container3">
+        <div class="list">
+            <h2>评论列表</h2>
+            <br>
+            {% for comment in comments %}
+             <div class="cushy-box2">
+                <br style="font-size: 5px;">
+                <div class="pinguser">
+                    <strong>内容:</strong><br> {{ comment['content'] }}
                 </div>
-                <br>
-                <div class="container3">
-                    <div class="list">
-                        <h2>评论列表</h2>
-                        <br>
-                        {% for comment in comments %}
-                        
-                            <div class="cushy-box2">
-                                <br style="font-size: 5px;">
-                                <div class="pinguser">
-                                    <strong>内容:</strong><br> {{ comment['content'] }}
-                                </div>
-                                <div class="pingtext" style="width: 700px;text-align: right;font-size:12px;">
-                                    <strong>By - </strong> {{ comment['user'] }}
-                                </div>
-                                <br style="font-size: 5px;">
-                            </div>
-                        {% endfor %}
-                    </div>
+                <div class="pingtext" style="width: 700px;text-align: right;font-size:12px;">
+                    <strong>By - </strong> {{ comment['user'] }}
                 </div>
+                <br style="font-size: 5px;">
             </div>
-        </section>
-    </body>
-</html>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

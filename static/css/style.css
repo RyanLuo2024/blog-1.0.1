@@ -149,14 +149,13 @@ section .color:nth-child(3) {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 .container2 {
-    position: relative;
     min-width: 900px;
-    min-height: 100px;
-    /* max-width: 1000px; */
+    min-height: 1000px;
+    position: relative;
     background: rgba(255, 255, 255, 0.1);
     display: flex;
-    justify-content: center;  /* 水平居中 */
-    align-items: flex-start;   /* 垂直靠上 */
+    justify-content:start;
+    align-items:start;
     backdrop-filter: blur(5px);
     box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.5);

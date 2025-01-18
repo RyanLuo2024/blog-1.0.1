@@ -23,3 +23,5 @@ class db:
     def close(self):
         self.cursor.close()
         self.db.close()
+    def return_cursour(self):
+        return (self.db, self.cursor)
