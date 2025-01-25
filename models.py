@@ -19,7 +19,7 @@ email = "xiaoxuanwangwin102@outlook.com"
 def getblog():
     from blueprint.dbget import db
     sql = db()
-    sql.execute("SELECT id,title,word,userid,search FROM articles")
+    sql.execute("SELECT id,title,word,userid,search,like,imageshow FROM articles")
     word = sql.get_return()
     sql.close()
     new_table = []

@@ -10,9 +10,34 @@
             <a href="/setmineimage">换头像</a>
         {% endif %}
         <p>{{cenghu}}的id(userid): {{ userid }}</p>
-        <p>{{cenghu}}的名字(username): {{ username }}</p>
+        <p>{{cenghu}}的名字(username): {{ username_show }}</p>
         <a href="/mepost/{{username}}">{{cenghu}}的文章</a>
         <p>{{fengjing}}</p>
     </div>
+</div>
+<div class="container2">
+    <h1>文章列表</h1>
+        <div id="list">
+            {% for item in posts %}
+            <!--{{item}}-->
+            <a href="/post/{{item[0]}}">
+                <div class="cushy-box">
+                    <div class="image-container" class="list-cr-{{item[0]}}" onload="machimage('{{item[0]}}','list-cr-{{item[0]}}')">
+                        {% if item[7] %}
+                            <img src="/static/image/blogtitilebg.png">
+                        {% else %}
+                            {{ item[7] }}
+                            <img src="{{ item[6] }}">
+                        {% endif %}
+                    </div>
+                    <div style="height: 100%;width: 100%;">
+                        <br>
+                        <h1>{{item[1]}}</h1>
+                        <h4 style="color: darkgray;">{{item[2][0:30]}}</h4>
+                    </div>
+                </div>
+            </a>
+            {% endfor %}
+        </div> 
 </div>
 {% endblock %}

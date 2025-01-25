@@ -10,6 +10,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/static/css/quill.snow.css" rel="stylesheet">
     <script src="/static/js/quill.js"></script>
+    <script  src="/static/js/ajax.js"></script>
+    <script src="https://google.github.io/traceur-compiler/bin/traceur.js"></script>
+    <script src="https://google.github.io/traceur-compiler/bin/BrowserSystem.js"></script>
+    <script src="https://google.github.io/traceur-compiler/src/bootstrap.js"></script>
+    <script src="/static/js/TrianglesMosaicBg.min.js"></script>
     <title>{% block title %}{% endblock %}</title>
     <style>
         /* 弹窗样式 */
@@ -59,9 +64,19 @@
         
     </style>
 </head>
-<body>
+<body >
+    <script type="module">
+    // traceur.options.experimental = true;
+    // import { TrianglesMosaicBg } from "/static/js/TrianglesMosaicBg.module.js"
+
+    let colorbg = new Color4Bg.TrianglesMosaicBg({
+        dom: "box",
+        colors: ["#212832","#3F4659","#3c4553","#282f3e","#212832","#3F4659"],
+        loop: true
+    })
+    </script>
     <header>
-        <a href="/me/{{username}}" class="profile-pic"><img src="{{image}}" alt="Profile"></a>
+        <a href="/me/{{username}}" class="profile-pic" id="profile-pic"></a>
         <a href="/writeblog">写文章</a>
         <a href="/about">关于本站</a>
         <form  method="GET" action="search" style="width: 200; height: 30;background-color: white;">
@@ -69,18 +84,17 @@
         </form>
     </header>
     <section>
+        <div id = "box" style="position: absolute;bottom: 0;width:100%;height: 100%;"></div>
         <!-- 背景颜色 -->
-        <div class="color"></div>
-        <div class="color"></div>
-        <div class="color"></div>
-        <div class="box">
-            <!-- 背景圆 -->
+        <div class="box" >
+            
+            <!-- 背景圆
             <div class="circle" style="--x:0"></div>
             <div class="circle" style="--x:1"></div>
             <div class="circle" style="--x:2"></div>
             <div class="circle" style="--x:3"></div>
-            <div class="circle" style="--x:4"></div>
-            <div>{% block content %}{% endblock %}</div>
+            <div class="circle" style="--x:4"></div> -->
+            <div style="grid-row: 2;">{% block content %}{% endblock %}</div>
         </div>
     </section>
 </body>

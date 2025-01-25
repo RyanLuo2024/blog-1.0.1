@@ -5,12 +5,23 @@
 {% block content %}
 <div class="container2">
     <h1>文章列表</h1>
-        <div id="list">
+        <div id="list" >
             {% for item in posts %}
+            
             <!--{{item}}-->
             <a href="/post/{{item[0]}}">
                 <div class="cushy-box">
-                    <h4>{{item[1]}}</h4>
+                    <div class="image-container" class="list-cr-{{item[0]}}" onload="machimage('{{item[0]}}','list-cr-{{item[0]}}')">
+                        {% if item[6] %}
+                            <img src="/static/image/blogtitilebg.png">
+                        {% else %}
+                            {{ item[6] }}
+                            <img src="{{ item[6] }}">
+                        {% endif %}
+                    </div>
+                    <div style="height: 100%;width: 100%;">
+                        <h1>{{item[1]}}</h1>
+                    </div>
                 </div>
             </a>
             {% endfor %}

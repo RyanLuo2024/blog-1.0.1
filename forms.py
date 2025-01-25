@@ -9,7 +9,7 @@ from flaskext.markdown import Markdown
 from PIL import Image
 Markdown(main.app)
 def get_db_connection():
-    (db_,conn) = db()
+    db_,conn = db().return_cursour()
     conn.row_factory = sqlite3.Row
     return conn
 
@@ -27,38 +27,6 @@ class wordid():
     def jiexi(self,uid):
         uid = uid[0:-2]
         return datetime.datetime.strptime(uid,"%Y%m%d%H%M%S") 
-
-@main.app.route("/mepost/<user>")
-def post2(user):
-    if addheimindan.get(flask.request.cookies.get("cookieid")) != False and \
-       addheimindan.get(flask.request.cookies.get("cookieid"))['quanxian']['/'] == False: 
-        return "您已被封禁，无法经行该操作"
-    import models
-    cookie = flask.request.cookies.get("cookieid")
-    flag=True
-    image = "/static/image/touxiang.png"
-    if (cookie==None) :flag = False
-    sql = db()
-    sql.execute("SELECT userid,username,usertype,image FROM user")
-    users = sql.get_return()
-    sql.close()
-    lists = models.getblog()
-    userid=""
-    image=""
-    for i in users:
-        if i[1] == user:
-            userid=i[0]
-            image=i[3]
-            break
-    
-    if userid == "":
-        return flask.render_template("error.html")
-    posts = []
-    for i in lists:
-        if (i[3] == user):
-            posts.append(i)
-    # print(posts)
-    return flask.render_template("blog/blog.html", posts=posts, username=flask.request.cookies.get("cookieid"))
 
 @main.app.route("/mepost/<user>/search",methods=['GET'])
 def post3(user):
@@ -107,7 +75,7 @@ def post3(user):
             if cookie == i[1]:
                 if(i[3] != None) :image = i[3]
     # print(lists)
-    # return flask.render_template("blog/blog.html", posts=lists, image=image, username=cookie)
+    # return flask.render_template("blog/blog.html", posts=lists, username=cookie)
 
     return flask.render_template("blog/blog.html", posts=lists, username=flask.request.cookies.get("cookieid"))
 
@@ -128,6 +96,7 @@ def post(postid):
             words=md2html(profanity.censor(blog_list[i][2]))
             user =profanity.censor(blog_list[i][3])
             wordid =profanity.censor(blog_list[i][0])
+            img =profanity.censor(blog_list[i][6])
             if user_ == user or user == "root":
                 a ="""<a href="/removeword/"""+ wordid +""""><img src="/static/image/remove.png"></a>"""
             break
@@ -139,7 +108,9 @@ def post(postid):
             pingl.append(i)
     # conn.close()
     # print(pingl)
-    return flask.render_template("blog/word.html", comments=pingl, title=title, words=words, user=user, a=a, wordid=wordid)
+    return flask.render_template("blog/word.html", comments=pingl, title=title, 
+                                 words=words, user=user, a=a, wordid=wordid, 
+                                 username=flask.request.cookies.get("cookieid"), img=img)
 
 @main.app.route('/add_comment', methods=['POST'])
 def add_comment():
@@ -165,7 +136,7 @@ def writeblog():
        addheimindan.get(flask.request.cookies.get("cookieid"))['quanxian']['writeblog'] == False: 
         return "您已被封禁，无法经行该操作"
     if (flask.request.cookies.get("cookieid") == None): flask.redirect(flask.url_for("user_login"))
-    return flask.render_template("auth/blogwrite.html")
+    return flask.render_template("auth/blogwrite.html", username=flask.request.cookies.get("cookieid"))
 
 """http://host:port/handle 处理文章 ###cookie###"""
 @main.app.route('/handle', methods=['POST'])
@@ -173,9 +144,9 @@ def handle():
     if addheimindan.get(flask.request.cookies.get("cookieid")) != False and \
        addheimindan.get(flask.request.cookies.get("cookieid"))['quanxian']['handle'] == False: 
         return "您已被封禁，无法经行该操作"
-    title = main.request.form.get("title")
-    word = main.request.form.get("html")
-    markdown = main.request.form.get("markdown")
+    title = flask.request.form.get("title")
+    word = flask.request.form.get("html")
+    markdown = flask.request.form.get("markdown")
     dislike = like = "[]"
     id = wordid()
     import jieba
@@ -183,11 +154,13 @@ def handle():
     # print(word_search_list)
     word_search_list = {"list":str(word_search_list)}
     sql = db()
-    sql.execute("insert into articles (title, word, id, userid, search, markdown, like, dislike) values (? , ?, ?, ?, ?, ?, ?, ?)", 
-                    (title ,word, id.shengzheng(), main.request.cookies.get('cookieid'), json.dumps(word_search_list), markdown, like, dislike))
+    sql.execute(
+"insert into articles (title,word,id,userid,search,markdown,like,dislike,imageshow) values (?,?,?,?,?,?,?,?,?)", 
+    (title ,word, id.shengzheng(), flask.request.cookies.get('cookieid'), json.dumps(word_search_list), 
+     markdown, like, dislike, "/static/image/blogtitilebg.png"))
     users = sql.get_return()
     sql.close()
-    return main.render_template("index.html")
+    return flask.render_template("index.html", username=flask.request.cookies.get("cookieid"))
 
 """http://host:port/ 主页"""
 @main.app.route("/")
@@ -197,24 +170,13 @@ def index():
         return "您已被封禁，无法经行该操作"
     import models
     cookie = flask.request.cookies.get("cookieid")
-    flag=True
-    image = "/static/image/touxiang.png"
-    if (cookie==None) :flag = False
     blog = models.getblog()
-    sql = db()
-    sql.execute("SELECT userid,username,usertype,image FROM user")
-    list = sql.get_return()
-    sql.close()
-    if (flag):
-        for i in list:
-            if cookie == i[1]:
-                    if(i[3] != None) :image = i[3]
-    return flask.render_template("blog/blog.html", posts=blog, image=image, username=cookie)
+    return flask.render_template("blog/blog.html", posts=blog, username=cookie)
 
 """http://host:port/logout 退出登录 ###cookie###"""
 @main.app.route("/logout")
 def logout():
-    response = flask.make_response(main.redirect(main.url_for('user_login')))
+    response = flask.make_response(flask.redirect(flask.url_for('user_login')))
     response.delete_cookie('cookieid')
     return response
 
@@ -223,15 +185,15 @@ def logout():
 def removeword(wordid):
     sql = db()
     sql.execute("SELECT userid,username,usertype,image FROM user")
-    response = main.request.cookies.get("cookieid")
+    response = flask.request.cookies.get("cookieid")
     blog_list=models.getblog()
     if (response=="root"):
         sql.execute("DELETE FROM articles WHERE id=?", (int(wordid),))
-        return main.render_template("index.html")
+        return flask.render_template("index.html",username=flask.request.cookies.get("cookieid"))
     for i in range(len(blog_list)):
         if response == blog_list[i][3] or response == str(blog_list[i][3]): 
             sql.execute("DELETE FROM articles WHERE id=?", (int(wordid),))
-            return main.render_template("index.html")
+            return flask.render_template("index.html", username=flask.request.cookies.get("cookieid"))
     sql.close()
     return """
 <h1>你无权删除该文章！</h1>
@@ -240,42 +202,41 @@ def removeword(wordid):
 """http://host:port/login 登录 ###cookie###"""
 @main.app.route('/user_login',methods=['GET','POST'])
 def user_login():
-    if main.request.method=='POST':  # 注册发送的请求为POST请求
-        username = main.request.form['username']
-        password = main.request.form['password']
+    if flask.request.method=='POST':  # 注册发送的请求为POST请求
+        username = flask.request.form['username']
+        password = flask.request.form['password']
         if models.is_null(username,password):
             login_massage = "温馨提示：账号和密码是必填"
-            return main.render_template('login.html', message=login_massage)
+            return flask.render_template('login.html', message=login_massage)
         elif models.is_existed(username, password):
-            response = flask.make_response(main.render_template('index.html', username=username)) # 发出cookie
+            response = flask.make_response(flask.render_template('index.html', username=username)) # 发出cookie
             username = flask.request.form["username"]
             response.set_cookie('cookieid', username, max_age=60*60*24*30)
             return response
         elif models.exist_user(username):
             login_massage = "温馨提示：密码错误，请输入正确密码"
-            return main.render_template('login.html', message=login_massage)
+            return flask.render_template('login.html', message=login_massage)
         else:
             login_massage = "温馨提示：不存在该用户，请先注册"
-            return main.render_template('login.html', message=login_massage)
-    return main.render_template('login.html')
+            return flask.render_template('login.html', message=login_massage)
+    return flask.render_template('login.html')
 
 """http://host:port/regiser 注册 ###cookie###"""
 @main.app.route("/regiser",methods=["GET", 'POST'])
 def register():
-    if main.request.method == 'POST':
-        username = main.request.form['username']
-        password = main.request.form['password']
+    if flask.request.method == 'POST':
+        username = flask.request.form['username']
+        password = flask.request.form['password']
         if models.is_null(username,password):
             login_massage = "温馨提示：账号和密码是必填"
-            return main.render_template('register.html', message=login_massage)
+            return flask.render_template('register.html', message=login_massage)
         elif models.exist_user(username):
             login_massage = "温馨提示：用户已存在，请直接登录"
             return flask.redirect(flask.url_for('user_login'))
-            # return main.render_template('register.html', message=login_massage)
         else:
-            models.add_user(main.request.form['username'], main.request.form['password'] )
+            models.add_user(flask.request.form['username'], flask.request.form['password'] )
             return flask.redirect(flask.url_for("/login"))
-    return main.render_template('register.html')
+    return flask.render_template('register.html')
 
 """http://host:port/uplaod 上传文件"""
 hash_object = hashlib.md5()
@@ -284,8 +245,8 @@ def upload():
     if addheimindan.get(flask.request.cookies.get("cookieid")) != False and \
        addheimindan.get(flask.request.cookies.get("cookieid"))['quanxian']['upload'] == False: 
         return "您已被封禁，无法经行该操作"
-    if main.request.method == 'POST':
-        f = main.request.files['file']
+    if flask.request.method == 'POST':
+        f = flask.request.files['file']
         basepath = os.path.dirname(__file__)
         # print('uploading '+f.filename+'... ')
         hash_object.update(b"1")
@@ -294,24 +255,46 @@ def upload():
         return """
         <h1>上传成功</h1>
         文件路径：/static/uploads/"""+hash_object.hexdigest()+f.filename+"   请注意复制"
-    return main.render_template('upload.html')
+    return flask.render_template('upload.html',username=flask.request.cookies.get("cookieid"))
  
 """http://host:port/me/<user> 我的 ###cookie###"""
 @main.app.route("/me/<user>")
 def me(user):
+    if (user==None or user == "") :return flask.redirect(flask.url_for("user_login"))
+    import models
+    cookie = flask.request.cookies.get("cookieid")
+    sql = db()
+    sql.execute("SELECT userid,username,usertype,image FROM user")
+    users = sql.get_return()
+    sql.close()
+    lists = models.getblog()
+    userid=""
+    for i in users:
+        if i[1] == user:
+            userid=i[0]
+            break
+    
+    if userid == "":
+        return flask.render_template("error.html")
+    posts = []
+    for i in lists:
+        if (i[3] == user):
+            posts.append(i)
+    # print(posts)
     cenghu = "Ta"
     fengjing=""
-    x =  main.request.cookies.get("cookieid")
+    x =  flask.request.cookies.get("cookieid")
     a = models.getuser()
     if (user == x):
         cenghu = "您"
     if (addheimindan.get(user) != False):
         fengjing = cenghu+"已被加入黑名单！"
     # print(x)
-    if (x==None) :return flask.redirect(flask.url_for("user_login"))
     for i in a:
         if (i[1]==x):
-            return main.render_template("blog/me.html",userid=i[0], username=i[1],cenghu=cenghu, fengjing=fengjing)
+            return flask.render_template("blog/me.html",userid=i[0], username_show=i[1],
+                                         cenghu=cenghu, fengjing=fengjing,posts=posts,
+                                         username=flask.request.cookies.get("cookieid"))
     return ""
 
 @main.app.route("/about")
@@ -375,14 +358,14 @@ def search():
                 if cookie == i[1]:
                         if(i[3] != None) :image = i[3]
         # print(lists)
-        return flask.render_template("blog/blog.html", posts=lists, image=image, username=cookie)
+        return flask.render_template("blog/blog.html", posts=lists, username=cookie)
         
 @main.app.route("/api/get/userimage",methods=['GET'])
 def api_get_userimage():
     import models
     cookie = flask.request.cookies.get("cookieid")
     flag=True
-    image = "/static/image/touxiang.png"
+    image = "static/image/touxiang.png"
     if (cookie==None) :flag = False
     sql = db()
     sql.execute("SELECT userid,username,usertype,image FROM user")
@@ -392,7 +375,8 @@ def api_get_userimage():
         for i in list:
             if cookie == i[1]:
                 if(i[3] != None) :image = i[3]
-    return """{"type":"200ok","data":{"image":\""""+image+"""\"}}"""
+    data = {"type":"200","data":{"image":"/"+image}}
+    return flask.jsonify(data)
 main.app.run(
     debug=config.debug,
     host=config.host,
