@@ -1,9 +1,9 @@
-import json
+import json,config
 
 
 def get(username):
     USERS = []
-    with open("heimindan.json","r") as px:
+    with open(config.json_heimindan,"r") as px:
         USERS = json.loads(px.read())
         px.close()
     for i in USERS["list"]:
@@ -22,10 +22,10 @@ def add(username,unlocktime,qdisk={"post":True,
             "unlocktime":unlocktime,
             "quanxian":qdisk}
     USERS = {"list":[]}
-    with open("heimindan.json","r") as px:
+    with open(config.json_heimindan,"r") as px:
         USERS = json.loads(px.read())
         px.close()
-    with open("heimindan.json","w+",encoding="UTF-8") as px:
+    with open(config.json_heimindan,"w+",encoding="UTF-8") as px:
         for i in USERS["list"]:
             if i["username"] == username:
                 i = disk
@@ -37,7 +37,7 @@ def add(username,unlocktime,qdisk={"post":True,
 
 def remove(username):
     USERS={"list":[{"username":"a"}]}
-    with open("heimindan.json","r") as px:
+    with open(config.json_heimindan,"r") as px:
         USERS = json.loads(px.read())
         px.close()
     x=0
@@ -45,7 +45,7 @@ def remove(username):
         if i["username"] == username:
             USERS["list"].pop(x)
         x+=1
-    with open("heimindan.json","w") as px:
+    with open(config.json_heimindan,"w") as px:
         px.write(json.dumps(USERS))
 
 remove("b")

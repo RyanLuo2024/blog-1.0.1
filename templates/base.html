@@ -76,12 +76,16 @@
     })
     </script>
     <header>
-        <a href="/me/{{username}}" class="profile-pic" id="profile-pic"></a>
+        {% if username %}
+            <a href="/me/{{username}}" class="profile-pic" id="profile-pic" style="width: 30px;height: 30px;"></a>
+        {% endif %}
         <a href="/writeblog">写文章</a>
         <a href="/about">关于本站</a>
-        <form  method="GET" action="search" style="width: 200; height: 30;background-color: white;">
-            <input type="text" name="search" style="width: 150;"><input type="submit" style="width: 50;height: 30;" value="搜索">
-        </form>
+        {% if search_show %}
+            <form  method="GET" action="search" style="width: 200; height: 30;background-color: white;">
+                <input type="text" name="search" style="width: 150;"><input type="submit" style="width: 50;height: 30;" value="搜索">
+            </form>
+        {% endif %}
     </header>
     <section>
         <div id = "box" style="position: absolute;bottom: 0;width:100%;height: 100%;"></div>

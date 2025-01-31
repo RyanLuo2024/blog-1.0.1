@@ -1,9 +1,9 @@
-import blueprint.user as user
-import blueprint.admin as admin 
+import includes.user as user
+import includes.admin as admin 
 import random
 import datetime
 import models as db
-import main,flask,markdown
+import flask,markdown
 from flaskext.markdown import Markdown
 from jinja2.utils import markupsafe
 # word = db.word

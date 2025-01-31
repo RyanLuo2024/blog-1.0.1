@@ -1,15 +1,32 @@
+{% extends "base.html" %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>上传文件</title>
-</head>
-<body>
-    <h1>上传:</h1>
-    <form action="" enctype='multipart/form-data' method='POST'>
-        <input type="file" name="file">
-        <input type="submit" value="upload">
-    </form>
-</body>
-</html>
+{% block title %}上传文件{% endblock %}
+
+{% block content %}
+<div class="container2">
+    <div style="width: 100%;"><h1 id="h0">文件列表</h1></div>
+    <br>
+    <ul style="width: 100%;">
+        {% for file in files %}
+        <div class="cushy-box2">
+            <li>/static/uploads/{{ username }}/{{ file }} - <a rel="nofollow" href="/api/get/download_uplaodfile/{{ file }}">下载</a>|<a rel="nofollow" href="/api/get/delete_uplaodfile/{{ file }}">删除</a></li>
+        </div>
+        {% endfor %}
+        没有更多了
+    </ul>
+</div>
+<br>
+<div class="container1">
+    <div style="width: 100%;">
+        <h1>上传:</h1>
+    </div>
+    <div style="width: 100%;"></div>
+        <form action="" enctype='multipart/form-data' method='POST'>
+            <input type="file" name="file">
+            <input type="submit" value="upload">
+        </form>
+    </div>
+</div>
+{% endblock %}
+<!-- </body>
+</html> -->

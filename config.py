@@ -6,4 +6,26 @@ Root_Password="""ssh-rsaAAAAB3NzaC1yc2EAAAADAQABAAABAQCtnTHro5CYzJBtGzgt2WTClwJ/
 Root_UserName="xiaoxuanwangwin102@outlook.com"
 ICP="null"
 RB ="null"
-dbfile = "main.db"
+dbfile = "db/main.db"
+json_heimindan = "static/jsons/heimindan.json"
+class auth:
+    setimage  = "auth/setimage.html"
+    login     = "auth/login.html"
+    register  = "auth/register.html"
+class blog:
+    blogwrite = "blog/blogwrite.html"
+    blog = "blog/blog.html"
+    me   = "blog/me.html"
+    word = "blog/word.html"
+
+class htmls:
+    auth  = auth()
+    blog  = blog()
+    about = "about.html"
+    base  = "base.html"
+    change_password = "change_password.html"
+    error = "error.html"
+    index = "index.html"
+    settings="settings.html"
+    upload= "upload.html"
+    web   = "web.html"

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}登录{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="form">
+        <h2>登录</h2>
+        <form method="POST">
+            <div class="inputBox">
+                <input type="text" name="username" placeholder="请输入用户名" />
+            </div>
+            <div class="inputBox">
+                <input type="password" name="password" placeholder="请输入密码" />
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="登录">
+            </div>
+            <p class="forget">没有账户?<a href="{{ url_for('register') }}">注册</a>{% if message %} {{message}} {% endif %}</p>
+        </form>
+    </div>
+</div>
+{% endblock %}

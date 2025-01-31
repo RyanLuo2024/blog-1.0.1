@@ -1,12 +1,12 @@
-import blueprint.dbget as db
-import blueprint.user as user
-import blueprint.admin as admins
-import blueprint.user as user
-import blueprint.admin as admin 
+import includes.dbget as db
+import includes.user as user
+import includes.admin as admins
+import includes.user as user
+import includes.admin as admin 
 import random
 import datetime
 import models as db
-import main,flask
+import flask,sqlite3
 import fakes
 port = 8080
 ip = "0.0.0.0"
@@ -17,7 +17,7 @@ email = "xiaoxuanwangwin102@outlook.com"
 # users = db.user
 # pinglun=db.pinglun
 def getblog():
-    from blueprint.dbget import db
+    from includes.dbget import db
     sql = db()
     sql.execute("SELECT id,title,word,userid,search,like,imageshow FROM articles")
     word = sql.get_return()
@@ -33,7 +33,7 @@ def getblog():
     # print("sql say --- Get db blogs in words , return :",new_table)
     return new_table
 def getuser():
-    from blueprint.dbget import db
+    from includes.dbget import db
     sql = db()
     sql.execute("SELECT userid,username,usertype FROM user")
     users = sql.get_return()
@@ -51,7 +51,7 @@ def getuser():
     # print("sql say --- Get db userlist in users , return :",new_table)
     return new_table
 def getpinglun():
-    from blueprint.dbget import db
+    from includes.dbget import db
     sql = db()
     sql.execute("SELECT word,touser,user,content FROM pinglun")
     pinglun = sql.get_return()
@@ -67,7 +67,7 @@ def getpinglun():
 def setpinglun(from_,to,text,word):
     sql4 = "INSERT into pinglun word,touser,user,content values (?, ?, ?, ?)"
     sql4_a=(word,to,from_,text)
-    from blueprint.dbget import db
+    from includes.dbget import db
     sql = db()
     sql.execute(sql4,sql4_a)
     sql.close()
@@ -104,9 +104,8 @@ def is_null(username, password):
         return True
     else:
         return False
-
 def is_existed(username, password):
-    from blueprint.dbget import db
+    from includes.dbget import db
     sql = db()
     sql.execute("SELECT * FROM user WHERE username = ? AND password = ?", (username, password))
     result = sql.get_return()
@@ -115,9 +114,8 @@ def is_existed(username, password):
         return False
     else:
         return True
-
 def exist_user(username):
-    from blueprint.dbget import db
+    from includes.dbget import db
     sql = db()
     sql.execute("SELECT * FROM user WHERE username = ?", (username,))
     result = sql.get_return()
@@ -126,11 +124,45 @@ def exist_user(username):
         return False
     else:
         return True
-
 def add_user(username, password):
-    from blueprint.dbget import db
+    from includes.dbget import db
     sql = db()
     a = userid()
     sqll = "INSERT INTO user(username, password, userid, type) VALUES (?, ?, ?, ?)"
     sql.execute(sqll, (username, password, a.shengzheng(), "user"))
     sql.close()
+class messages:
+    def __init__(self):
+        self.db = sqlite3.connect("db/massage.db")
+        self.cur= self.db.cursor()
+    
+    def send(self,from_,to,con, type):
+        """def send(from_,to,con, type)
+            from_: 谁发的
+            to: 给谁
+            con: 内容是啥
+            type:属性是啥
+        """
+        contect = (from_, to, con, type, wordid.shengzheng())
+        sql = "INSERT INTO message ('from', 'to', connect, type_,id) VALUES (?, ?, ?, ?, ?)"
+        self.cur.execute(sql,contect)
+        self.db.commit()
+    
+    def get(self,user):
+        sql = "SELECT * from message WHERE \"from\"=\"{}\" AND \"to\"=\"{}\"".format(user)
+        self.cur.execute(sql)
+        return self.cur.fetchall()
+
+    def remove(self,id):
+        sql = "DELETE from message WHERE \"id\"=\"{}\"".format(id)
+        self.cur.execute(sql)
+        self.db.commit()
+    
+    def setcantsee(self,id,toorfrom="to"):
+        sql = "UPDATE message SET {0}cansee=\"0\" WHERE \"id\"=\"{1}\"".format(toorfrom,id)
+        self.cur.execute(sql)
+        self.db.commit()
+    
+    def exit_(self):
+        self.cur.close()
+        self.db.close()

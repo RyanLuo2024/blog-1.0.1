@@ -1,25 +1,20 @@
+import multiprocessing
 import os
-import sys
-try:
-    command = sys.argv[1]
-    if (command=="start"):
-        os.system("sh run.sh")
-    if (command=="stop"):
-        os.system("sh stop.sh")
-    if (command=="restart"):
-        os.system("sh stop.sh")
-        os.system("sh run.sh")
-    else:
-        print("Error: not command:",command)
-        print("""python3 service.py <command>
-command:
-    start -> start the web
-    stop -> stop  the web
-    restart ->restart the web""")
-except:
-    print("Error: please input command!")
-    print("""python3 service.py <command>
-command:
-    start -> start the web
-    stop -> stop  the web
-    restart ->restart the web""")
+runflag = True
+
+def runningmain():
+    print("-------running main-------")
+    os.system("python main.py")
+
+def runningssh():
+    print("-------running ssh-------")
+    os.system("python ssh.py")
+
+if __name__ == "__main__":
+    print("\033[1mmineblog\033[0m")
+    print("v1.1")
+    print("-------Press CTRL+C to quit-------")
+    main = multiprocessing.Process(target=runningmain)
+    ssh = multiprocessing.Process(target=runningssh)
+    main.start()
+    ssh.start()

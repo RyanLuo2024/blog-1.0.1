@@ -140,8 +140,8 @@ section .color:nth-child(3) {
     min-height: 400px;
     background: rgba(255, 255, 255);
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     backdrop-filter: blur(5px);
     box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.5);
@@ -150,11 +150,11 @@ section .color:nth-child(3) {
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 0, 0, 0));
 }
 .container2 {
-    min-width: 900px;
+    width: 1000px;
     min-height: 1000px;
     position: relative;
     background: rgba(255, 255, 255);
-    display: flex;
+    /* display: flex; */
     justify-content:start;
     align-items:start;
     backdrop-filter: blur(5px);
@@ -164,7 +164,6 @@ section .color:nth-child(3) {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 0, 0, 0));
 }
-
 .container3 {
     position: relative;
     min-width: 900px;
@@ -181,14 +180,14 @@ section .color:nth-child(3) {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 0, 0, 0));
 }
-.container3 {
+.container1 {
     position: relative;
     min-width: 900px;
     min-height: 100px;
     max-width: 1000px;
     background: rgba(255, 255, 255);
-    display: flex;
-    justify-content: center;  /* 水平居中 */
+    /* display: flex; */
+    /* justify-content: center;  水平居中 */
     align-items: flex-start;   /* 垂直靠上 */
     backdrop-filter: blur(5px);
     box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
@@ -198,17 +197,16 @@ section .color:nth-child(3) {
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 0, 0, 0));
 }
 .form {
-    position: relative;
+    /* position: relative; */
     width: 100%;
     height: 100%;
     padding: 50px;
 }
-
 /* 登录标题样式 */
 
 .form h2 {
     position: relative;
-    color: #fff;
+    color: #000000;
     font-size: 24px;
     font-weight: 600;
     letter-spacing: 5px;
@@ -225,7 +223,7 @@ section .color:nth-child(3) {
     bottom: -10px;
     width: 0px;
     height: 3px;
-    background: #fff;
+    background: #000000;
     transition: 0.5s;
 }
 
@@ -252,12 +250,12 @@ section .color:nth-child(3) {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     font-size: 16px;
     letter-spacing: 1px;
-    color: #fff;
+    color: #000000;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 .form .inputBox input::placeholder {
-    color: #fff;
+    color: #000000;
 }
 
 /* 登录按钮样式 */
