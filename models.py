@@ -15,7 +15,7 @@ email = "xiaoxuanwangwin102@outlook.com"
 # import blue# print.dbget as db
 # word = db.word
 # users = db.user
-# pinglun=db.pinglun
+# pinglun=db.pinglun#
 def getblog():
     from includes.dbget import db
     sql = db()

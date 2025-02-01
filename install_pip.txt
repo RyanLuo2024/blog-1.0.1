@@ -2,7 +2,6 @@ flask
 better_profanity
 jieba
 flask_basicauth
-aspose-words 
 bs4
 pillow
 flask-pagedown
