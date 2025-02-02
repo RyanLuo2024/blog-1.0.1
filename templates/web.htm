@@ -6,13 +6,11 @@
     <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
     <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
-    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.2.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <!-- 引入 xterm 的 CSS 文件 -->
     <link rel="stylesheet" href="https://unpkg.com/xterm@4.18.0/css/xterm.css">
     <!-- 引入 xterm 的 JavaScript 文件 -->
     <script src="https://unpkg.com/xterm@4.18.0/lib/xterm.js"></script>
-
-
 </head>
 <body>
     <div id="terminal"></div>
@@ -38,27 +36,29 @@
         console.log("高度" + window_height + "宽度" + window_width);
 
         $(document).ready(function() {
-            // 连接服务器
-            const namespace = '/ws';
+            const namespace = '/ssh/ws';
             const socket = io.connect("http://" + document.domain + ":" + location.port + namespace);
 
             socket.on("connect", function(){
-                // 打开终端
                 term.open(document.getElementById('terminal'));
             });
-
-            // 接受后端数据,并写到控制台
             socket.on("response", function(recv){
                 term.write(recv.data);
             });
-
-            // terminal终端上输入的数据发送消息到服务端
             term.onData((data) => {
               console.log('发送消息:'+data)
-              socket.send(data);
-              // socket.emit('message', {"data":data});
+              socket.emit('message', data); // 确保发送的是字符串
+            });
+
+            // 在页面刷新或关闭时关闭 WebSocket 连接
+            window.addEventListener('beforeunload', function() {
+                socket.close();
             });
         });
-</script>
+
+        // 示例：创建 Canvas 上下文时设置 willReadFrequently 属性
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d', { willReadFrequently: true });
+    </script>
 </body>
 </html>

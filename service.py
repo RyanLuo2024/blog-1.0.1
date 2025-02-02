@@ -1,20 +1,26 @@
 import multiprocessing
 import os
+from includes.colour import colour
 runflag = True
-
+os.system("clear")
+print("""\033[1
+    #       #     ### ##   # ###  #     ####### ######
+   # #     # #     #  # #  # #  # #     #     # #
+  #   #   #   #    #  #  # # #### #     #     # #   ###
+ #     # #     #   #  #   ## #  # #     #     # #    #
+#       #      #  ### #    # ###  ##### ####### ######
+\033[0m
+{0}v1.1@20250201build01{1}
+""".format(colour.GREEN,colour.NONE))
 def runningmain():
-    print("-------running main-------")
-    os.system("python main.py")
-
-def runningssh():
-    print("-------running ssh-------")
-    os.system("python ssh.py")
+    print("[MAIN_SERVICE_MASSAGE] service.py -> _log line:16 [INFO] :  running main")
+    os.system("./.venv/bin/python main.py")
 
 if __name__ == "__main__":
-    print("\033[1mmineblog\033[0m")
-    print("v1.1")
-    print("-------Press CTRL+C to quit-------")
-    main = multiprocessing.Process(target=runningmain)
-    ssh = multiprocessing.Process(target=runningssh)
-    main.start()
-    ssh.start()
+    print("-------Press CTRL+C to quit-------\n\n\n")
+    try:
+        main = multiprocessing.Process(target=runningmain)
+        main.start()
+    except KeyboardInterrupt:
+        print("[MAIN_SERVICE_MASSAGE] service.py -> _log line:25 [INFO] :  stop main")
+    
