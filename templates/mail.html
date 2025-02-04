@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block title %}消息{% endblock %}
+
+{% block content %}
+<div class="container1" >
+    <style>
+        .message-window {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 400px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        .message-list {
+            height: 100%;
+            overflow-y: auto;
+        }
+        .message-item {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+    </style>
+    <div style="display: block;" class="fadd">
+        <h2>写消息</h2>
+        <form action="{{ url_for('mail.send') }}" method="post">
+            <input type="text" name="to" placeholder="To" required style="padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.2);
+            outline: none;
+            border: none;
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 16px;letter-spacing: 1px;color: #000000;box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);"><br>
+            <input type="text" name="subject" placeholder="Subject" required style="padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.2);
+            outline: none;
+            border: none;
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 16px;letter-spacing: 1px;color: #000000;box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);"><br>
+            <textarea name="body" placeholder="Body" required id="content" ></textarea><br>
+            <input type="text" name="type" placeholder="Type (e.g., personal, work)" required style="padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.2);
+            outline: none;
+            border: none;
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 16px;letter-spacing: 1px;color: #000000;box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);"><br>
+            <div class="inputBox">
+                <input type="submit" value="提交" style="background: #fff;color: #666;max-width: 100px;margin-bottom: 20px;font-weight: 600;cursor: pointer;width: 100%;
+                padding: 10px 20px;
+                background: rgba(255, 255, 255, 0.2);
+                outline: none;
+                border: none;
+                border-radius: 30px;
+                border: 1px solid rgba(255, 255, 255, 0.5);
+                border-right: 1px solid rgba(255, 255, 255, 0.2);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+                font-size: 16px;letter-spacing: 1px;color: #000000;box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);">
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,12 @@
+[33m[2025-02-04  19:56:59.981] _internal.py -> _log line:97 [WARNING] :  * Debugger is active![0m
+[32m[2025-02-04  19:56:59.982] _internal.py -> _log line:97 [INFO] :  * Debugger PIN: 140-724-297[0m
+[32m[2025-02-04  19:57:02.412] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 19:57:02] "[35m[1mGET /mail/mail/2025020319482433 HTTP/1.1[0m" 500 -[0m
+[32m[2025-02-04  19:57:02.518] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 19:57:02] "[36mGET /mail/mail/2025020319482433?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  19:57:02.572] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 19:57:02] "[36mGET /mail/mail/2025020319482433?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  19:57:02.705] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 19:57:02] "GET /mail/mail/2025020319482433?__debugger__=yes&cmd=resource&f=console.png&s=rviP08CHowaLhdPLliIl HTTP/1.1" 200 -[0m
+[32m[2025-02-04  19:57:02.834] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 19:57:02] "[36mGET /mail/mail/2025020319482433?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  19:57:34.842] _internal.py -> _log line:97 [INFO] :  * To enable the debugger you need to enter the security pin:[0m
+[32m[2025-02-04  19:57:34.842] _internal.py -> _log line:97 [INFO] :  * Debugger pin code: 140-724-297[0m
+[32m[2025-02-04  19:57:34.843] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 19:57:34] "GET /mail/mail/2025020319482433?__debugger__=yes&cmd=printpin&s=rviP08CHowaLhdPLliIl HTTP/1.1" 200 -[0m
+[32m[2025-02-04  19:57:54.410] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 19:57:54] "GET /mail/mail/2025020319482433?__debugger__=yes&cmd=pinauth&pin=140-724-297&s=rviP08CHowaLhdPLliIl HTTP/1.1" 200 -[0m
+[32m[2025-02-04  19:58:57.573] _internal.py -> _log line:97 [INFO] :  * Detected change in '/home/ryan/blog/routes/massage.py', reloading[0m

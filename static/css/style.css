@@ -260,7 +260,7 @@ section .color:nth-child(3) {
 
 /* 登录按钮样式 */
 
-.form .inputBox input[type="submit"] {
+.inputBox input[type="submit"] {
     background: #fff;
     color: #666;
     max-width: 100px;

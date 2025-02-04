@@ -1,0 +1,9 @@
+[32m[2025-02-03  18:52:37.692] _internal.py -> _log line:97 [INFO] : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.50.206:5000[0m
+[32m[2025-02-03  18:52:37.692] _internal.py -> _log line:97 [INFO] : [33mPress CTRL+C to quit[0m
+[32m[2025-02-03  18:52:37.692] _internal.py -> _log line:97 [INFO] :  * Restarting with stat[0m
+[32m[2025-02-03  18:53:24.409] _internal.py -> _log line:97 [INFO] :  * Restarting with stat[0m
+[32m[2025-02-03  18:54:21.182] _internal.py -> _log line:97 [INFO] :  * Restarting with stat[0m
+[32m[2025-02-03  18:55:25.029] _internal.py -> _log line:97 [INFO] :  * Restarting with stat[0m

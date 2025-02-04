@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block title %}消息列表{% endblock %}
+
+{% block content %}
+<div class="container2">
+    <style>
+        pre{
+            color: gray;
+        }
+    </style>
+    <div class="message-window" id="messageWindow">
+        <div class="message-list" id="messageList">
+            <!-- 消息列表将被动态加载 -->
+        </div>
+    </div>
+
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            function loadMessages() {
+                $.getJSON('/mail/messages', function(data) {
+                    var messageList = $('#messageList');
+                    messageList.empty();
+                    $.each(data, function(index, message) {
+                        messageList.append(
+                            '<a href=/mail/mail/'+ message.id +'>'+
+                                '<div class="cushy-box2">' +
+                                    '<div style="display: flex;">' +
+                                        '<p><strong>Date:</strong> <pre cass="pre">' + message.date + '   </pre></p>' +
+                                        '<p><strong>From:</strong> <pre cass="pre">' + message.from_user + '   </pre></p> <br>\n' +
+                                        '<p><strong>To:</strong> <pre cass="pre">' + message.to_user + '   </pre></p> <br>\n' +
+                                        '<p><strong>Subject:</strong> <pre cass="pre">' + message.subject + '   </pre></p>' +
+                                    '</div>'+
+                                '</div>'+
+                            '</a>'
+                        );
+                    });
+                });
+            }
+
+            loadMessages();
+        });
+    </script>
+{% endblock %}

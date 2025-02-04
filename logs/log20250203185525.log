@@ -1,0 +1,14 @@
+[33m[2025-02-03  18:55:25.390] _internal.py -> _log line:97 [WARNING] :  * Debugger is active![0m
+[32m[2025-02-03  18:55:25.390] _internal.py -> _log line:97 [INFO] :  * Debugger PIN: 377-767-200[0m
+[32m[2025-02-03  18:55:27.062] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:55:27] "GET /mail/ HTTP/1.1" 200 -[0m
+[32m[2025-02-03  18:55:27.133] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:55:27] "[33mGET /static/style.css HTTP/1.1[0m" 404 -[0m
+[32m[2025-02-03  18:55:40.265] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:55:40] "[35m[1mPOST /mail/send HTTP/1.1[0m" 500 -[0m
+[32m[2025-02-03  18:55:40.414] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:55:40] "GET /mail/send?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -[0m
+[32m[2025-02-03  18:55:40.474] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:55:40] "GET /mail/send?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -[0m
+[32m[2025-02-03  18:55:40.642] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:55:40] "GET /mail/send?__debugger__=yes&cmd=resource&f=console.png&s=2uWoj2kSAXgbSfBh8NSw HTTP/1.1" 200 -[0m
+[32m[2025-02-03  18:55:40.773] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:55:40] "GET /mail/send?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -[0m
+[32m[2025-02-03  18:57:34.216] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:57:34] "[35m[1mPOST /mail/send HTTP/1.1[0m" 500 -[0m
+[32m[2025-02-03  18:57:34.299] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:57:34] "[36mGET /mail/send?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:57:34.335] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:57:34] "[36mGET /mail/send?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:57:34.450] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:57:34] "[36mGET /mail/send?__debugger__=yes&cmd=resource&f=console.png&s=2uWoj2kSAXgbSfBh8NSw HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:57:34.572] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:57:34] "[36mGET /mail/send?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -[0m

@@ -1,0 +1,246 @@
+[33m[2025-02-03  18:28:05.366] _internal.py -> _log line:97 [WARNING] :  * Debugger is active![0m
+[32m[2025-02-03  18:28:05.367] _internal.py -> _log line:97 [INFO] :  * Debugger PIN: 377-767-200[0m
+[36m[2025-02-03  18:28:08.886] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.extra".[0m
+[36m[2025-02-03  18:28:08.895] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".[0m
+[36m[2025-02-03  18:28:08.896] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".[0m
+[36m[2025-02-03  18:28:08.897] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".[0m
+[36m[2025-02-03  18:28:08.897] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.def_list.DefListExtension".[0m
+[36m[2025-02-03  18:28:08.898] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.tables.TableExtension".[0m
+[36m[2025-02-03  18:28:08.898] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".[0m
+[36m[2025-02-03  18:28:08.899] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".[0m
+[36m[2025-02-03  18:28:08.899] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.extra.ExtraExtension".[0m
+[36m[2025-02-03  18:28:08.899] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.codehilite".[0m
+[36m[2025-02-03  18:28:08.900] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.codehilite.CodeHiliteExtension".[0m
+[36m[2025-02-03  18:28:08.900] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.tables".[0m
+[36m[2025-02-03  18:28:08.900] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.tables.TableExtension".[0m
+[36m[2025-02-03  18:28:08.900] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.toc".[0m
+[36m[2025-02-03  18:28:08.901] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.toc.TocExtension".[0m
+[32m[2025-02-03  18:28:08.918] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:08] "GET /post/2025020318071474 HTTP/1.1" 200 -[0m
+[32m[2025-02-03  18:28:09.130] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:09.165] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:09] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:09.166] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:09] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:09.173] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:09] "[36mGET /static/editormd/editormd.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:09.175] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:09] "[36mGET /static/js/quill.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:09.181] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:09] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:09.188] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:09] "[36mGET /static/js/ajax.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:09.224] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:09] "[36mGET /static/js/TrianglesMosaicBg.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:09.255] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:09] "[36mGET /static/uploads/root/2aa7370bb1288d5e4c18e02862de8f55capture_20240903143440735.bmp HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:09.991] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:09] "[33mGET /static/js/quill.js.map HTTP/1.1[0m" 404 -[0m
+[32m[2025-02-03  18:28:10.127] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:10] "[33mGET /static/css/quill.snow.css.map HTTP/1.1[0m" 404 -[0m
+[32m[2025-02-03  18:28:10.806] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:10] "GET /api/get/userimage HTTP/1.1" 200 -[0m
+[32m[2025-02-03  18:28:11.666] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:11] "[36mGET /static/uploads/c4ca4238a0b923820dcc509a6f75849bscreenshot-1725345109184.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:14.068] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:14] "GET /removeword/2025020318071474 HTTP/1.1" 200 -[0m
+[32m[2025-02-03  18:28:14.413] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:14.491] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:14] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:14.497] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:14] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:14.502] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:14] "[36mGET /static/editormd/editormd.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:14.515] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:14] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:14.520] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:14] "[36mGET /static/js/quill.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:14.533] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:14] "[36mGET /static/js/ajax.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:14.583] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:14] "[36mGET /static/js/TrianglesMosaicBg.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:15.525] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:15] "[33mGET /static/js/quill.js.map HTTP/1.1[0m" 404 -[0m
+[32m[2025-02-03  18:28:15.535] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:15] "[33mGET /static/css/quill.snow.css.map HTTP/1.1[0m" 404 -[0m
+[32m[2025-02-03  18:28:15.720] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:15] "GET /api/get/userimage HTTP/1.1" 200 -[0m
+[32m[2025-02-03  18:28:16.125] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:16] "[36mGET /static/uploads/c4ca4238a0b923820dcc509a6f75849bscreenshot-1725345109184.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:16.844] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:16] "GET / HTTP/1.1" 200 -[0m
+[32m[2025-02-03  18:28:17.179] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:17.266] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:17] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:17.267] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:17] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:17.271] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:17] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:17.275] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:17] "[36mGET /static/js/quill.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:17.289] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:17] "[36mGET /static/editormd/editormd.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:17.312] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:17] "[36mGET /static/js/ajax.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:17.363] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:17] "[36mGET /static/js/TrianglesMosaicBg.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:17.366] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:17] "[36mGET /static/uploads/root/2aa7370bb1288d5e4c18e02862de8f55capture_20240903143440735.bmp HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:17.372] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:17] "[36mGET /static/image/blogtitilebg.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:17.893] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:17] "[33mGET /static/js/quill.js.map HTTP/1.1[0m" 404 -[0m
+[32m[2025-02-03  18:28:17.898] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:17] "[33mGET /static/css/quill.snow.css.map HTTP/1.1[0m" 404 -[0m
+[32m[2025-02-03  18:28:18.490] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:18] "GET /api/get/userimage HTTP/1.1" 200 -[0m
+[32m[2025-02-03  18:28:18.883] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:18] "[36mGET /static/uploads/c4ca4238a0b923820dcc509a6f75849bscreenshot-1725345109184.png HTTP/1.1[0m" 304 -[0m
+[36m[2025-02-03  18:28:20.176] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.extra".[0m
+[36m[2025-02-03  18:28:20.176] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".[0m
+[36m[2025-02-03  18:28:20.177] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".[0m
+[36m[2025-02-03  18:28:20.177] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".[0m
+[36m[2025-02-03  18:28:20.177] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.def_list.DefListExtension".[0m
+[36m[2025-02-03  18:28:20.177] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.tables.TableExtension".[0m
+[36m[2025-02-03  18:28:20.178] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".[0m
+[36m[2025-02-03  18:28:20.178] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".[0m
+[36m[2025-02-03  18:28:20.178] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.extra.ExtraExtension".[0m
+[36m[2025-02-03  18:28:20.178] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.codehilite".[0m
+[36m[2025-02-03  18:28:20.178] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.codehilite.CodeHiliteExtension".[0m
+[36m[2025-02-03  18:28:20.178] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.tables".[0m
+[36m[2025-02-03  18:28:20.178] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.tables.TableExtension".[0m
+[36m[2025-02-03  18:28:20.179] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.toc".[0m
+[36m[2025-02-03  18:28:20.179] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.toc.TocExtension".[0m
+[32m[2025-02-03  18:28:20.184] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:20] "GET /post/2025020318261511 HTTP/1.1" 200 -[0m
+[32m[2025-02-03  18:28:20.480] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:20.729] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:20] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:20.737] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:20] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:20.738] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:20] "[36mGET /static/editormd/editormd.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:20.740] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:20] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:20.764] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:20] "[36mGET /static/js/quill.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:20.806] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:20] "[36mGET /static/js/ajax.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:20.851] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:20] "[36mGET /static/js/TrianglesMosaicBg.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:20.861] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:20] "[36mGET /static/image/blogtitilebg.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:21.412] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:21] "[33mGET /static/js/quill.js.map HTTP/1.1[0m" 404 -[0m
+[32m[2025-02-03  18:28:21.717] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:21] "[33mGET /static/css/quill.snow.css.map HTTP/1.1[0m" 404 -[0m
+[32m[2025-02-03  18:28:22.035] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:22] "GET /api/get/userimage HTTP/1.1" 200 -[0m
+[32m[2025-02-03  18:28:22.590] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:22] "[36mGET /static/uploads/c4ca4238a0b923820dcc509a6f75849bscreenshot-1725345109184.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:25.540] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:25] "GET /removeword/2025020318261511 HTTP/1.1" 200 -[0m
+[32m[2025-02-03  18:28:25.838] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:25.902] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:25] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:25.904] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:25] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:25.910] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:25] "[36mGET /static/js/quill.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:25.916] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:25] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:25.920] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:25] "[36mGET /static/editormd/editormd.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:25.926] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:25] "[36mGET /static/js/ajax.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:26.006] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:26] "[36mGET /static/js/TrianglesMosaicBg.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:26.651] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:26] "[33mGET /static/js/quill.js.map HTTP/1.1[0m" 404 -[0m
+[32m[2025-02-03  18:28:26.841] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:26] "[33mGET /static/css/quill.snow.css.map HTTP/1.1[0m" 404 -[0m
+[32m[2025-02-03  18:28:26.998] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:26] "GET /api/get/userimage HTTP/1.1" 200 -[0m
+[32m[2025-02-03  18:28:27.404] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:27] "[36mGET /static/uploads/c4ca4238a0b923820dcc509a6f75849bscreenshot-1725345109184.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:28.171] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:28] "GET / HTTP/1.1" 200 -[0m
+[32m[2025-02-03  18:28:28.431] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:28.490] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:28] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:28.493] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:28] "[36mGET /static/editormd/editormd.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:28.495] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:28] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:28.498] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:28] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:28.505] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:28] "[36mGET /static/js/ajax.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:28.506] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:28] "[36mGET /static/js/quill.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:28.565] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:28] "[36mGET /static/js/TrianglesMosaicBg.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:28.576] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:28] "[36mGET /static/uploads/root/2aa7370bb1288d5e4c18e02862de8f55capture_20240903143440735.bmp HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:29.417] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:29] "[33mGET /static/css/quill.snow.css.map HTTP/1.1[0m" 404 -[0m
+[32m[2025-02-03  18:28:29.424] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:29] "[33mGET /static/js/quill.js.map HTTP/1.1[0m" 404 -[0m
+[32m[2025-02-03  18:28:29.707] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:29] "GET /api/get/userimage HTTP/1.1" 200 -[0m
+[32m[2025-02-03  18:28:30.084] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:30] "[36mGET /static/uploads/c4ca4238a0b923820dcc509a6f75849bscreenshot-1725345109184.png HTTP/1.1[0m" 304 -[0m
+[36m[2025-02-03  18:28:31.440] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.extra".[0m
+[36m[2025-02-03  18:28:31.440] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".[0m
+[36m[2025-02-03  18:28:31.441] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".[0m
+[36m[2025-02-03  18:28:31.441] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".[0m
+[36m[2025-02-03  18:28:31.441] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.def_list.DefListExtension".[0m
+[36m[2025-02-03  18:28:31.441] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.tables.TableExtension".[0m
+[36m[2025-02-03  18:28:31.442] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".[0m
+[36m[2025-02-03  18:28:31.442] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".[0m
+[36m[2025-02-03  18:28:31.442] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.extra.ExtraExtension".[0m
+[36m[2025-02-03  18:28:31.442] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.codehilite".[0m
+[36m[2025-02-03  18:28:31.442] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.codehilite.CodeHiliteExtension".[0m
+[36m[2025-02-03  18:28:31.443] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.tables".[0m
+[36m[2025-02-03  18:28:31.443] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.tables.TableExtension".[0m
+[36m[2025-02-03  18:28:31.443] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.toc".[0m
+[36m[2025-02-03  18:28:31.443] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.toc.TocExtension".[0m
+[32m[2025-02-03  18:28:31.453] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:31] "GET /post/2025020318274786 HTTP/1.1" 200 -[0m
+[32m[2025-02-03  18:28:32.092] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:32.095] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:32] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:32.101] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:32] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:32.104] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:32] "[36mGET /static/js/quill.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:32.112] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:32] "[36mGET /static/editormd/editormd.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:32.124] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:32] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:32.188] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:32] "[36mGET /static/js/ajax.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:32.197] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:32] "[36mGET /static/js/TrianglesMosaicBg.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:32.215] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:32] "[36mGET /static/uploads/root/2aa7370bb1288d5e4c18e02862de8f55capture_20240903143440735.bmp HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:33.207] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:33] "[33mGET /static/js/quill.js.map HTTP/1.1[0m" 404 -[0m
+[32m[2025-02-03  18:28:33.308] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:33] "[33mGET /static/css/quill.snow.css.map HTTP/1.1[0m" 404 -[0m
+[32m[2025-02-03  18:28:33.788] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:33] "GET /api/get/userimage HTTP/1.1" 200 -[0m
+[32m[2025-02-03  18:28:34.508] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:34] "[36mGET /static/uploads/c4ca4238a0b923820dcc509a6f75849bscreenshot-1725345109184.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:37.931] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:37] "GET /removeword/2025020318274786 HTTP/1.1" 200 -[0m
+[32m[2025-02-03  18:28:38.209] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:38.325] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:38] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:38.327] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:38] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:38.333] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:38] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:38.334] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:38] "[36mGET /static/editormd/editormd.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:38.340] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:38] "[36mGET /static/js/ajax.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:38.342] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:38] "[36mGET /static/js/quill.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:38.387] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:38] "[36mGET /static/js/TrianglesMosaicBg.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:38.976] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:38] "[33mGET /static/js/quill.js.map HTTP/1.1[0m" 404 -[0m
+[32m[2025-02-03  18:28:38.983] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:38] "[33mGET /static/css/quill.snow.css.map HTTP/1.1[0m" 404 -[0m
+[32m[2025-02-03  18:28:39.245] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:39] "GET /api/get/userimage HTTP/1.1" 200 -[0m
+[32m[2025-02-03  18:28:39.600] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:39] "[36mGET /static/uploads/c4ca4238a0b923820dcc509a6f75849bscreenshot-1725345109184.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:41.931] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:41] "GET / HTTP/1.1" 200 -[0m
+[32m[2025-02-03  18:28:42.193] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:42.285] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:42] "[36mGET /static/js/quill.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:42.286] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:42] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:42.296] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:42] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:42.345] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:42] "[36mGET /static/editormd/editormd.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:42.423] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:42] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:42.425] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:42] "[36mGET /static/js/ajax.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:42.467] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:42] "[36mGET /static/js/TrianglesMosaicBg.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:42.918] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:42] "[33mGET /static/js/quill.js.map HTTP/1.1[0m" 404 -[0m
+[32m[2025-02-03  18:28:42.979] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:42] "[33mGET /static/css/quill.snow.css.map HTTP/1.1[0m" 404 -[0m
+[32m[2025-02-03  18:28:43.224] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:43] "GET /api/get/userimage HTTP/1.1" 200 -[0m
+[32m[2025-02-03  18:28:43.489] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:43] "[36mGET /static/uploads/c4ca4238a0b923820dcc509a6f75849bscreenshot-1725345109184.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:49.945] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:49] "GET /writeblog HTTP/1.1" 200 -[0m
+[32m[2025-02-03  18:28:50.156] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:50.207] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:50] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:50.212] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:50] "[36mGET /static/editormd/editormd.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:50.213] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:50] "[36mGET /static/js/quill.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:50.218] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:50] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:50.221] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:50] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:50.222] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:50] "[36mGET /static/js/ajax.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:50.310] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:50] "[36mGET /static/js/TrianglesMosaicBg.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:50.944] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:50] "[33mGET /static/js/quill.js.map HTTP/1.1[0m" 404 -[0m
+[32m[2025-02-03  18:28:51.045] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:51] "[33mGET /static/css/quill.snow.css.map HTTP/1.1[0m" 404 -[0m
+[32m[2025-02-03  18:28:51.271] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:51] "GET /api/get/userimage HTTP/1.1" 200 -[0m
+[32m[2025-02-03  18:28:51.686] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:51] "[36mGET /static/editormd/lib/codemirror/addon/search/matchesonscrollbar.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:51.686] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:51] "[36mGET /static/editormd/lib/codemirror/codemirror.min.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:51.689] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:51] "[36mGET /static/editormd/images/loading.gif HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:51.703] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:51] "[36mGET /static/editormd/lib/codemirror/codemirror.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:51.710] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:51] "[36mGET /static/editormd/lib/codemirror/addon/dialog/dialog.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:51.848] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:51] "[36mGET /static/uploads/c4ca4238a0b923820dcc509a6f75849bscreenshot-1725345109184.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:52.031] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:52] "[36mGET /static/editormd/lib/codemirror/modes.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:52.297] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:52] "[36mGET /static/editormd/lib/codemirror/addons.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:52.639] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:52] "[36mGET /static/editormd/fonts/fontawesome-webfont.woff2?v=4.3.0 HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:52.647] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:52] "[36mGET /static/editormd/lib/marked.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:28:52.888] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:28:52] "[36mGET /static/editormd/lib/prettify.min.js HTTP/1.1[0m" 304 -[0m
+[36m[2025-02-03  18:29:14.073] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.extra".[0m
+[36m[2025-02-03  18:29:14.073] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".[0m
+[36m[2025-02-03  18:29:14.074] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".[0m
+[36m[2025-02-03  18:29:14.074] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".[0m
+[36m[2025-02-03  18:29:14.074] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.def_list.DefListExtension".[0m
+[36m[2025-02-03  18:29:14.074] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.tables.TableExtension".[0m
+[36m[2025-02-03  18:29:14.075] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".[0m
+[36m[2025-02-03  18:29:14.075] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".[0m
+[36m[2025-02-03  18:29:14.075] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.extra.ExtraExtension".[0m
+[36m[2025-02-03  18:29:14.075] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.codehilite".[0m
+[36m[2025-02-03  18:29:14.075] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.codehilite.CodeHiliteExtension".[0m
+[36m[2025-02-03  18:29:14.076] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.tables".[0m
+[36m[2025-02-03  18:29:14.076] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.tables.TableExtension".[0m
+[36m[2025-02-03  18:29:14.076] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.toc".[0m
+[36m[2025-02-03  18:29:14.076] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.toc.TocExtension".[0m
+[36m[2025-02-03  18:29:14.078] __init__.py -> initialize line:113 [DEBUG] : Building prefix dict from the default dictionary ...[0m
+[36m[2025-02-03  18:29:14.078] __init__.py -> initialize line:132 [DEBUG] : Loading model from cache /tmp/jieba.cache[0m
+[36m[2025-02-03  18:29:14.834] __init__.py -> initialize line:164 [DEBUG] : Loading model cost 0.756 seconds.[0m
+[36m[2025-02-03  18:29:14.834] __init__.py -> initialize line:166 [DEBUG] : Prefix dict has been built successfully.[0m
+[32m[2025-02-03  18:29:14.835] blog.py -> handle line:87 [INFO] : 拆分列表：['测试', 'markdown'][0m
+[32m[2025-02-03  18:29:14.844] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:29:14] "POST /handle HTTP/1.1" 200 -[0m
+[32m[2025-02-03  18:29:15.019] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:29:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:29:15.055] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:29:15] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:29:15.058] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:29:15] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:29:15.078] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:29:15] "[36mGET /static/editormd/editormd.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:29:15.079] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:29:15] "[36mGET /static/js/quill.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:29:15.083] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:29:15] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:29:15.087] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:29:15] "[36mGET /static/js/ajax.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:29:15.118] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:29:15] "[36mGET /static/js/TrianglesMosaicBg.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:29:15.694] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:29:15] "[33mGET /static/js/quill.js.map HTTP/1.1[0m" 404 -[0m
+[32m[2025-02-03  18:29:15.704] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:29:15] "[33mGET /static/css/quill.snow.css.map HTTP/1.1[0m" 404 -[0m
+[32m[2025-02-03  18:29:15.880] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:29:15] "GET /api/get/userimage HTTP/1.1" 200 -[0m
+[32m[2025-02-03  18:29:16.244] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:29:16] "[36mGET /static/uploads/c4ca4238a0b923820dcc509a6f75849bscreenshot-1725345109184.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:29:22.379] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:29:22] "GET / HTTP/1.1" 200 -[0m
+[32m[2025-02-03  18:29:22.588] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:29:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:29:22.674] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:29:22] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:29:22.677] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:29:22] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:29:22.685] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:29:22] "[36mGET /static/editormd/editormd.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:29:22.745] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:29:22] "[36mGET /static/js/quill.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:29:22.811] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:29:22] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:29:22.853] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:29:22] "[36mGET /static/js/ajax.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:29:22.892] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:29:22] "[36mGET /static/js/TrianglesMosaicBg.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:29:22.920] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:29:22] "[36mGET /static/uploads/root/2aa7370bb1288d5e4c18e02862de8f55capture_20240903143440735.bmp HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:29:23.504] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:29:23] "[33mGET /static/css/quill.snow.css.map HTTP/1.1[0m" 404 -[0m
+[32m[2025-02-03  18:29:23.513] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:29:23] "[33mGET /static/js/quill.js.map HTTP/1.1[0m" 404 -[0m
+[32m[2025-02-03  18:29:23.938] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:29:23] "GET /api/get/userimage HTTP/1.1" 200 -[0m
+[32m[2025-02-03  18:29:24.234] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:29:24] "[36mGET /static/uploads/c4ca4238a0b923820dcc509a6f75849bscreenshot-1725345109184.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:29:29.843] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:29:29] "[35m[1mGET /search?search=markdown HTTP/1.1[0m" 500 -[0m
+[32m[2025-02-03  18:29:30.074] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:29:30] "GET /search?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -[0m
+[32m[2025-02-03  18:29:30.162] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:29:30] "GET /search?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -[0m
+[32m[2025-02-03  18:29:30.366] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:29:30] "GET /search?__debugger__=yes&cmd=resource&f=console.png&s=5Mndz4GAfBsk4ewjcF8L HTTP/1.1" 200 -[0m
+[32m[2025-02-03  18:29:30.569] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:29:30] "GET /search?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -[0m
+[32m[2025-02-03  18:33:31.224] _internal.py -> _log line:97 [INFO] :  * Detected change in '/home/ryan/blog/routes/others.py', reloading[0m

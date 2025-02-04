@@ -1,7 +1,7 @@
 import models,os,hashlib,flask,datetime,sqlite3
 from fakes import*
 from better_profanity import profanity
-import json
+import json,logging
 import config,addheimindan
 from includes.dbget import db
 from bs4 import BeautifulSoup
@@ -16,7 +16,7 @@ def get_db_connection():
 def post(postid):
     if addheimindan.get(flask.request.cookies.get("cookieid")) != False and \
        addheimindan.get(flask.request.cookies.get("cookieid"))['quanxian']['post'] == False: 
-        return "您已被封禁，无法经行该操作"
+        return "您已被封禁，无法经行该操作",403
     blog_list=models.getblog()
     user_ = flask.request.cookies.get("cookieid")
     a=""
@@ -47,7 +47,7 @@ def post(postid):
 def add_comment():
     if addheimindan.get(flask.request.cookies.get("cookieid")) != False and \
        addheimindan.get(flask.request.cookies.get("cookieid"))['quanxian']['add_comment'] == False: 
-        return "您已被封禁，无法经行该操作"
+        return "您已被封禁，无法经行该操作",403
     conn = get_db_connection()
     word = flask.request.form['word']
     touser = flask.request.form['touser']
@@ -65,7 +65,7 @@ def add_comment():
 def writeblog():
     if addheimindan.get(flask.request.cookies.get("cookieid")) != False and \
        addheimindan.get(flask.request.cookies.get("cookieid"))['quanxian']['writeblog'] == False: 
-        return "您已被封禁，无法经行该操作"
+        return "您已被封禁，无法经行该操作",403
     if (flask.request.cookies.get("cookieid") == None): flask.redirect(flask.url_for("user_login"))
     return flask.render_template(config.htmls.blog.blogwrite, username=flask.request.cookies.get("cookieid"))
 
@@ -74,28 +74,33 @@ def writeblog():
 def handle(): 
     if addheimindan.get(flask.request.cookies.get("cookieid")) != False and \
        addheimindan.get(flask.request.cookies.get("cookieid"))['quanxian']['handle'] == False: 
-        return "您已被封禁，无法经行该操作"
+        return "您已被封禁，无法经行该操作",403
     title = flask.request.form.get("title")
     word = flask.request.form.get("html")
     markdown = flask.request.form.get("markdown")
+    titleimage = flask.request.form.get("titleimage")
+    if (titleimage == ""): titleimage = "/static/image/blogtitilebg.png"
     dislike = like = "[]"
     id = wordid()
     import jieba
-    word_search_list = jieba.lcut(BeautifulSoup(word,"html").get_text())
+    word_search_list = jieba.lcut(BeautifulSoup(md2html(title),"html").get_text())
+    logging.info(f"拆分列表：{word_search_list}")
     # print(word_search_list)
     word_search_list = {"list":str(word_search_list)}
     sql = db()
     sql.execute(
 "insert into articles (title,word,id,userid,search,markdown,like,dislike,imageshow) values (?,?,?,?,?,?,?,?,?)", 
     (title ,word, id.shengzheng(), flask.request.cookies.get('cookieid'), json.dumps(word_search_list), 
-     markdown, like, dislike, "/static/image/blogtitilebg.png"))
-    users = sql.get_return()
+     markdown, like, dislike, titleimage))
     sql.close()
     return flask.render_template(config.htmls.index, username=flask.request.cookies.get("cookieid"))
 
 """http://host:port/removeword/<wordid> 删除文章 ###cookie###"""
 @blog.route("/removeword/<wordid>")
 def removeword(wordid):
+    if addheimindan.get(flask.request.cookies.get("cookieid")) != False and \
+       addheimindan.get(flask.request.cookies.get("cookieid"))['quanxian']['handle'] == False: 
+        return "您已被封禁，无法经行该操作",403
     sql = db()
     sql.execute("SELECT userid,username,usertype,image FROM user")
     response = flask.request.cookies.get("cookieid")
@@ -110,4 +115,4 @@ def removeword(wordid):
     sql.close()
     return """
 <h1>你无权删除该文章！</h1>
-"""
+""", 403

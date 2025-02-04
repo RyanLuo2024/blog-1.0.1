@@ -1,0 +1,8 @@
+[33m[2025-02-03  19:24:30.323] _internal.py -> _log line:97 [WARNING] :  * Debugger is active![0m
+[32m[2025-02-03  19:24:30.324] _internal.py -> _log line:97 [INFO] :  * Debugger PIN: 377-767-200[0m
+[32m[2025-02-03  19:24:41.945] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 19:24:41] "[35m[1mPOST /mail/send HTTP/1.1[0m" 500 -[0m
+[32m[2025-02-03  19:24:42.182] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 19:24:42] "[36mGET /mail/send?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  19:24:42.315] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 19:24:42] "[36mGET /mail/send?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  19:24:42.477] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 19:24:42] "GET /mail/send?__debugger__=yes&cmd=resource&f=console.png&s=6lChqrFk6KosniFYfcx7 HTTP/1.1" 200 -[0m
+[32m[2025-02-03  19:24:42.610] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 19:24:42] "[36mGET /mail/send?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  19:24:58.468] _internal.py -> _log line:97 [INFO] :  * Detected change in '/home/ryan/blog/routes/massage.py', reloading[0m

@@ -8,6 +8,7 @@ from routes.api import api
 from routes.auth import auth
 from routes.blog import blog
 from routes.others import others
+from routes.massage import mail_blueprint
 import config
 
 ssh = Flask(
@@ -26,7 +27,7 @@ app.register_blueprint(api, url_prefix="/")
 app.register_blueprint(auth, url_prefix="/")
 app.register_blueprint(blog, url_prefix='/')
 app.register_blueprint(others, url_prefix="/")
-
+app.register_blueprint(mail_blueprint, url_prefix='/mail')
 def ssh_cmd():
     tran = paramiko.Transport(('127.0.0.1', 22,))
     tran.start_client()
@@ -81,6 +82,31 @@ def disconnect():
         sessions[sid].close()
         del sessions[sid]
     logging.debug("链接已断开")
+
+@app.errorhandler(404)
+def err404():
+    return render_template("error.html",message="404 Not found,\n去其他地方看看吧")
+
+@app.errorhandler(403)
+def err403():
+    return render_template("error.html",message="do you have 权限?\n去其他地方看看吧")
+
+@app.errorhandler(401)
+def err401():
+    return render_template("error.html",message="do you have 权限?\n去其他地方看看吧")
+
+@app.errorhandler(400)
+def err400():
+    return render_template("error.html",message="您请求是不是有问题?我理解不了,\n去其他地方看看吧")
+
+@app.errorhandler(408)
+def err408():
+    return render_template("error.html",message="等你等超时了,刷新试试？")
+
+@app.errorhandler(429)
+def err429():
+    return render_template("error.html",message="你请求太多次了，慢点！")
+
 
 if __name__ == '__main__':
     socketio.run(

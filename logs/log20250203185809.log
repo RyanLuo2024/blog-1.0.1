@@ -1,0 +1,28 @@
+[32m[2025-02-03  18:58:09.909] _internal.py -> _log line:97 [INFO] : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.50.206:5000[0m
+[32m[2025-02-03  18:58:09.909] _internal.py -> _log line:97 [INFO] : [33mPress CTRL+C to quit[0m
+[32m[2025-02-03  18:58:09.910] _internal.py -> _log line:97 [INFO] :  * Restarting with stat[0m
+[32m[2025-02-03  18:59:54.848] _internal.py -> _log line:97 [INFO] :  * Restarting with stat[0m
+[32m[2025-02-03  19:00:05.440] _internal.py -> _log line:97 [INFO] :  * Restarting with stat[0m
+[32m[2025-02-03  19:01:55.424] _internal.py -> _log line:97 [INFO] :  * Restarting with stat[0m
+[32m[2025-02-03  19:09:00.023] _internal.py -> _log line:97 [INFO] :  * Restarting with stat[0m
+[32m[2025-02-03  19:09:11.572] _internal.py -> _log line:97 [INFO] :  * Restarting with stat[0m
+[32m[2025-02-03  19:10:04.335] _internal.py -> _log line:97 [INFO] :  * Restarting with stat[0m
+[32m[2025-02-03  19:10:55.049] _internal.py -> _log line:97 [INFO] :  * Restarting with stat[0m
+[32m[2025-02-03  19:22:57.025] _internal.py -> _log line:97 [INFO] :  * Restarting with stat[0m
+[32m[2025-02-03  19:24:29.971] _internal.py -> _log line:97 [INFO] :  * Restarting with stat[0m
+[32m[2025-02-03  19:24:58.605] _internal.py -> _log line:97 [INFO] :  * Restarting with stat[0m
+[32m[2025-02-03  19:33:26.544] _internal.py -> _log line:97 [INFO] :  * Restarting with stat[0m
+[32m[2025-02-03  19:36:08.891] _internal.py -> _log line:97 [INFO] :  * Restarting with stat[0m
+[32m[2025-02-03  19:36:18.430] _internal.py -> _log line:97 [INFO] :  * Restarting with stat[0m
+[32m[2025-02-03  19:36:37.006] _internal.py -> _log line:97 [INFO] :  * Restarting with stat[0m
+[32m[2025-02-03  19:37:36.784] _internal.py -> _log line:97 [INFO] :  * Restarting with stat[0m
+[32m[2025-02-03  19:38:35.576] _internal.py -> _log line:97 [INFO] :  * Restarting with stat[0m
+[32m[2025-02-03  19:38:42.100] _internal.py -> _log line:97 [INFO] :  * Restarting with stat[0m
+[32m[2025-02-03  19:39:10.726] _internal.py -> _log line:97 [INFO] :  * Restarting with stat[0m
+[32m[2025-02-03  19:45:12.997] _internal.py -> _log line:97 [INFO] :  * Restarting with stat[0m
+[32m[2025-02-03  19:45:26.563] _internal.py -> _log line:97 [INFO] :  * Restarting with stat[0m
+[32m[2025-02-03  19:45:50.174] _internal.py -> _log line:97 [INFO] :  * Restarting with stat[0m
+[32m[2025-02-03  19:46:51.964] _internal.py -> _log line:97 [INFO] :  * Restarting with stat[0m

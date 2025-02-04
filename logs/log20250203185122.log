@@ -1,0 +1,26 @@
+[32m[2025-02-03  18:51:22.117] _internal.py -> _log line:97 [INFO] : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.50.206:5000[0m
+[32m[2025-02-03  18:51:22.117] _internal.py -> _log line:97 [INFO] : [33mPress CTRL+C to quit[0m
+[32m[2025-02-03  18:51:22.118] _internal.py -> _log line:97 [INFO] :  * Restarting with stat[0m
+[33m[2025-02-03  18:51:22.486] _internal.py -> _log line:97 [WARNING] :  * Debugger is active![0m
+[32m[2025-02-03  18:51:22.486] _internal.py -> _log line:97 [INFO] :  * Debugger PIN: 377-767-200[0m
+[32m[2025-02-03  18:51:25.047] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:51:25] "GET / HTTP/1.1" 200 -[0m
+[32m[2025-02-03  18:51:25.163] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:51:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:51:25.223] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:51:25] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:51:25.225] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:51:25] "[36mGET /static/editormd/editormd.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:51:25.230] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:51:25] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:51:25.232] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:51:25] "[36mGET /static/js/ajax.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:51:25.234] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:51:25] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:51:25.235] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:51:25] "[36mGET /static/js/quill.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:51:25.331] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:51:25] "[36mGET /static/js/TrianglesMosaicBg.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:51:25.336] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:51:25] "[36mGET /static/uploads/root/2aa7370bb1288d5e4c18e02862de8f55capture_20240903143440735.bmp HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:51:26.423] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:51:26] "GET /api/get/userimage HTTP/1.1" 200 -[0m
+[32m[2025-02-03  18:51:26.708] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:51:26] "[36mGET /static/uploads/c4ca4238a0b923820dcc509a6f75849bscreenshot-1725345109184.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:51:31.880] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:51:31] "[32mGET /mail HTTP/1.1[0m" 308 -[0m
+[32m[2025-02-03  18:51:31.930] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:51:31] "[35m[1mGET /mail/ HTTP/1.1[0m" 500 -[0m
+[32m[2025-02-03  18:51:32.063] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:51:32] "GET /mail/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -[0m
+[32m[2025-02-03  18:51:32.071] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:51:32] "GET /mail/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -[0m
+[32m[2025-02-03  18:51:32.163] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:51:32] "GET /mail/?__debugger__=yes&cmd=resource&f=console.png&s=qajuH86NV8XqXQYB5Ter HTTP/1.1" 200 -[0m
+[32m[2025-02-03  18:51:32.271] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:51:32] "GET /mail/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -[0m

@@ -8,7 +8,9 @@
         <h2>登录</h2>
         <form method="POST">
             错误！
-            没有这个页面！！
+            {% if message %}
+                {{ message }}
+            {% endif %}
         </form>
     </div>
 </div>

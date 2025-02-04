@@ -1,0 +1,17 @@
+[33m[2025-02-03  18:21:39.348] _internal.py -> _log line:97 [WARNING] :  * Debugger is active![0m
+[32m[2025-02-03  18:21:39.349] _internal.py -> _log line:97 [INFO] :  * Debugger PIN: 377-767-200[0m
+[32m[2025-02-03  18:21:53.915] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:21:53] "GET / HTTP/1.1" 200 -[0m
+[32m[2025-02-03  18:21:54.104] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:21:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:21:54.173] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:21:54] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:21:54.186] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:21:54] "[36mGET /static/editormd/editormd.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:21:54.197] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:21:54] "[36mGET /static/js/quill.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:21:54.201] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:21:54] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:21:54.202] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:21:54] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:21:54.207] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:21:54] "[36mGET /static/js/ajax.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:21:54.226] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:21:54] "[36mGET /static/js/TrianglesMosaicBg.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:21:54.264] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:21:54] "[36mGET /static/uploads/root/2aa7370bb1288d5e4c18e02862de8f55capture_20240903143440735.bmp HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:21:55.034] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:21:55] "[33mGET /static/js/quill.js.map HTTP/1.1[0m" 404 -[0m
+[32m[2025-02-03  18:21:55.041] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:21:55] "[33mGET /static/css/quill.snow.css.map HTTP/1.1[0m" 404 -[0m
+[32m[2025-02-03  18:21:55.233] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:21:55] "GET /api/get/userimage HTTP/1.1" 200 -[0m
+[32m[2025-02-03  18:21:55.501] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:21:55] "[36mGET /static/uploads/c4ca4238a0b923820dcc509a6f75849bscreenshot-1725345109184.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:22:10.503] _internal.py -> _log line:97 [INFO] :  * Detected change in '/home/ryan/blog/routes/blog.py', reloading[0m

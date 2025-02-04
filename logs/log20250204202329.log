@@ -1,0 +1,71 @@
+[33m[2025-02-04  20:23:29.272] _internal.py -> _log line:97 [WARNING] :  * Debugger is active![0m
+[32m[2025-02-04  20:23:29.272] _internal.py -> _log line:97 [INFO] :  * Debugger PIN: 140-724-297[0m
+[32m[2025-02-04  20:24:43.157] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:24:43] "GET /mail/x HTTP/1.1" 200 -[0m
+[32m[2025-02-04  20:24:43.474] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:24:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:24:43.540] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:24:43] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:24:43.547] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:24:43] "[36mGET /static/js/quill.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:24:43.548] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:24:43] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:24:43.551] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:24:43] "[36mGET /static/editormd/editormd.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:24:43.557] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:24:43] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:24:43.559] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:24:43] "[36mGET /static/js/ajax.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:24:43.661] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:24:43] "[36mGET /static/js/TrianglesMosaicBg.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:24:43.751] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:24:43] "[36mGET /static/image/touxiang.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:24:44.709] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:24:44] "GET /api/get/userimage HTTP/1.1" 200 -[0m
+[36m[2025-02-04  20:24:45.019] massage.py -> messages line:83 [DEBUG] : /messages,get a requrest,return[{'id': 2025020319482433, 'from_user': 'root', 'to_user': '123', 'subject': '123', 'body': '123', 'type_': '123', 'fromcansee': 1, 'tocansee': 1, 'date': '2025-02-03 19:48:24'}][0m
+[32m[2025-02-04  20:24:45.019] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:24:45] "GET /mail/messages HTTP/1.1" 200 -[0m
+[32m[2025-02-04  20:24:45.031] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:24:45] "[36mGET /static/uploads/c4ca4238a0b923820dcc509a6f75849bscreenshot-1725345109184.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:25:00.172] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:25:00] "GET /mail/mail/2025020319482433 HTTP/1.1" 200 -[0m
+[32m[2025-02-04  20:25:00.436] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:25:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:25:00.491] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:25:00] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:25:00.497] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:25:00] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:25:00.506] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:25:00] "[36mGET /static/editormd/editormd.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:25:00.509] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:25:00] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:25:00.512] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:25:00] "[36mGET /static/js/ajax.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:25:00.518] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:25:00] "[36mGET /static/js/quill.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:25:00.554] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:25:00] "[36mGET /static/js/TrianglesMosaicBg.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:25:00.621] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:25:00] "[36mGET /static/image/touxiang.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:25:01.849] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:25:01] "GET /api/get/userimage HTTP/1.1" 200 -[0m
+[32m[2025-02-04  20:25:02.218] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:25:02] "[36mGET /static/uploads/c4ca4238a0b923820dcc509a6f75849bscreenshot-1725345109184.png HTTP/1.1[0m" 304 -[0m
+[36m[2025-02-04  20:25:02.237] massage.py -> messages line:83 [DEBUG] : /messages,get a requrest,return[{'id': 2025020319482433, 'from_user': 'root', 'to_user': '123', 'subject': '123', 'body': '123', 'type_': '123', 'fromcansee': 1, 'tocansee': 1, 'date': '2025-02-03 19:48:24'}][0m
+[32m[2025-02-04  20:25:02.237] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:25:02] "GET /mail/messages HTTP/1.1" 200 -[0m
+[32m[2025-02-04  20:25:34.875] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:25:34] "GET /mail/mail/2025020319482433 HTTP/1.1" 200 -[0m
+[32m[2025-02-04  20:25:35.241] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:25:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:25:35.378] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:25:35] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:25:35.381] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:25:35] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:25:35.382] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:25:35] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:25:35.389] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:25:35] "[36mGET /static/editormd/editormd.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:25:35.393] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:25:35] "[36mGET /static/js/quill.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:25:35.412] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:25:35] "[36mGET /static/js/ajax.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:25:35.525] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:25:35] "[36mGET /static/js/TrianglesMosaicBg.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:25:35.547] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:25:35] "[36mGET /static/image/touxiang.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:25:36.583] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:25:36] "GET /api/get/userimage HTTP/1.1" 200 -[0m
+[36m[2025-02-04  20:25:36.891] massage.py -> messages line:83 [DEBUG] : /messages,get a requrest,return[{'id': 2025020319482433, 'from_user': 'root', 'to_user': '123', 'subject': '123', 'body': '123', 'type_': '123', 'fromcansee': 1, 'tocansee': 1, 'date': '2025-02-03 19:48:24'}][0m
+[32m[2025-02-04  20:25:36.892] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:25:36] "GET /mail/messages HTTP/1.1" 200 -[0m
+[32m[2025-02-04  20:25:36.899] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:25:36] "[36mGET /static/uploads/c4ca4238a0b923820dcc509a6f75849bscreenshot-1725345109184.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:26:13.020] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:26:13] "GET /mail/mail/2025020319482433 HTTP/1.1" 200 -[0m
+[32m[2025-02-04  20:26:13.266] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:26:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:26:13.418] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:26:13] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:26:13.430] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:26:13] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:26:13.448] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:26:13] "[36mGET /static/editormd/editormd.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:26:13.449] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:26:13] "[36mGET /static/js/quill.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:26:13.458] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:26:13] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:26:13.465] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:26:13] "[36mGET /static/js/ajax.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:26:13.517] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:26:13] "[36mGET /static/js/TrianglesMosaicBg.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:26:13.537] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:26:13] "[36mGET /static/image/touxiang.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:26:14.461] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:26:14] "GET /api/get/userimage HTTP/1.1" 200 -[0m
+[36m[2025-02-04  20:26:14.759] massage.py -> messages line:83 [DEBUG] : /messages,get a requrest,return[{'id': 2025020319482433, 'from_user': 'root', 'to_user': '123', 'subject': '123', 'body': '123', 'type_': '123', 'fromcansee': 1, 'tocansee': 1, 'date': '2025-02-03 19:48:24'}][0m
+[32m[2025-02-04  20:26:14.760] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:26:14] "GET /mail/messages HTTP/1.1" 200 -[0m
+[32m[2025-02-04  20:26:14.824] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:26:14] "[36mGET /static/uploads/c4ca4238a0b923820dcc509a6f75849bscreenshot-1725345109184.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:27:18.385] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:27:18] "GET /mail/ HTTP/1.1" 200 -[0m
+[32m[2025-02-04  20:27:18.770] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:27:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:27:18.832] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:27:18] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:27:18.832] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:27:18] "[36mGET /static/editormd/editormd.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:27:18.854] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:27:18] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:27:18.859] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:27:18] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:27:18.860] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:27:18] "[36mGET /static/js/ajax.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:27:18.862] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:27:18] "[36mGET /static/js/quill.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:27:18.919] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:27:18] "[36mGET /static/image/touxiang.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:27:18.929] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:27:18] "[36mGET /static/js/TrianglesMosaicBg.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:27:19.923] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:27:19] "GET /api/get/userimage HTTP/1.1" 200 -[0m
+[32m[2025-02-04  20:27:20.194] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:27:20] "[36mGET /static/uploads/c4ca4238a0b923820dcc509a6f75849bscreenshot-1725345109184.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:28:08.667] _internal.py -> _log line:97 [INFO] :  * Detected change in '/home/ryan/blog/routes/massage.py', reloading[0m

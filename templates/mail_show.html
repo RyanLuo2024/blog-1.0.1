@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}消息{% endblock %}
+
+{% block content %}
+<div class="container2">
+    <h1>消息 - {{ req }}</h1>
+    <div class="message-window" id="messageWindow">
+        <div class="message-list" id="messageList">
+            <!-- 消息列表将被动态加载 -->
+        </div>
+    </div>
+
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            function loadMessages() {
+                $.getJSON('/mail/messages', function(data) {
+                    var messageList = $('#messageList');
+                    messageList.empty();
+                    $.each(data, function(index, message) {
+                        if (message.id == {{ req }}){
+                            messageList.append(
+                                    '<p><strong>Date:</strong> ' + message.date + '</p>' +
+                                    '<p><strong>From:</strong> ' + message.from_user + '</p>' +
+                                    '<p><strong>To:</strong> ' + message.to_user + '</p>' +
+                                    '<p><strong>Subject:</strong> ' + message.subject + '</p>' +
+                                    '<p><strong>Type:</strong> ' + message.type_ + '</p>' +
+                                    '<p><strong>Body:</strong> <br>' + message.body + '</p>' +
+                                    '<a href="/mail/delete/'+message.id+'"">删除</a>'
+                            );
+                        }
+                        
+                    });
+                });
+            }
+
+            loadMessages();
+        });
+    </script>
+{% endblock %}

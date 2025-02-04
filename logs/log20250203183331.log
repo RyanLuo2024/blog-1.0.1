@@ -1,0 +1,8 @@
+[33m[2025-02-03  18:33:31.791] _internal.py -> _log line:97 [WARNING] :  * Debugger is active![0m
+[32m[2025-02-03  18:33:31.792] _internal.py -> _log line:97 [INFO] :  * Debugger PIN: 377-767-200[0m
+[32m[2025-02-03  18:33:36.044] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:33:36] "[35m[1mGET /search?search=markdown HTTP/1.1[0m" 500 -[0m
+[32m[2025-02-03  18:33:36.149] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:33:36] "[36mGET /search?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:33:36.189] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:33:36] "[36mGET /search?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:33:36.325] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:33:36] "GET /search?__debugger__=yes&cmd=resource&f=console.png&s=RAmgGGTov1J7hrAcaf31 HTTP/1.1" 200 -[0m
+[32m[2025-02-03  18:33:36.472] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:33:36] "[36mGET /search?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  18:34:52.204] _internal.py -> _log line:97 [INFO] :  * Detected change in '/home/ryan/blog/routes/others.py', reloading[0m

@@ -22,16 +22,16 @@ def getblog():
     sql.execute("SELECT id,title,word,userid,search,like,imageshow FROM articles")
     word = sql.get_return()
     sql.close()
-    new_table = []
-    for i in range(len(word)):
-        new_table.append([])
-        # print("debug::line 53")
-        for j in word[i]:
-            new_table[i].append(j)
-            # print("debug::line 56")
+    # new_table = []
+    # for i in range(len(word)):
+    #     new_table.append([])
+    #     # print("debug::line 53")
+    #     for j in word[i]:
+    #         new_table[i].append(j)
+    #         # print("debug::line 56")
             
-    # print("sql say --- Get db blogs in words , return :",new_table)
-    return new_table
+    # # print("sql say --- Get db blogs in words , return :",new_table)
+    return word
 def getuser():
     from includes.dbget import db
     sql = db()
@@ -97,6 +97,7 @@ class wordid():
         return self.uid
     
     def jiexi(self,uid):
+        uid = str(uid)
         uid = uid[0:-2]
         return datetime.datetime.strptime(uid,"%Y%m%d%H%M%S") 
 def is_null(username, password):

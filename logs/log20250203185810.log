@@ -1,0 +1,8 @@
+[33m[2025-02-03  18:58:10.262] _internal.py -> _log line:97 [WARNING] :  * Debugger is active![0m
+[32m[2025-02-03  18:58:10.263] _internal.py -> _log line:97 [INFO] :  * Debugger PIN: 377-767-200[0m
+[32m[2025-02-03  18:58:13.639] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:58:13] "[32mPOST /mail/send HTTP/1.1[0m" 302 -[0m
+[32m[2025-02-03  18:58:13.670] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:58:13] "GET /mail/ HTTP/1.1" 200 -[0m
+[32m[2025-02-03  18:58:13.793] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:58:13] "[33mGET /static/style.css HTTP/1.1[0m" 404 -[0m
+[32m[2025-02-03  18:58:16.328] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:58:16] "GET /mail/ HTTP/1.1" 200 -[0m
+[32m[2025-02-03  18:58:16.384] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 18:58:16] "[33mGET /static/style.css HTTP/1.1[0m" 404 -[0m
+[32m[2025-02-03  18:59:54.712] _internal.py -> _log line:97 [INFO] :  * Detected change in '/home/ryan/blog/routes/massage.py', reloading[0m

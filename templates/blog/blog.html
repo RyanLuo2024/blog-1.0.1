@@ -13,14 +13,18 @@
                 <div class="cushy-box">
                     <div class="image-container" class="list-cr-{{item[0]}}" onload="machimage('{{item[0]}}','list-cr-{{item[0]}}')">
                         {% if item[6] %}
-                            <img src="/static/image/blogtitilebg.png">
+                            <img src="{{ item[6] }}">
                         {% else %}
                             {{ item[6] }}
-                            <img src="{{ item[6] }}">
+                            <img src="/static/image/blogtitilebg.png">
                         {% endif %}
                     </div>
-                    <div style="height: 100%;width: 100%;">
+                    <div class="title" style="height: 100%;width: 60%;display:flexbox;">
                         <h1>{{item[1]}}</h1>
+                        <br>
+                        <h4>{{item[2][0:50]}}</h4>
+                        <h4>{{item[2][51:100]}}</h4>
+                        <h4>{{item[2][101:150]}}</h4>
                     </div>
                 </div>
             </a>

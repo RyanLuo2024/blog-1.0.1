@@ -180,14 +180,13 @@ def search():
         user_ = flask.request.cookies.get("cookieid")
         a=""
         lists = []
-        # # print(models.getblog())
-        # # print(flask.request.form["search"])
-        
-        for i in range(len(blog_list)):
-            # print(json.loads(blog_list[i][4])["list"])
-            # print(flask.request.form["search"] in json.loads(blog_list[i][4])["list"])
-            if str(flask.request.form["search"]) in json.loads(blog_list[i][4])["list"]:
-                lists.append(blog_list[i])
+        import jieba
+        search_query = flask.request.args.get("search")
+        if search_query:
+            cut = jieba.lcut(search_query)
+            for i in range(len(blog_list)):
+                if search_query in json.loads(blog_list[i][4])["list"]:
+                    lists.append(blog_list[i])
         import models
         cookie = flask.request.cookies.get("cookieid")
         flag=True

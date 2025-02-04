@@ -1,0 +1,13 @@
+[33m[2025-02-03  19:09:11.932] _internal.py -> _log line:97 [WARNING] :  * Debugger is active![0m
+[32m[2025-02-03  19:09:11.932] _internal.py -> _log line:97 [INFO] :  * Debugger PIN: 377-767-200[0m
+[32m[2025-02-03  19:09:14.903] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 19:09:14] "[35m[1mGET /mail/ HTTP/1.1[0m" 500 -[0m
+[32m[2025-02-03  19:09:15.084] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 19:09:15] "[36mGET /mail/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  19:09:15.084] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 19:09:15] "[36mGET /mail/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  19:09:15.349] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 19:09:15] "GET /mail/?__debugger__=yes&cmd=resource&f=console.png&s=b7ZO0LQsMzV0UF4aNE8o HTTP/1.1" 200 -[0m
+[32m[2025-02-03  19:09:15.477] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 19:09:15] "[36mGET /mail/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  19:09:19.198] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 19:09:19] "[35m[1mGET /mail/ HTTP/1.1[0m" 500 -[0m
+[32m[2025-02-03  19:09:19.276] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 19:09:19] "[36mGET /mail/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  19:09:19.311] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 19:09:19] "[36mGET /mail/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  19:09:19.481] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 19:09:19] "[36mGET /mail/?__debugger__=yes&cmd=resource&f=console.png&s=b7ZO0LQsMzV0UF4aNE8o HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  19:09:19.601] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [03/Feb/2025 19:09:19] "[36mGET /mail/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-03  19:10:04.197] _internal.py -> _log line:97 [INFO] :  * Detected change in '/home/ryan/blog/routes/massage.py', reloading[0m

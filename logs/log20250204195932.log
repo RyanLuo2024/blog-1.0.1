@@ -1,0 +1,23 @@
+[33m[2025-02-04  19:59:32.782] _internal.py -> _log line:97 [WARNING] :  * Debugger is active![0m
+[32m[2025-02-04  19:59:32.782] _internal.py -> _log line:97 [INFO] :  * Debugger PIN: 140-724-297[0m
+[32m[2025-02-04  19:59:36.015] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 19:59:36] "GET /mail/mail/2025020319482433 HTTP/1.1" 200 -[0m
+[32m[2025-02-04  19:59:36.127] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 19:59:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  19:59:36.176] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 19:59:36] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  19:59:36.178] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 19:59:36] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  19:59:36.180] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 19:59:36] "[36mGET /static/editormd/editormd.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  19:59:36.186] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 19:59:36] "[36mGET /static/js/quill.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  19:59:36.187] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 19:59:36] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  19:59:36.190] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 19:59:36] "[36mGET /static/js/ajax.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  19:59:36.238] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 19:59:36] "[36mGET /static/js/TrianglesMosaicBg.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  19:59:36.247] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 19:59:36] "[36mGET /static/image/touxiang.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  19:59:37.230] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 19:59:37] "[33mGET /static/js/quill.js.map HTTP/1.1[0m" 404 -[0m
+[32m[2025-02-04  19:59:37.236] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 19:59:37] "[33mGET /static/css/quill.snow.css.map HTTP/1.1[0m" 404 -[0m
+[32m[2025-02-04  19:59:37.401] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 19:59:37] "GET /api/get/userimage HTTP/1.1" 200 -[0m
+[32m[2025-02-04  19:59:37.561] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 19:59:37] "[36mGET /static/uploads/c4ca4238a0b923820dcc509a6f75849bscreenshot-1725345109184.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:00:01.531] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:00:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:00:01.535] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:00:01] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:00:01.550] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:00:01] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:00:01.550] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:00:01] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-04  20:00:01.821] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:00:01] "[33mGET /static/css/quill.snow.css.map HTTP/1.1[0m" 404 -[0m
+[32m[2025-02-04  20:00:02.688] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [04/Feb/2025 20:00:02] "[33mGET /static/js/quill.js.map HTTP/1.1[0m" 404 -[0m
+[32m[2025-02-04  20:03:08.825] _internal.py -> _log line:97 [INFO] :  * Detected change in '/home/ryan/blog/routes/massage.py', reloading[0m
