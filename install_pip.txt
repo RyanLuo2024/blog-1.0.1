@@ -8,3 +8,4 @@ flask-pagedown
 flask_markdown
 flask_socketio
 paramiko
+colorlog

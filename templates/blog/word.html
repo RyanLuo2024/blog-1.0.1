@@ -5,7 +5,18 @@
 {% block content %}
 
 <div class="container2">
-    
+    <!-- <script src="/static/js/vue.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/editormd/lib/marked.min.js"></script>
+    <script src="/static/editormd/lib/prettify.min.js"></script>
+    <script src="/static/editormd/lib/raphael.min.js"></script>
+    <script src="/static/editormd/lib/underscore.min.js"></script>
+    <script src="/static/editormd/lib/sequence-diagram.min.js"></script>
+    <script src="/static/editormd/lib/flowchart.min.js"></script>
+    <script src="/static/editormd/lib/jquery.flowchart.min.js"></script>
+    <script src="/static/editormd/editormd.js"></script>
+    <link rel="stylesheet" href="/static/css/github-markdown-light.min.css">
     <div>
         <style>
             img {
@@ -13,30 +24,31 @@
             max-height: 100%;
             }
         </style>
-        <div class="titleimage" >
-            <img src="{{ img }}" style="max-height: 100%;max-width: 100%;display: flex;    justify-content: center;align-items: center;  ">
+        <div class="word_header">
+            <div class="titleimage" >
+                <img src="{{ img }}" style="max-height: 100%;max-width: 100%;display: flex;    justify-content: center;align-items: center;  ">
+            </div>
+            <br>
+            <hr />
+            <br>
+            <h1> {{ title }} </h1> 
+            <a href="/me/{{ user }}">by - {{ user }}</a>
+            {% if a != ""%}
+                <a href="/removeword/{{ wordid }}">删除本文</a>
+            {% endif %}
+            <h6>本文id(wordid): {{ wordid }} </h6>       
         </div>
-        <br>
+        <!-- <div id="$m" class="markdown-body">{{ markdown }}</div> -->
+        <div style="width: 100%;background-color: rgb(243, 242, 242);" id="test-editormd">
+            <textarea style="display:none;" placeholder="markdown语言">{{ markdown }}</textarea>
+        </div>
         <hr />
-        <br>
-        <h1> {{ title }} </h1> 
-        <a href="/me/{{ user }}">by - {{ user }}</a>
-        <p> {{ words }}</p>
-        <hr />
-        {% if a != ""%}
-        <a href="/removeword/{{ wordid }}">删除本文</a>
-        {% endif %}<h6>本文id(wordid): {{ wordid }} </h6>       
+        <textarea id="$t" style="display:none">
+            {{ markdown }}
+        </textarea>
         <script>
-        var toolbarOptions = []
-        const quill = new Quill('#editor2', {
-        readOnly:true,
-        theme: 'snow',
-        modules: {
-            toolbar: toolbarOptions
-        },
-        });
         var vm = new Vue({
-        el: '#main-container',
+        el: '#test-editormd',
         data: {
             textareaContent:'',
             num: 200,
@@ -48,7 +60,15 @@
             }
         },
         });
-        
+        // $m.innerHTML = marked.parse($t.value);
+        editormd.markdownToHTML("test-editormd", {
+            htmlDecode      : "style,script,iframe",  
+            emoji           : true,
+            taskList        : true,
+            tex             : true,  // 默认不解析
+            flowChart       : true,  // 默认不解析
+            sequenceDiagram : true  // 默认不解析
+        });
         </script>
     </div>
 </div>
@@ -69,7 +89,7 @@
             });
             });
             </script>
-            <input type="text" id="word" name="word" style="display: none;"  value=" """+wordid+""" "><br>
+            <input type="text" id="word" name="word" style="display: none;"  value=" "+wordid+" "><br>
             <input type="text" id="touser" name="touser" style="display: none;"><br>
             <div><label for="content">评论:</label></div>
             <textarea maxlength="400" @input="monitorInput" v-model="textareaContent" id="content" placeholder="写点东西吧..." name="content"></textarea>

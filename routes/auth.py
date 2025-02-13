@@ -32,8 +32,8 @@ def register():
             login_massage = "温馨提示：账号和密码是必填"
             return flask.render_template(config.htmls.auth.register, message=login_massage)
         elif models.exist_user(username):
-            login_massage = "温馨提示：用户已存在，请直接登录"
-            return flask.redirect(flask.url_for('user_login'))
+            login_massage = "温馨提示：用户名已存在"
+            return flask.render_template(config.htmls.auth.register, message=login_massage)
         else:
             models.add_user(flask.request.form['username'], flask.request.form['password'] )
             return flask.redirect(flask.url_for('user_login'))

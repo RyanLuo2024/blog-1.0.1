@@ -3,21 +3,26 @@
 {% block title %}个人中心{% endblock %}
 
 {% block content %}
-<div class="container1">
-    <div class="form">
-        <h1>个人中心</h1>
-        {% if isme %}
-            <a href="/setmineimage">换头像</a>
-        {% endif %}
-        <p>{{cenghu}}的id(userid): {{ userid }}</p>
-        <p>{{cenghu}}的名字(username): {{ username_show }}</p>
-        <p>{{fengjing}}</p>
+<div class="container4" style="background-color: rgba(255, 255, 255, 0);">
+    <div>
+        <div class="information" style="display: grid;grid-template-columns: 1fr 1fr 1fr;">
+            <div class="profile-pic-me-div" style="display:grid block;grid-template-columns: 2fr 2fr 2fr;" >
+                <a class="profile-pic-me" id="profile-pic-me" style="width: 80px;height: 80px;" {% if isme %} href="/api/setmineimage" {% endif %}></a>
+                <p class="profile-pic-me-id" id="profile-pic-me-ids" style="display: none;">{{ username_show }}</p>
+            <!-- </div>
+            <div class="user-username-show" style="display: block;width: auto;height: 80;"> -->
+                <h1 style="font-family:'Microsoft Yahei', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;color: white;">
+<pre style="font-family:'Microsoft Yahei', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">    {{ username_show }}
+    uid(userid): {{ userid }}
+    {{fengjing}}</pre>
+            </div>  
+        </div>      
     </div>
 </div>
 <br>
 <br>
 <div class="container2">
-    <h1>文章列表</h1>
+    <h1>{{ cenghu }}的文章</h1>
         <div id="list">
             {% for item in posts %}
             <!--{{item}}-->

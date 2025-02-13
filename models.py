@@ -5,6 +5,7 @@ import includes.user as user
 import includes.admin as admin 
 import random
 import datetime
+import hashlib
 import models as db
 import flask,sqlite3
 import fakes
@@ -115,22 +116,28 @@ def is_existed(username, password):
         return False
     else:
         return True
-def exist_user(username):
+def md5_hash(text:str):
+    return hashlib.md5(text.encode('utf-8')).hexdigest()
+
+def exist_user(username, password):
     from includes.dbget import db
     sql = db()
-    sql.execute("SELECT * FROM user WHERE username = ?", (username,))
+    hashed_password = md5_hash(password)
+    sql.execute("SELECT * FROM user WHERE username = ? AND (password = ? OR password = ?)", (username, password, hashed_password))
     result = sql.get_return()
     sql.close()
     if len(result) == 0:
         return False
     else:
         return True
+
 def add_user(username, password):
     from includes.dbget import db
     sql = db()
     a = userid()
+    hashed_password = md5_hash(password)
     sqll = "INSERT INTO user(username, password, userid, type) VALUES (?, ?, ?, ?)"
-    sql.execute(sqll, (username, password, a.shengzheng(), "user"))
+    sql.execute(sqll, (username, hashed_password, a.shengzheng(), "user"))
     sql.close()
 class messages:
     def __init__(self):

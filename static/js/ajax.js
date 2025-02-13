@@ -26,9 +26,43 @@ function reqst()
   xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
   xmlhttp.send();
 }
+function reqst_user()
+{
+  var xmlhttp;
+  var user;
+  var myArr;
+  if (window.XMLHttpRequest)
+  {
+    // IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
+    xmlhttp=new XMLHttpRequest();
+  }
+  else
+  {
+    // IE6, IE5 浏览器执行代码
+    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange=function()
+  {
+    if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+      myArr = JSON.parse(this.responseText);
+      $(document).ready(function(){
+        $(".profile-pic-me").html("<img src=\""+myArr.data.image+"\" alt=\"Profile\">")
+    })
+    }
+  }
+  $(document).ready(function() {
+      var usernameShow = $('.profile-pic-me-id').text();
+      xmlhttp.open("GET","/api/get/userimage/"+usernameShow,true);
+      xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+      xmlhttp.send();
+  });
+}
+
 
 document.addEventListener("DOMContentLoaded", function () {
   reqst();
+  reqst_user();
 });
 function machimage(id,class_) {
   reqst();

@@ -25,6 +25,7 @@ def post(postid):
         if postid == blog_list[i][0] or postid == str(blog_list[i][0]): 
             title=profanity.censor(blog_list[i][1])
             words=md2html(profanity.censor(blog_list[i][2]))
+            Markdown_ = profanity.censor(blog_list[i][2])
             user =profanity.censor(blog_list[i][3])
             wordid =profanity.censor(blog_list[i][0])
             img =profanity.censor(blog_list[i][6])
@@ -41,7 +42,7 @@ def post(postid):
     # print(pingl)
     return flask.render_template(config.htmls.blog.word, comments=pingl, title=title, 
                                  words=words, user=user, a=a, wordid=wordid, 
-                                 username=flask.request.cookies.get("cookieid"), img=img)
+                                 username=flask.request.cookies.get("cookieid"), img=img, markdown=Markdown_)
 
 @blog.route('/add_comment', methods=['POST'])
 def add_comment():

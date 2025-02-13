@@ -45,6 +45,24 @@ def api_get_userimage():
     data = {"type":"200","data":{"image":"/"+image}}
     return flask.jsonify(data)
 
+@api.route("/api/get/userimage/<user>",methods=['GET'])
+def api_get_userimage_user(user):
+    import models
+    cookie = user
+    flag=True
+    image = "static/image/touxiang.png"
+    if (cookie==None) :flag = False
+    sql = db()
+    sql.execute("SELECT userid,username,usertype,image FROM user")
+    list = sql.get_return()
+    sql.close()
+    if (flag):
+        for i in list:
+            if cookie == i[1]:
+                if(i[3] != None) :image = i[3]
+    data = {"type":"200","data":{"image":"/"+image}}
+    return flask.jsonify(data)
+
 @api.route("/api/post/editormd_uplaodimg",methods=['POST'])
 def editormd_uplaodimg():
     f = flask.request.files.get('editormd-image-file')

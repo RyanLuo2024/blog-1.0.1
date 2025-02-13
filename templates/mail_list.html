@@ -1,9 +1,10 @@
-{% extends "base.html" %}
+{% extends "base_non.html" %}
 
 {% block title %}消息列表{% endblock %}
 
 {% block content %}
-<div class="container2">
+<div class="container5" style="width: 170PX;height: auto;background-color: white;">
+    <h1>消息列表</h1><br>
     <style>
         pre{
             color: gray;
@@ -26,11 +27,9 @@
                         messageList.append(
                             '<a href=/mail/mail/'+ message.id +'>'+
                                 '<div class="cushy-box2">' +
-                                    '<div style="display: flex;">' +
+                                    '<div style="display: block;left: 10px;">' +
                                         '<p><strong>Date:</strong> <pre cass="pre">' + message.date + '   </pre></p>' +
-                                        '<p><strong>From:</strong> <pre cass="pre">' + message.from_user + '   </pre></p> <br>\n' +
-                                        '<p><strong>To:</strong> <pre cass="pre">' + message.to_user + '   </pre></p> <br>\n' +
-                                        '<p><strong>Subject:</strong> <pre cass="pre">' + message.subject + '   </pre></p>' +
+                                        '<p><strong>From:</strong> <pre cass="pre">' + message.from_user + '   </pre></p>\n' +
                                     '</div>'+
                                 '</div>'+
                             '</a>'

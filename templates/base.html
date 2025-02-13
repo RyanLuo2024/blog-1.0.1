@@ -50,9 +50,17 @@
             display: block;
             margin-left: auto; /* 头像靠右 */
         }
+        .profile-pic-me {
+            display: block;
+        }
         .profile-pic img {
             width: 30px; /* 根据需要调整 */
             height: 30px; /* 保持宽高比 */
+            object-fit: cover;
+        }
+        .profile-pic-me img {
+            width: 80px; /* 根据需要调整 */
+            height: 80px; /* 保持宽高比 */
             object-fit: cover;
         }
         /* 清除浮动，如果不再使用float属性，可以删除这一部分 */
@@ -61,7 +69,20 @@
             display: table;
             clear: both;
         }
-        
+        #mail-content {
+            width: 250px;
+            position: absolute;
+            overflow: auto;  /* 如果内容超出容器，允许滚动 */
+        }
+        #mail-content_ {
+            width: 250px;
+            height: 1000px;
+            right: 0px;
+            position: absolute;
+            display: block;
+            top: 50px;
+            overflow: auto;  /* 如果内容超出容器，允许滚动 */
+        }
     </style>
 </head>
 <body >
@@ -94,8 +115,24 @@
         {% endif %}
     </header>
     <section>
+        <script>
+            $(document).ready(function() {
+                $.ajax({
+                    url: '/mail/',  // 确保这是正确的 URL
+                    type: 'GET',
+                    success: function(data) {
+                        $('#mail-content').html(data);  // 将加载的内容放入容器中
+                    },
+                    error: function(xhr, status, error) {
+                        console.error("Error loading the mail content: " + error);
+                        $('#mail-content').html('<p>Error loading content.</p>');  // 在加载失败时显示错误信息
+                    }
+                });
+            });
+        </script>
         <div id = "box" style="position: absolute;bottom: 0;width:100%;height: 100%;"></div>
         <!-- 背景颜色 -->
+        
         <div class="box" >
             
             <!-- 背景圆

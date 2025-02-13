@@ -84,28 +84,28 @@ def disconnect():
     logging.debug("链接已断开")
 
 @app.errorhandler(404)
-def err404():
-    return render_template("error.html",message="404 Not found,\n去其他地方看看吧")
+def err404(message):
+    return render_template("error.html",message=message)
 
 @app.errorhandler(403)
-def err403():
-    return render_template("error.html",message="do you have 权限?\n去其他地方看看吧")
+def err403(message):
+    return render_template("error.html",message=message)
 
 @app.errorhandler(401)
-def err401():
-    return render_template("error.html",message="do you have 权限?\n去其他地方看看吧")
+def err401(message):
+    return render_template("error.html",message=message)
 
 @app.errorhandler(400)
-def err400():
-    return render_template("error.html",message="您请求是不是有问题?我理解不了,\n去其他地方看看吧")
+def err400(message):
+    return render_template("error.html",message=message)
 
 @app.errorhandler(408)
-def err408():
-    return render_template("error.html",message="等你等超时了,刷新试试？")
+def err408(message):
+    return render_template("error.html",mmessage=message)
 
 @app.errorhandler(429)
-def err429():
-    return render_template("error.html",message="你请求太多次了，慢点！")
+def err429(message):
+    return render_template("error.html",message=message)
 
 
 if __name__ == '__main__':

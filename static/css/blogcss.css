@@ -75,6 +75,9 @@ footer {
     font-size: 16px; /* 文本大小 */
     font-weight: 500; /* 字体粗细 */
     overflow: hidden; /* 隐藏溢出的内容 */
+    /* overflow: hidden; */
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .cushy-box2 {
     position: relative;
@@ -93,6 +96,9 @@ footer {
     font-size: 16px; /* 文本大小 */
     font-weight: 500; /* 字体粗细 */
     overflow: hidden; /* 隐藏溢出的内容 */
+    /* overflow: hidden; */
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 

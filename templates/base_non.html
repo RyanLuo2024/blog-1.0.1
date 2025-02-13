@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/blogcss.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static',filename='editormd/css/editormd.css') }}"/>
+    <script src="{{ url_for('static',filename='editormd/editormd.min.js') }}"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/css/quill.snow.css" rel="stylesheet">
+    <script src="/static/js/quill.js"></script>
+    <script  src="/static/js/ajax.js"></script>
+    <script src="https://google.github.io/traceur-compiler/bin/traceur.js"></script>
+    <script src="https://google.github.io/traceur-compiler/bin/BrowserSystem.js"></script>
+    <script src="https://google.github.io/traceur-compiler/src/bootstrap.js"></script>
+    <script src="/static/js/TrianglesMosaicBg.min.js"></script>
+    <title>{% block title %}{% endblock %}</title>
+    <style>
+        /* 弹窗样式 */
+        .popup {
+            display: none;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 200px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 20px;
+            z-index: 9999;
+        }
+        .p {
+            padding: 10px 30px;
+            border: 1px solid #888;
+            margin: 20px 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #f8f8f8; /* 仅作为示例，根据需要调整 */
+        }
+        .banner-link {
+            margin: 0 10px; /* 根据需要调整间距 */
+        }
+        .profile-pic {
+            display: block;
+            margin-left: auto; /* 头像靠右 */
+        }
+        .profile-pic-me {
+            display: block;
+        }
+        .profile-pic img {
+            width: 30px; /* 根据需要调整 */
+            height: 30px; /* 保持宽高比 */
+            object-fit: cover;
+        }
+        .profile-pic-me img {
+            width: 80px; /* 根据需要调整 */
+            height: 80px; /* 保持宽高比 */
+            object-fit: cover;
+        }
+        /* 清除浮动，如果不再使用float属性，可以删除这一部分 */
+        header::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+    </style>
+</head>
+<body >
+    <div class="box" >
+        <div style="grid-row: 2;">{% block content %}{% endblock %}</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,664 @@
+[33m[2025-02-12  21:12:08.355] _internal.py -> _log line:97 [WARNING] :  * Debugger is active![0m
+[32m[2025-02-12  21:12:08.371] _internal.py -> _log line:97 [INFO] :  * Debugger PIN: 141-439-431[0m
+[32m[2025-02-12  21:12:13.844] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:12:13] "GET / HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:12:14.450] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:12:14] "GET /static/css/style.css HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:12:14.591] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:12:14] "GET /static/js/ajax.js HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:12:14.609] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:12:14] "GET /static/js/TrianglesMosaicBg.min.js HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:12:14.770] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:12:14] "GET /static/css/blogcss.css HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:12:14.814] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:12:14] "GET /static/editormd/editormd.min.js HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:12:14.836] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:12:14] "GET /static/css/quill.snow.css HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:12:14.903] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:12:14] "GET /static/js/quill.js HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:12:14.928] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:12:14] "GET /static/editormd/css/editormd.css HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:12:29.005] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:12:29] "GET /static/uploads/root/2aa7370bb1288d5e4c18e02862de8f55capture_20240903143440735.bmp HTTP/1.1" 200 -[0m
+[36m[2025-02-12  21:12:38.039] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.extra".[0m
+[36m[2025-02-12  21:12:38.059] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".[0m
+[36m[2025-02-12  21:12:38.062] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".[0m
+[36m[2025-02-12  21:12:38.063] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".[0m
+[36m[2025-02-12  21:12:38.068] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.def_list.DefListExtension".[0m
+[36m[2025-02-12  21:12:38.071] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.tables.TableExtension".[0m
+[36m[2025-02-12  21:12:38.074] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".[0m
+[36m[2025-02-12  21:12:38.079] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".[0m
+[36m[2025-02-12  21:12:38.080] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.extra.ExtraExtension".[0m
+[36m[2025-02-12  21:12:38.081] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.codehilite".[0m
+[36m[2025-02-12  21:12:38.083] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.codehilite.CodeHiliteExtension".[0m
+[36m[2025-02-12  21:12:38.084] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.tables".[0m
+[36m[2025-02-12  21:12:38.086] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.tables.TableExtension".[0m
+[36m[2025-02-12  21:12:38.091] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.toc".[0m
+[36m[2025-02-12  21:12:38.093] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.toc.TocExtension".[0m
+[32m[2025-02-12  21:12:38.226] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:12:38] "GET /post/2025020318291487 HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:12:38.377] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:12:38] "GET /static/js/jquery.min.js HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:12:38.384] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:12:38] "GET /static/editormd/lib/marked.min.js HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:12:38.386] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:12:38] "GET /static/editormd/lib/prettify.min.js HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:12:38.401] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:12:38] "GET /static/editormd/lib/underscore.min.js HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:12:38.403] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:12:38] "GET /static/editormd/lib/sequence-diagram.min.js HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:12:38.412] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:12:38] "GET /static/css/github-markdown-light.min.css HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:12:38.409] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:12:38] "GET /static/editormd/lib/raphael.min.js HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:12:38.450] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:12:38] "GET /static/editormd/lib/flowchart.min.js HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:12:38.460] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:12:38] "GET /static/editormd/lib/jquery.flowchart.min.js HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:12:38.464] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:12:38] "GET /static/editormd/editormd.js HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:13:14.335] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:13:14] "GET /api/get/userimage HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:13:14.904] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:13:14] "GET /static/uploads/c4ca4238a0b923820dcc509a6f75849bscreenshot-1725345109184.png HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:13:15.253] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:13:15] "GET /favicon.ico HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:13:15.399] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:13:15] "GET /favicon.ico HTTP/1.1" 200 -[0m
+[36m[2025-02-12  21:13:25.277] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.extra".[0m
+[32m[2025-02-12  21:13:25.281] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:13:25] "[36mGET /static/css/github-markdown-light.min.css HTTP/1.1[0m" 304 -[0m
+[36m[2025-02-12  21:13:25.283] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".[0m
+[36m[2025-02-12  21:13:25.298] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".[0m
+[32m[2025-02-12  21:13:25.294] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:13:25] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:13:25.303] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:13:25] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[36m[2025-02-12  21:13:25.307] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".[0m
+[36m[2025-02-12  21:13:25.325] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.def_list.DefListExtension".[0m
+[32m[2025-02-12  21:13:25.312] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:13:25] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[36m[2025-02-12  21:13:25.327] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.tables.TableExtension".[0m
+[36m[2025-02-12  21:13:25.332] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".[0m
+[36m[2025-02-12  21:13:25.334] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".[0m
+[36m[2025-02-12  21:13:25.338] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.extra.ExtraExtension".[0m
+[36m[2025-02-12  21:13:25.345] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.codehilite".[0m
+[36m[2025-02-12  21:13:25.349] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.codehilite.CodeHiliteExtension".[0m
+[36m[2025-02-12  21:13:25.352] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.tables".[0m
+[36m[2025-02-12  21:13:25.358] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.tables.TableExtension".[0m
+[36m[2025-02-12  21:13:25.360] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.toc".[0m
+[36m[2025-02-12  21:13:25.363] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.toc.TocExtension".[0m
+[32m[2025-02-12  21:13:25.465] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:13:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:13:25.468] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:13:25] "GET /post/2025020318291487 HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:13:26.862] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:13:26] "GET /static/css/quill.snow.css.map HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:13:29.325] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:13:29] "GET /static/js/quill.js.map HTTP/1.1" 200 -[0m
+[36m[2025-02-12  21:15:02.341] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.extra".[0m
+[36m[2025-02-12  21:15:02.362] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".[0m
+[36m[2025-02-12  21:15:02.375] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".[0m
+[36m[2025-02-12  21:15:02.412] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".[0m
+[36m[2025-02-12  21:15:02.414] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.def_list.DefListExtension".[0m
+[36m[2025-02-12  21:15:02.431] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.tables.TableExtension".[0m
+[36m[2025-02-12  21:15:02.431] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".[0m
+[36m[2025-02-12  21:15:02.444] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".[0m
+[36m[2025-02-12  21:15:02.447] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.extra.ExtraExtension".[0m
+[36m[2025-02-12  21:15:02.455] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.codehilite".[0m
+[36m[2025-02-12  21:15:02.470] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.codehilite.CodeHiliteExtension".[0m
+[36m[2025-02-12  21:15:02.470] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.tables".[0m
+[36m[2025-02-12  21:15:02.470] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.tables.TableExtension".[0m
+[36m[2025-02-12  21:15:02.470] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.toc".[0m
+[36m[2025-02-12  21:15:02.495] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.toc.TocExtension".[0m
+[32m[2025-02-12  21:15:02.834] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:02] "GET /post/2025020318291487 HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:15:03.257] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:15:03.515] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:03] "[36mGET /static/js/quill.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:15:03.541] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:03] "[36mGET /static/editormd/editormd.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:15:03.568] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:03] "[36mGET /static/css/github-markdown-light.min.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:15:03.748] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:03] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:15:03.916] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:03] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:15:03.920] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:03] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:15:03.948] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:03] "[36mGET /static/js/ajax.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:15:04.042] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:04] "[36mGET /static/js/TrianglesMosaicBg.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:15:04.122] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:04] "[36mGET /static/js/jquery.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:15:04.127] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:04] "[36mGET /static/editormd/lib/marked.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:15:04.140] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:04] "[36mGET /static/editormd/lib/prettify.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:15:04.281] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:04] "[36mGET /static/editormd/lib/raphael.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:15:04.323] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:04] "[36mGET /static/editormd/lib/sequence-diagram.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:15:04.352] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:04] "[36mGET /static/editormd/lib/underscore.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:15:04.359] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:04] "[36mGET /static/editormd/lib/flowchart.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:15:04.421] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:04] "[36mGET /static/editormd/lib/jquery.flowchart.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:15:04.462] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:04] "[36mGET /static/editormd/editormd.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:15:04.464] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:04] "[36mGET /static/uploads/root/2aa7370bb1288d5e4c18e02862de8f55capture_20240903143440735.bmp HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:15:08.488] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:08] "GET /static/js/quill.js.map HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:15:08.497] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:08] "GET /static/css/quill.snow.css.map HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:15:08.897] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:08] "GET /api/get/userimage HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:15:09.161] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:09] "[36mGET /static/uploads/c4ca4238a0b923820dcc509a6f75849bscreenshot-1725345109184.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:15:09.381] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:09] "GET /favicon.ico HTTP/1.1" 200 -[0m
+[36m[2025-02-12  21:15:34.736] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.extra".[0m
+[36m[2025-02-12  21:15:34.736] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".[0m
+[36m[2025-02-12  21:15:34.736] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".[0m
+[36m[2025-02-12  21:15:34.736] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".[0m
+[36m[2025-02-12  21:15:34.751] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.def_list.DefListExtension".[0m
+[36m[2025-02-12  21:15:34.754] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.tables.TableExtension".[0m
+[36m[2025-02-12  21:15:34.755] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".[0m
+[36m[2025-02-12  21:15:34.757] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".[0m
+[36m[2025-02-12  21:15:34.761] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.extra.ExtraExtension".[0m
+[36m[2025-02-12  21:15:34.763] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.codehilite".[0m
+[36m[2025-02-12  21:15:34.767] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.codehilite.CodeHiliteExtension".[0m
+[36m[2025-02-12  21:15:34.770] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.tables".[0m
+[36m[2025-02-12  21:15:34.774] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.tables.TableExtension".[0m
+[36m[2025-02-12  21:15:34.776] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.toc".[0m
+[36m[2025-02-12  21:15:34.777] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.toc.TocExtension".[0m
+[32m[2025-02-12  21:15:34.964] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:34] "GET /post/2025020318291487 HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:15:35.168] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:15:35.176] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:35] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:15:35.216] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:35] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:15:35.228] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:35] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:15:35.228] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:35] "[36mGET /static/editormd/editormd.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:15:35.237] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:35] "[36mGET /static/js/quill.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:15:35.245] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:35] "[36mGET /static/js/ajax.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:15:35.270] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:35] "[36mGET /static/js/TrianglesMosaicBg.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:15:35.292] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:35] "[36mGET /static/css/github-markdown-light.min.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:15:35.302] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:35] "[36mGET /static/js/jquery.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:15:35.306] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:35] "[36mGET /static/editormd/lib/marked.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:15:35.334] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:35] "[36mGET /static/editormd/lib/prettify.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:15:35.335] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:35] "[36mGET /static/editormd/lib/raphael.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:15:35.351] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:35] "[36mGET /static/editormd/lib/underscore.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:15:35.367] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:35] "[36mGET /static/editormd/lib/sequence-diagram.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:15:35.390] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:35] "[36mGET /static/editormd/lib/flowchart.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:15:35.401] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:35] "[36mGET /static/editormd/lib/jquery.flowchart.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:15:35.410] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:35] "[36mGET /static/editormd/editormd.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:15:35.444] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:35] "[36mGET /static/uploads/root/2aa7370bb1288d5e4c18e02862de8f55capture_20240903143440735.bmp HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:15:39.942] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:39] "GET /static/js/quill.js.map HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:15:39.953] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:39] "GET /static/css/quill.snow.css.map HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:15:40.223] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:40] "GET /api/get/userimage HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:15:40.581] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:40] "[36mGET /static/uploads/c4ca4238a0b923820dcc509a6f75849bscreenshot-1725345109184.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:15:40.875] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:15:40] "GET /favicon.ico HTTP/1.1" 200 -[0m
+[36m[2025-02-12  21:16:39.625] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.extra".[0m
+[36m[2025-02-12  21:16:39.625] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".[0m
+[36m[2025-02-12  21:16:39.633] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".[0m
+[36m[2025-02-12  21:16:39.633] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".[0m
+[36m[2025-02-12  21:16:39.633] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.def_list.DefListExtension".[0m
+[36m[2025-02-12  21:16:39.643] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.tables.TableExtension".[0m
+[36m[2025-02-12  21:16:39.645] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".[0m
+[36m[2025-02-12  21:16:39.646] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".[0m
+[36m[2025-02-12  21:16:39.654] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.extra.ExtraExtension".[0m
+[36m[2025-02-12  21:16:39.657] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.codehilite".[0m
+[36m[2025-02-12  21:16:39.660] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.codehilite.CodeHiliteExtension".[0m
+[36m[2025-02-12  21:16:39.663] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.tables".[0m
+[36m[2025-02-12  21:16:39.666] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.tables.TableExtension".[0m
+[36m[2025-02-12  21:16:39.668] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.toc".[0m
+[36m[2025-02-12  21:16:39.671] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.toc.TocExtension".[0m
+[32m[2025-02-12  21:16:39.865] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:16:39] "GET /post/2025020318291487 HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:16:40.084] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:16:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:16:40.140] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:16:40] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:16:40.162] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:16:40] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:16:40.248] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:16:40] "[36mGET /static/css/github-markdown-light.min.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:16:40.360] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:16:40] "[36mGET /static/editormd/editormd.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:16:40.483] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:16:40] "[36mGET /static/js/quill.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:16:40.507] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:16:40] "[36mGET /static/js/ajax.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:16:40.572] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:16:40] "[36mGET /static/js/TrianglesMosaicBg.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:16:40.652] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:16:40] "[36mGET /static/js/jquery.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:16:40.723] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:16:40] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:16:40.756] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:16:40] "[36mGET /static/editormd/lib/raphael.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:16:40.816] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:16:40] "[36mGET /static/editormd/lib/marked.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:16:40.840] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:16:40] "[36mGET /static/editormd/lib/prettify.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:16:40.898] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:16:40] "[36mGET /static/editormd/lib/jquery.flowchart.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:16:40.939] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:16:40] "[36mGET /static/editormd/lib/flowchart.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:16:40.946] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:16:40] "[36mGET /static/uploads/root/2aa7370bb1288d5e4c18e02862de8f55capture_20240903143440735.bmp HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:16:40.992] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:16:40] "[36mGET /static/editormd/lib/underscore.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:16:40.996] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:16:40] "[36mGET /static/editormd/lib/sequence-diagram.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:16:41.012] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:16:41] "[36mGET /static/editormd/editormd.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:16:44.884] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:16:44] "GET /static/js/quill.js.map HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:16:44.916] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:16:44] "GET /static/css/quill.snow.css.map HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:16:45.454] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:16:45] "GET /api/get/userimage HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:16:45.921] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:16:45] "[36mGET /static/uploads/c4ca4238a0b923820dcc509a6f75849bscreenshot-1725345109184.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:16:46.483] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:16:46] "GET /favicon.ico HTTP/1.1" 200 -[0m
+[36m[2025-02-12  21:18:47.099] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.extra".[0m
+[36m[2025-02-12  21:18:47.103] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".[0m
+[36m[2025-02-12  21:18:47.107] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".[0m
+[36m[2025-02-12  21:18:47.110] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".[0m
+[36m[2025-02-12  21:18:47.112] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.def_list.DefListExtension".[0m
+[36m[2025-02-12  21:18:47.114] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.tables.TableExtension".[0m
+[36m[2025-02-12  21:18:47.118] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".[0m
+[36m[2025-02-12  21:18:47.122] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".[0m
+[36m[2025-02-12  21:18:47.124] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.extra.ExtraExtension".[0m
+[36m[2025-02-12  21:18:47.127] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.codehilite".[0m
+[36m[2025-02-12  21:18:47.128] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.codehilite.CodeHiliteExtension".[0m
+[36m[2025-02-12  21:18:47.130] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.tables".[0m
+[36m[2025-02-12  21:18:47.132] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.tables.TableExtension".[0m
+[36m[2025-02-12  21:18:47.135] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.toc".[0m
+[36m[2025-02-12  21:18:47.136] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.toc.TocExtension".[0m
+[32m[2025-02-12  21:18:47.284] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:18:47] "GET /post/2025020318291487 HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:18:47.519] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:18:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:18:47.561] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:18:47] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:18:47.569] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:18:47] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:18:47.591] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:18:47] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:18:47.610] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:18:47] "[36mGET /static/editormd/editormd.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:18:47.647] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:18:47] "[36mGET /static/js/quill.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:18:47.664] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:18:47] "[36mGET /static/css/github-markdown-light.min.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:18:47.673] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:18:47] "[36mGET /static/js/ajax.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:18:47.691] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:18:47] "[36mGET /static/js/TrianglesMosaicBg.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:18:47.712] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:18:47] "[36mGET /static/js/jquery.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:18:47.769] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:18:47] "[36mGET /static/editormd/lib/marked.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:18:47.793] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:18:47] "[36mGET /static/editormd/lib/prettify.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:18:47.825] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:18:47] "[36mGET /static/editormd/lib/raphael.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:18:47.837] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:18:47] "[36mGET /static/editormd/lib/underscore.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:18:47.852] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:18:47] "[36mGET /static/editormd/lib/sequence-diagram.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:18:47.951] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:18:47] "GET /static/js/vue.js HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:18:47.967] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:18:47] "[36mGET /static/editormd/lib/jquery.flowchart.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:18:47.976] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:18:47] "[36mGET /static/editormd/editormd.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:18:47.977] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:18:47] "[36mGET /static/editormd/lib/flowchart.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:18:47.991] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:18:47] "[36mGET /static/uploads/root/2aa7370bb1288d5e4c18e02862de8f55capture_20240903143440735.bmp HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:18:52.433] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:18:52] "GET /static/js/quill.js.map HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:18:52.438] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:18:52] "GET /static/css/quill.snow.css.map HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:18:52.595] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:18:52] "GET /api/get/userimage HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:18:52.729] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:18:52] "[36mGET /static/uploads/c4ca4238a0b923820dcc509a6f75849bscreenshot-1725345109184.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:18:52.831] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:18:52] "GET /favicon.ico HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:18:53.967] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:18:53] "GET /sm/d36e99bb464f957c380ae20394a6f0e1d2856aeb7cad3b838104f3f2f1fd1d42.map HTTP/1.1" 200 -[0m
+[36m[2025-02-12  21:19:41.310] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.extra".[0m
+[36m[2025-02-12  21:19:41.312] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".[0m
+[36m[2025-02-12  21:19:41.313] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".[0m
+[36m[2025-02-12  21:19:41.313] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".[0m
+[36m[2025-02-12  21:19:41.319] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.def_list.DefListExtension".[0m
+[36m[2025-02-12  21:19:41.322] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.tables.TableExtension".[0m
+[36m[2025-02-12  21:19:41.324] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".[0m
+[36m[2025-02-12  21:19:41.325] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".[0m
+[36m[2025-02-12  21:19:41.325] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.extra.ExtraExtension".[0m
+[36m[2025-02-12  21:19:41.328] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.codehilite".[0m
+[36m[2025-02-12  21:19:41.330] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.codehilite.CodeHiliteExtension".[0m
+[36m[2025-02-12  21:19:41.331] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.tables".[0m
+[36m[2025-02-12  21:19:41.334] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.tables.TableExtension".[0m
+[36m[2025-02-12  21:19:41.336] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.toc".[0m
+[36m[2025-02-12  21:19:41.338] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.toc.TocExtension".[0m
+[32m[2025-02-12  21:19:41.449] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:19:41] "GET /post/2025020318291487 HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:19:41.654] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:19:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:19:41.674] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:19:41] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:19:41.677] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:19:41] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:19:41.684] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:19:41] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:19:41.685] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:19:41] "[36mGET /static/editormd/editormd.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:19:41.696] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:19:41] "[36mGET /static/js/quill.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:19:41.707] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:19:41] "[36mGET /static/css/github-markdown-light.min.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:19:41.711] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:19:41] "[36mGET /static/js/ajax.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:19:41.728] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:19:41] "[36mGET /static/js/TrianglesMosaicBg.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:19:41.733] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:19:41] "[36mGET /static/js/jquery.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:19:41.748] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:19:41] "[36mGET /static/editormd/lib/marked.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:19:41.760] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:19:41] "[36mGET /static/editormd/lib/prettify.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:19:41.761] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:19:41] "[36mGET /static/editormd/lib/raphael.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:19:41.781] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:19:41] "[36mGET /static/editormd/lib/underscore.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:19:41.807] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:19:41] "[36mGET /static/editormd/lib/flowchart.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:19:41.815] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:19:41] "[36mGET /static/editormd/lib/sequence-diagram.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:19:41.816] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:19:41] "[36mGET /static/editormd/lib/jquery.flowchart.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:19:41.833] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:19:41] "[36mGET /static/editormd/editormd.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:19:41.835] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:19:41] "[36mGET /static/uploads/root/2aa7370bb1288d5e4c18e02862de8f55capture_20240903143440735.bmp HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:19:43.602] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:19:43] "GET /static/css/quill.snow.css.map HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:19:43.608] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:19:43] "GET /static/js/quill.js.map HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:19:43.950] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:19:43] "GET /api/get/userimage HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:19:44.316] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:19:44] "[36mGET /static/uploads/c4ca4238a0b923820dcc509a6f75849bscreenshot-1725345109184.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:19:46.015] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:19:46] "GET /favicon.ico HTTP/1.1" 200 -[0m
+[36m[2025-02-12  21:20:33.287] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.extra".[0m
+[36m[2025-02-12  21:20:33.290] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".[0m
+[36m[2025-02-12  21:20:33.292] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".[0m
+[36m[2025-02-12  21:20:33.296] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".[0m
+[36m[2025-02-12  21:20:33.300] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.def_list.DefListExtension".[0m
+[36m[2025-02-12  21:20:33.303] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.tables.TableExtension".[0m
+[36m[2025-02-12  21:20:33.304] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".[0m
+[36m[2025-02-12  21:20:33.308] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".[0m
+[36m[2025-02-12  21:20:33.310] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.extra.ExtraExtension".[0m
+[36m[2025-02-12  21:20:33.313] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.codehilite".[0m
+[36m[2025-02-12  21:20:33.313] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.codehilite.CodeHiliteExtension".[0m
+[36m[2025-02-12  21:20:33.316] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.tables".[0m
+[36m[2025-02-12  21:20:33.318] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.tables.TableExtension".[0m
+[36m[2025-02-12  21:20:33.321] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.toc".[0m
+[36m[2025-02-12  21:20:33.323] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.toc.TocExtension".[0m
+[32m[2025-02-12  21:20:33.524] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:33] "GET /post/2025020318291487 HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:20:33.806] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:20:33.863] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:33] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:20:33.868] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:33] "[36mGET /static/editormd/editormd.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:20:33.876] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:33] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:20:33.879] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:33] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:20:33.901] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:33] "[36mGET /static/js/quill.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:20:33.916] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:33] "[36mGET /static/js/ajax.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:20:33.929] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:33] "[36mGET /static/css/github-markdown-light.min.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:20:33.946] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:33] "[36mGET /static/js/TrianglesMosaicBg.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:20:33.949] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:33] "[36mGET /static/js/jquery.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:20:34.058] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:34] "[36mGET /static/editormd/lib/marked.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:20:34.068] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:34] "[36mGET /static/editormd/lib/prettify.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:20:34.096] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:34] "[36mGET /static/editormd/lib/raphael.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:20:34.127] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:34] "[36mGET /static/editormd/lib/sequence-diagram.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:20:34.133] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:34] "[36mGET /static/editormd/lib/underscore.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:20:34.158] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:34] "[36mGET /static/editormd/lib/flowchart.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:20:34.190] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:34] "[36mGET /static/editormd/lib/jquery.flowchart.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:20:34.207] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:34] "[36mGET /static/uploads/root/2aa7370bb1288d5e4c18e02862de8f55capture_20240903143440735.bmp HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:20:34.207] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:34] "[36mGET /static/editormd/editormd.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:20:35.553] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:35] "GET /static/js/quill.js.map HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:20:35.558] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:35] "GET /static/css/quill.snow.css.map HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:20:36.225] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:36] "GET /api/get/userimage HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:20:36.605] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:36] "[36mGET /static/uploads/c4ca4238a0b923820dcc509a6f75849bscreenshot-1725345109184.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:20:36.966] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:36] "GET /favicon.ico HTTP/1.1" 200 -[0m
+[36m[2025-02-12  21:20:56.411] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.extra".[0m
+[36m[2025-02-12  21:20:56.413] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".[0m
+[36m[2025-02-12  21:20:56.417] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".[0m
+[36m[2025-02-12  21:20:56.420] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".[0m
+[36m[2025-02-12  21:20:56.422] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.def_list.DefListExtension".[0m
+[36m[2025-02-12  21:20:56.424] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.tables.TableExtension".[0m
+[36m[2025-02-12  21:20:56.427] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".[0m
+[36m[2025-02-12  21:20:56.429] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".[0m
+[36m[2025-02-12  21:20:56.431] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.extra.ExtraExtension".[0m
+[36m[2025-02-12  21:20:56.433] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.codehilite".[0m
+[36m[2025-02-12  21:20:56.434] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.codehilite.CodeHiliteExtension".[0m
+[36m[2025-02-12  21:20:56.436] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.tables".[0m
+[36m[2025-02-12  21:20:56.438] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.tables.TableExtension".[0m
+[36m[2025-02-12  21:20:56.439] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.toc".[0m
+[36m[2025-02-12  21:20:56.441] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.toc.TocExtension".[0m
+[32m[2025-02-12  21:20:56.578] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:56] "GET /post/2025020318291487 HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:20:56.797] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:20:56.810] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:56] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:20:56.826] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:56] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:20:56.841] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:56] "[36mGET /static/editormd/editormd.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:20:56.850] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:56] "[36mGET /static/js/quill.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:20:56.855] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:56] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:20:56.889] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:56] "[36mGET /static/js/ajax.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:20:56.925] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:56] "[36mGET /static/css/github-markdown-light.min.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:20:56.935] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:56] "[36mGET /static/js/TrianglesMosaicBg.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:20:56.945] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:56] "[36mGET /static/js/jquery.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:20:56.969] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:56] "[36mGET /static/editormd/lib/marked.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:20:56.975] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:56] "[36mGET /static/editormd/lib/prettify.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:20:57.009] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:57] "[36mGET /static/editormd/lib/raphael.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:20:57.014] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:57] "[36mGET /static/editormd/lib/underscore.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:20:57.020] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:57] "[36mGET /static/editormd/lib/sequence-diagram.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:20:57.056] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:57] "[36mGET /static/editormd/lib/flowchart.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:20:57.062] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:57] "[36mGET /static/editormd/lib/jquery.flowchart.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:20:57.062] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:57] "[36mGET /static/editormd/editormd.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:20:57.146] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:57] "[36mGET /static/uploads/root/2aa7370bb1288d5e4c18e02862de8f55capture_20240903143440735.bmp HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:20:58.720] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:58] "GET /static/js/quill.js.map HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:20:58.821] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:58] "GET /static/css/quill.snow.css.map HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:20:59.169] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:59] "GET /api/get/userimage HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:20:59.497] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:59] "[36mGET /static/uploads/c4ca4238a0b923820dcc509a6f75849bscreenshot-1725345109184.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:20:59.823] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:20:59] "GET /favicon.ico HTTP/1.1" 200 -[0m
+[36m[2025-02-12  21:22:30.387] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.extra".[0m
+[36m[2025-02-12  21:22:30.389] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".[0m
+[36m[2025-02-12  21:22:30.389] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".[0m
+[36m[2025-02-12  21:22:30.389] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".[0m
+[36m[2025-02-12  21:22:30.407] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.def_list.DefListExtension".[0m
+[36m[2025-02-12  21:22:30.412] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.tables.TableExtension".[0m
+[36m[2025-02-12  21:22:30.422] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".[0m
+[36m[2025-02-12  21:22:30.424] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".[0m
+[36m[2025-02-12  21:22:30.426] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.extra.ExtraExtension".[0m
+[36m[2025-02-12  21:22:30.428] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.codehilite".[0m
+[36m[2025-02-12  21:22:30.430] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.codehilite.CodeHiliteExtension".[0m
+[36m[2025-02-12  21:22:30.432] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.tables".[0m
+[36m[2025-02-12  21:22:30.434] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.tables.TableExtension".[0m
+[36m[2025-02-12  21:22:30.438] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.toc".[0m
+[36m[2025-02-12  21:22:30.440] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.toc.TocExtension".[0m
+[32m[2025-02-12  21:22:30.692] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:22:30] "GET /post/2025020318291487 HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:22:30.991] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:22:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:22:31.037] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:22:31] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:22:31.053] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:22:31] "[36mGET /static/editormd/editormd.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:22:31.065] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:22:31] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:22:31.072] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:22:31] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:22:31.110] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:22:31] "[36mGET /static/js/quill.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:22:31.148] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:22:31] "[36mGET /static/css/github-markdown-light.min.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:22:31.151] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:22:31] "[36mGET /static/js/TrianglesMosaicBg.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:22:31.156] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:22:31] "[36mGET /static/js/ajax.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:22:31.264] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:22:31] "[36mGET /static/js/jquery.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:22:31.295] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:22:31] "[36mGET /static/editormd/lib/prettify.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:22:31.310] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:22:31] "[36mGET /static/editormd/lib/raphael.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:22:31.314] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:22:31] "[36mGET /static/editormd/lib/marked.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:22:31.389] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:22:31] "[36mGET /static/editormd/lib/underscore.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:22:31.474] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:22:31] "[36mGET /static/editormd/lib/sequence-diagram.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:22:31.485] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:22:31] "[36mGET /static/editormd/lib/flowchart.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:22:31.491] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:22:31] "[36mGET /static/editormd/lib/jquery.flowchart.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:22:31.550] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:22:31] "[36mGET /static/editormd/editormd.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:22:31.739] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:22:31] "[36mGET /static/uploads/root/2aa7370bb1288d5e4c18e02862de8f55capture_20240903143440735.bmp HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:22:32.555] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:22:32] "GET /static/js/quill.js.map HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:22:32.565] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:22:32] "GET /static/css/quill.snow.css.map HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:22:33.235] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:22:33] "GET /api/get/userimage HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:22:33.755] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:22:33] "[36mGET /static/uploads/c4ca4238a0b923820dcc509a6f75849bscreenshot-1725345109184.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:22:34.197] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:22:34] "GET /favicon.ico HTTP/1.1" 200 -[0m
+[36m[2025-02-12  21:23:19.433] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.extra".[0m
+[36m[2025-02-12  21:23:19.433] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".[0m
+[36m[2025-02-12  21:23:19.490] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".[0m
+[36m[2025-02-12  21:23:19.513] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".[0m
+[36m[2025-02-12  21:23:19.519] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.def_list.DefListExtension".[0m
+[36m[2025-02-12  21:23:19.522] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.tables.TableExtension".[0m
+[36m[2025-02-12  21:23:19.525] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".[0m
+[36m[2025-02-12  21:23:19.529] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".[0m
+[36m[2025-02-12  21:23:19.550] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.extra.ExtraExtension".[0m
+[36m[2025-02-12  21:23:19.557] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.codehilite".[0m
+[36m[2025-02-12  21:23:19.566] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.codehilite.CodeHiliteExtension".[0m
+[36m[2025-02-12  21:23:19.569] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.tables".[0m
+[36m[2025-02-12  21:23:19.580] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.tables.TableExtension".[0m
+[36m[2025-02-12  21:23:19.587] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.toc".[0m
+[36m[2025-02-12  21:23:19.598] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.toc.TocExtension".[0m
+[32m[2025-02-12  21:23:20.140] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:20] "GET /post/2025020318291487 HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:23:20.520] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:21.108] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:21] "[36mGET /static/css/github-markdown-light.min.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:21.111] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:21] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:21.113] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:21] "[36mGET /static/editormd/editormd.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:21.174] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:21] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:21.174] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:21] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:21.226] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:21] "[36mGET /static/js/quill.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:21.338] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:21] "[36mGET /static/js/TrianglesMosaicBg.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:21.360] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:21] "[36mGET /static/js/ajax.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:21.488] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:21] "[36mGET /static/editormd/lib/prettify.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:21.507] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:21] "[36mGET /static/editormd/lib/marked.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:21.601] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:21] "[36mGET /static/js/jquery.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:21.639] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:21] "[36mGET /static/editormd/lib/raphael.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:21.690] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:21] "[36mGET /static/editormd/lib/underscore.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:21.714] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:21] "[36mGET /static/editormd/lib/sequence-diagram.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:21.732] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:21] "[36mGET /static/editormd/lib/flowchart.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:21.835] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:21] "[36mGET /static/editormd/lib/jquery.flowchart.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:21.849] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:21] "[36mGET /static/editormd/editormd.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:21.854] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:21] "[36mGET /static/uploads/root/2aa7370bb1288d5e4c18e02862de8f55capture_20240903143440735.bmp HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:22.701] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:22] "GET /api/get/userimage HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:23:23.264] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:23] "[36mGET /static/uploads/c4ca4238a0b923820dcc509a6f75849bscreenshot-1725345109184.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:23.595] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:23] "GET /favicon.ico HTTP/1.1" 200 -[0m
+[36m[2025-02-12  21:23:40.826] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.extra".[0m
+[36m[2025-02-12  21:23:40.840] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".[0m
+[36m[2025-02-12  21:23:40.844] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".[0m
+[36m[2025-02-12  21:23:40.848] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".[0m
+[36m[2025-02-12  21:23:40.852] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.def_list.DefListExtension".[0m
+[36m[2025-02-12  21:23:40.858] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.tables.TableExtension".[0m
+[36m[2025-02-12  21:23:40.862] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".[0m
+[36m[2025-02-12  21:23:40.867] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".[0m
+[36m[2025-02-12  21:23:40.874] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.extra.ExtraExtension".[0m
+[36m[2025-02-12  21:23:40.879] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.codehilite".[0m
+[36m[2025-02-12  21:23:40.883] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.codehilite.CodeHiliteExtension".[0m
+[36m[2025-02-12  21:23:40.888] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.tables".[0m
+[36m[2025-02-12  21:23:40.890] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.tables.TableExtension".[0m
+[36m[2025-02-12  21:23:40.893] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.toc".[0m
+[36m[2025-02-12  21:23:40.893] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.toc.TocExtension".[0m
+[32m[2025-02-12  21:23:41.031] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:41] "GET /post/2025020318291487 HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:23:41.370] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:41.412] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:41] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:41.428] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:41] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:41.437] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:41] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:41.439] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:41] "[36mGET /static/editormd/editormd.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:41.476] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:41] "[36mGET /static/js/quill.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:41.510] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:41] "[36mGET /static/js/ajax.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:41.517] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:41] "[36mGET /static/css/github-markdown-light.min.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:41.523] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:41] "[36mGET /static/js/TrianglesMosaicBg.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:41.532] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:41] "[36mGET /static/js/jquery.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:41.541] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:41] "[36mGET /static/editormd/lib/marked.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:41.581] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:41] "[36mGET /static/editormd/lib/prettify.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:41.630] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:41] "[36mGET /static/editormd/lib/raphael.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:41.660] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:41] "[36mGET /static/editormd/lib/sequence-diagram.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:41.677] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:41] "[36mGET /static/editormd/lib/underscore.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:41.731] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:41] "[36mGET /static/editormd/lib/flowchart.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:41.754] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:41] "[36mGET /static/editormd/lib/jquery.flowchart.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:41.794] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:41] "[36mGET /static/editormd/editormd.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:41.807] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:41] "[36mGET /static/uploads/root/2aa7370bb1288d5e4c18e02862de8f55capture_20240903143440735.bmp HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:44.586] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:44] "GET /api/get/userimage HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:23:45.390] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:45] "[36mGET /static/uploads/c4ca4238a0b923820dcc509a6f75849bscreenshot-1725345109184.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:45.589] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:45] "GET /favicon.ico HTTP/1.1" 200 -[0m
+[36m[2025-02-12  21:23:50.481] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.extra".[0m
+[36m[2025-02-12  21:23:50.485] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".[0m
+[36m[2025-02-12  21:23:50.490] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".[0m
+[36m[2025-02-12  21:23:50.494] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".[0m
+[36m[2025-02-12  21:23:50.497] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.def_list.DefListExtension".[0m
+[36m[2025-02-12  21:23:50.500] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.tables.TableExtension".[0m
+[36m[2025-02-12  21:23:50.503] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".[0m
+[36m[2025-02-12  21:23:50.503] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".[0m
+[36m[2025-02-12  21:23:50.503] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.extra.ExtraExtension".[0m
+[36m[2025-02-12  21:23:50.516] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.codehilite".[0m
+[36m[2025-02-12  21:23:50.521] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.codehilite.CodeHiliteExtension".[0m
+[36m[2025-02-12  21:23:50.526] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.tables".[0m
+[36m[2025-02-12  21:23:50.531] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.tables.TableExtension".[0m
+[36m[2025-02-12  21:23:50.536] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.toc".[0m
+[36m[2025-02-12  21:23:50.540] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.toc.TocExtension".[0m
+[32m[2025-02-12  21:23:50.662] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:50] "GET /post/2025020318291487 HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:23:50.940] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:50.963] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:50] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:51.070] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:51] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:51.087] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:51] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:51.102] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:51] "[36mGET /static/editormd/editormd.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:51.145] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:51] "[36mGET /static/js/quill.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:51.149] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:51] "[36mGET /static/css/github-markdown-light.min.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:51.160] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:51] "[36mGET /static/js/ajax.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:51.174] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:51] "[36mGET /static/js/TrianglesMosaicBg.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:51.191] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:51] "[36mGET /static/js/jquery.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:51.248] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:51] "[36mGET /static/editormd/lib/marked.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:51.269] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:51] "[36mGET /static/editormd/lib/prettify.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:51.279] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:51] "[36mGET /static/editormd/lib/raphael.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:51.303] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:51] "[36mGET /static/editormd/lib/underscore.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:51.334] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:51] "[36mGET /static/editormd/lib/sequence-diagram.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:51.361] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:51] "[36mGET /static/editormd/lib/jquery.flowchart.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:51.362] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:51] "[36mGET /static/editormd/lib/flowchart.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:51.366] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:51] "[36mGET /static/editormd/editormd.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:51.413] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:51] "[36mGET /static/uploads/root/2aa7370bb1288d5e4c18e02862de8f55capture_20240903143440735.bmp HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:53.966] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:53] "GET /api/get/userimage HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:23:55.157] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:55] "[36mGET /static/uploads/c4ca4238a0b923820dcc509a6f75849bscreenshot-1725345109184.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:23:55.241] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:23:55] "GET /favicon.ico HTTP/1.1" 200 -[0m
+[36m[2025-02-12  21:24:14.999] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.extra".[0m
+[36m[2025-02-12  21:24:15.004] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".[0m
+[36m[2025-02-12  21:24:15.005] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".[0m
+[36m[2025-02-12  21:24:15.016] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".[0m
+[36m[2025-02-12  21:24:15.029] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.def_list.DefListExtension".[0m
+[36m[2025-02-12  21:24:15.042] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.tables.TableExtension".[0m
+[36m[2025-02-12  21:24:15.046] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".[0m
+[36m[2025-02-12  21:24:15.050] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".[0m
+[36m[2025-02-12  21:24:15.053] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.extra.ExtraExtension".[0m
+[36m[2025-02-12  21:24:15.069] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.codehilite".[0m
+[36m[2025-02-12  21:24:15.072] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.codehilite.CodeHiliteExtension".[0m
+[36m[2025-02-12  21:24:15.072] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.tables".[0m
+[36m[2025-02-12  21:24:15.072] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.tables.TableExtension".[0m
+[36m[2025-02-12  21:24:15.072] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.toc".[0m
+[36m[2025-02-12  21:24:15.087] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.toc.TocExtension".[0m
+[32m[2025-02-12  21:24:15.541] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:15] "GET /post/2025020318291487 HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:24:15.965] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:24:15.983] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:15] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:24:16.032] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:16] "[36mGET /static/editormd/editormd.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:24:16.034] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:16] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:24:16.043] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:16] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:24:16.057] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:16] "[36mGET /static/js/quill.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:24:16.061] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:16] "[36mGET /static/js/ajax.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:24:16.090] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:16] "[36mGET /static/css/github-markdown-light.min.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:24:16.127] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:16] "[36mGET /static/js/TrianglesMosaicBg.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:24:16.143] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:16] "[36mGET /static/js/jquery.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:24:16.150] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:16] "[36mGET /static/editormd/lib/marked.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:24:16.178] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:16] "[36mGET /static/editormd/lib/prettify.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:24:16.191] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:16] "[36mGET /static/editormd/lib/raphael.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:24:16.199] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:16] "[36mGET /static/editormd/lib/underscore.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:24:16.228] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:16] "[36mGET /static/editormd/lib/sequence-diagram.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:24:16.229] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:16] "[36mGET /static/editormd/lib/flowchart.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:24:16.252] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:16] "[36mGET /static/editormd/lib/jquery.flowchart.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:24:16.255] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:16] "[36mGET /static/editormd/editormd.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:24:16.292] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:16] "[36mGET /static/uploads/root/2aa7370bb1288d5e4c18e02862de8f55capture_20240903143440735.bmp HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:24:17.701] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:17] "GET /api/get/userimage HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:24:18.430] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:18] "[36mGET /static/uploads/c4ca4238a0b923820dcc509a6f75849bscreenshot-1725345109184.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:24:18.529] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:18] "GET /favicon.ico HTTP/1.1" 200 -[0m
+[36m[2025-02-12  21:24:40.617] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.extra".[0m
+[36m[2025-02-12  21:24:40.620] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".[0m
+[36m[2025-02-12  21:24:40.620] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".[0m
+[36m[2025-02-12  21:24:40.632] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".[0m
+[36m[2025-02-12  21:24:40.636] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.def_list.DefListExtension".[0m
+[36m[2025-02-12  21:24:40.639] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.tables.TableExtension".[0m
+[36m[2025-02-12  21:24:40.643] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".[0m
+[36m[2025-02-12  21:24:40.649] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".[0m
+[36m[2025-02-12  21:24:40.654] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.extra.ExtraExtension".[0m
+[36m[2025-02-12  21:24:40.656] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.codehilite".[0m
+[36m[2025-02-12  21:24:40.667] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.codehilite.CodeHiliteExtension".[0m
+[36m[2025-02-12  21:24:40.671] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.tables".[0m
+[36m[2025-02-12  21:24:40.678] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.tables.TableExtension".[0m
+[36m[2025-02-12  21:24:40.683] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.toc".[0m
+[36m[2025-02-12  21:24:40.687] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.toc.TocExtension".[0m
+[32m[2025-02-12  21:24:41.039] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:41] "GET /post/2025020318291487 HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:24:41.541] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:24:41.555] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:41] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:24:41.567] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:41] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:24:41.577] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:41] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:24:41.611] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:41] "[36mGET /static/js/quill.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:24:41.615] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:41] "[36mGET /static/editormd/editormd.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:24:41.635] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:41] "[36mGET /static/js/ajax.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:24:41.666] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:41] "[36mGET /static/js/jquery.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:24:41.666] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:41] "[36mGET /static/js/TrianglesMosaicBg.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:24:41.685] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:41] "[36mGET /static/css/github-markdown-light.min.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:24:41.688] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:41] "[36mGET /static/editormd/lib/marked.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:24:41.694] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:41] "[36mGET /static/editormd/lib/prettify.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:24:41.700] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:41] "[36mGET /static/editormd/lib/raphael.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:24:41.730] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:41] "[36mGET /static/editormd/lib/underscore.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:24:41.733] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:41] "[36mGET /static/editormd/lib/sequence-diagram.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:24:41.757] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:41] "[36mGET /static/editormd/lib/flowchart.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:24:41.769] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:41] "[36mGET /static/editormd/editormd.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:24:41.774] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:41] "[36mGET /static/editormd/lib/jquery.flowchart.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:24:41.799] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:41] "[36mGET /static/uploads/root/2aa7370bb1288d5e4c18e02862de8f55capture_20240903143440735.bmp HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:24:45.393] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:45] "GET /api/get/userimage HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:24:46.184] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:46] "[36mGET /static/uploads/c4ca4238a0b923820dcc509a6f75849bscreenshot-1725345109184.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:24:46.366] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:46] "GET /favicon.ico HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:24:58.954] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:58] "[36mGET /static/css/github-markdown-light.min.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:24:59.007] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:59] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:24:59.071] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:59] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:24:59.111] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:59] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:24:59.161] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:24:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:25:00.455] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:25:00] "GET /static/css/quill.snow.css.map HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:25:03.900] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:25:03] "GET /static/js/quill.js.map HTTP/1.1" 200 -[0m
+[36m[2025-02-12  21:25:34.268] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.extra".[0m
+[36m[2025-02-12  21:25:34.276] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".[0m
+[36m[2025-02-12  21:25:34.298] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".[0m
+[36m[2025-02-12  21:25:34.304] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".[0m
+[36m[2025-02-12  21:25:34.335] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.def_list.DefListExtension".[0m
+[36m[2025-02-12  21:25:34.341] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.tables.TableExtension".[0m
+[36m[2025-02-12  21:25:34.354] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".[0m
+[36m[2025-02-12  21:25:34.365] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".[0m
+[36m[2025-02-12  21:25:34.371] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.extra.ExtraExtension".[0m
+[36m[2025-02-12  21:25:34.378] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.codehilite".[0m
+[36m[2025-02-12  21:25:34.395] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.codehilite.CodeHiliteExtension".[0m
+[36m[2025-02-12  21:25:34.405] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.tables".[0m
+[36m[2025-02-12  21:25:34.412] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.tables.TableExtension".[0m
+[36m[2025-02-12  21:25:34.414] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.toc".[0m
+[36m[2025-02-12  21:25:34.426] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.toc.TocExtension".[0m
+[32m[2025-02-12  21:25:34.898] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:25:34] "GET /post/2025020318291487 HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:25:35.465] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:25:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:25:35.598] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:25:35] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:25:35.629] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:25:35] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:25:35.647] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:25:35] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:25:35.671] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:25:35] "[36mGET /static/editormd/editormd.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:25:35.676] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:25:35] "[36mGET /static/js/quill.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:25:35.737] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:25:35] "[36mGET /static/css/github-markdown-light.min.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:25:35.764] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:25:35] "[36mGET /static/js/ajax.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:25:35.789] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:25:35] "[36mGET /static/js/TrianglesMosaicBg.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:25:35.883] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:25:35] "[36mGET /static/js/jquery.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:25:35.903] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:25:35] "[36mGET /static/editormd/lib/marked.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:25:35.935] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:25:35] "[36mGET /static/editormd/lib/prettify.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:25:35.975] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:25:35] "[36mGET /static/editormd/lib/underscore.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:25:35.987] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:25:35] "[36mGET /static/editormd/lib/raphael.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:25:36.140] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:25:36] "[36mGET /static/editormd/lib/flowchart.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:25:36.183] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:25:36] "[36mGET /static/editormd/lib/jquery.flowchart.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:25:36.201] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:25:36] "[36mGET /static/editormd/lib/sequence-diagram.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:25:36.275] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:25:36] "[36mGET /static/editormd/editormd.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:25:36.341] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:25:36] "[36mGET /static/uploads/root/2aa7370bb1288d5e4c18e02862de8f55capture_20240903143440735.bmp HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:25:36.592] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:25:36] "GET /static/js/quill.js.map HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:25:36.702] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:25:36] "GET /static/css/quill.snow.css.map HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:25:38.108] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:25:38] "GET /api/get/userimage HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:25:38.912] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:25:38] "[36mGET /static/uploads/c4ca4238a0b923820dcc509a6f75849bscreenshot-1725345109184.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:25:39.315] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:25:39] "GET /favicon.ico HTTP/1.1" 200 -[0m
+[36m[2025-02-12  21:26:07.994] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.extra".[0m
+[36m[2025-02-12  21:26:08.014] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".[0m
+[36m[2025-02-12  21:26:08.039] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".[0m
+[36m[2025-02-12  21:26:08.041] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".[0m
+[36m[2025-02-12  21:26:08.054] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.def_list.DefListExtension".[0m
+[36m[2025-02-12  21:26:08.063] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.tables.TableExtension".[0m
+[36m[2025-02-12  21:26:08.069] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".[0m
+[36m[2025-02-12  21:26:08.073] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".[0m
+[36m[2025-02-12  21:26:08.077] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.extra.ExtraExtension".[0m
+[36m[2025-02-12  21:26:08.108] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.codehilite".[0m
+[36m[2025-02-12  21:26:08.119] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.codehilite.CodeHiliteExtension".[0m
+[36m[2025-02-12  21:26:08.126] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.tables".[0m
+[36m[2025-02-12  21:26:08.132] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.tables.TableExtension".[0m
+[36m[2025-02-12  21:26:08.140] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.toc".[0m
+[36m[2025-02-12  21:26:08.144] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.toc.TocExtension".[0m
+[32m[2025-02-12  21:26:08.566] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:26:08] "GET /post/2025020318291487 HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:26:09.068] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:26:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:26:09.326] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:26:09] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:26:09.327] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:26:09] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:26:09.341] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:26:09] "[36mGET /static/editormd/editormd.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:26:09.663] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:26:09] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:26:09.726] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:26:09] "[36mGET /static/js/quill.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:26:09.871] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:26:09] "[36mGET /static/css/github-markdown-light.min.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:26:09.924] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:26:09] "[36mGET /static/js/ajax.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:26:09.972] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:26:09] "[36mGET /static/js/jquery.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:26:10.001] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:26:10] "[36mGET /static/js/TrianglesMosaicBg.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:26:10.027] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:26:10] "[36mGET /static/editormd/lib/marked.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:26:10.055] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:26:10] "[36mGET /static/editormd/lib/prettify.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:26:10.091] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:26:10] "[36mGET /static/editormd/lib/raphael.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:26:10.193] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:26:10] "[36mGET /static/editormd/lib/sequence-diagram.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:26:10.196] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:26:10] "[36mGET /static/editormd/lib/flowchart.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:26:10.197] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:26:10] "[36mGET /static/editormd/lib/underscore.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:26:10.331] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:26:10] "[36mGET /static/editormd/lib/jquery.flowchart.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:26:10.467] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:26:10] "[36mGET /static/uploads/root/2aa7370bb1288d5e4c18e02862de8f55capture_20240903143440735.bmp HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:26:10.467] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:26:10] "[36mGET /static/editormd/editormd.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:26:10.968] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:26:10] "GET /static/js/quill.js.map HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:26:11.420] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:26:11] "GET /static/css/quill.snow.css.map HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:26:12.067] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:26:12] "GET /api/get/userimage HTTP/1.1" 200 -[0m
+[32m[2025-02-12  21:26:12.935] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:26:12] "[36mGET /static/uploads/c4ca4238a0b923820dcc509a6f75849bscreenshot-1725345109184.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-12  21:26:13.195] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [12/Feb/2025 21:26:13] "GET /favicon.ico HTTP/1.1" 200 -[0m

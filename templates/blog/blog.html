@@ -3,8 +3,14 @@
 {% block title %}主页{% endblock %}
 
 {% block content %}
-<div class="container2">
-    <h1>文章列表</h1>
+
+<div class="container2" style="display: block;position: relative;">
+    <div style="width: 250px; height: 1000px;float: left;right: 0px;" id="mail-content_">
+        <div id="mail-content"></div>
+    </div>
+    
+    <div id="word-content" style="margin-right: 250px;border-right-style:solid;height: 1000px;overflow: auto;">
+        <h1>文章列表</h1>
         <div id="list" >
             {% for item in posts %}
             
@@ -30,5 +36,6 @@
             </a>
             {% endfor %}
         </div> 
+    </div>
 </div>
 {% endblock %}
