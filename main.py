@@ -28,60 +28,60 @@ app.register_blueprint(auth, url_prefix="/")
 app.register_blueprint(blog, url_prefix='/')
 app.register_blueprint(others, url_prefix="/")
 app.register_blueprint(mail_blueprint, url_prefix='/mail')
-def ssh_cmd():
-    tran = paramiko.Transport(('127.0.0.1', 22,))
-    tran.start_client()
-    tran.auth_password('ryan', 'Ryan+123')
-    chan = tran.open_session()
-    chan.get_pty(height=492, width=1312)
-    chan.invoke_shell()
-    return chan
+# def ssh_cmd():
+#     tran = paramiko.Transport(('127.0.0.1', 22,))
+#     tran.start_client()
+#     tran.auth_password('ryan', 'Ryan+123')
+#     chan = tran.open_session()
+#     chan.get_pty(height=492, width=1312)
+#     chan.invoke_shell()
+#     return chan
 
-sessions = {}
+# sessions = {}
 
-@app.route("/ssh")
-@basic_auth.required
-def index():
-    return render_template("web.htm")
+# @app.route("/ssh")
+# @basic_auth.required
+# def index():
+#     return render_template("web.htm")
 
-@socketio.on("message", namespace="/ssh/ws")
-def socket(message):
-    """接收到前端message消息，执行此方法"""
-    logging.info(f"接收到消息: {message}")
-    sid = request.sid
-    if sid in sessions:
-        if isinstance(message, str):
-            sessions[sid].send(message)  # 传到服务器上执行
-            ret = sessions[sid].recv(4096)
-            socketio.emit(
-                "response",
-                {"data": ret.decode("utf-8")},
-                namespace="/ssh/ws"
-            )
-        else:
-            logging.error("接收到的消息不是字符串类型")
+# @socketio.on("message", namespace="/ssh/ws")
+# def socket(message):
+#     """接收到前端message消息，执行此方法"""
+#     logging.info(f"接收到消息: {message}")
+#     sid = request.sid
+#     if sid in sessions:
+#         if isinstance(message, str):
+#             sessions[sid].send(message)  # 传到服务器上执行
+#             ret = sessions[sid].recv(4096)
+#             socketio.emit(
+#                 "response",
+#                 {"data": ret.decode("utf-8")},
+#                 namespace="/ssh/ws"
+#             )
+#         else:
+#             logging.error("接收到的消息不是字符串类型")
 
-@socketio.on("connect", namespace="/ssh/ws")
-def connect():
-    """当websocket连接成功时,自动触发connect默认方法"""
-    sid = request.sid
-    sessions[sid] = ssh_cmd()
-    ret = sessions[sid].recv(4096)
-    socketio.emit(
-        "response",
-        {"data": ret.decode("utf-8")},
-        namespace="/ssh/ws"
-    )
-    logging.info("连接成功")
+# @socketio.on("connect", namespace="/ssh/ws")
+# def connect():
+#     """当websocket连接成功时,自动触发connect默认方法"""
+#     sid = request.sid
+#     sessions[sid] = ssh_cmd()
+#     ret = sessions[sid].recv(4096)
+#     socketio.emit(
+#         "response",
+#         {"data": ret.decode("utf-8")},
+#         namespace="/ssh/ws"
+#     )
+#     logging.info("连接成功")
 
-@socketio.on("disconnect", namespace="/ssh/ws")
-def disconnect():
-    """当websocket连接失败时,触发disconnect默认方法"""
-    sid = request.sid
-    if sid in sessions:
-        sessions[sid].close()
-        del sessions[sid]
-    logging.debug("链接已断开")
+# @socketio.on("disconnect", namespace="/ssh/ws")
+# def disconnect():
+#     """当websocket连接失败时,触发disconnect默认方法"""
+#     sid = request.sid
+#     if sid in sessions:
+#         sessions[sid].close()
+#         del sessions[sid]
+#     logging.debug("链接已断开")
 
 @app.errorhandler(404)
 def err404(message):

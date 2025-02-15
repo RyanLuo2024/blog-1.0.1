@@ -6,7 +6,7 @@ import config,addheimindan
 from includes.dbget import db
 from bs4 import BeautifulSoup
 from flaskext.markdown import Markdown
-others = flask.Blueprint('oters', __name__)
+others = flask.Blueprint('others', __name__)
 def get_db_connection():
     db_,conn = db().return_cursour()
     conn.row_factory = sqlite3.Row
@@ -84,9 +84,16 @@ def index():
     if addheimindan.get(flask.request.cookies.get("cookieid")) != False and \
        addheimindan.get(flask.request.cookies.get("cookieid"))['quanxian']['/'] == False: 
         return "您已被封禁，无法经行该操作"
+    page = 1
+    wordonepage = 4
+    try:
+        page = flask.request.form["page"]
+    except:
+        pass
     import models
     cookie = flask.request.cookies.get("cookieid")
     blog = models.getblog()
+    # blog = blog[((page - 1) * 4):(page * 4 - 1)]
     return flask.render_template(config.htmls.blog.blog, posts=blog, username=cookie, search_show=True)
 
 """http://host:port/uplaod 上传文件"""

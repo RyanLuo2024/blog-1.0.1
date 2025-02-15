@@ -1,14 +1,27 @@
 {% extends "base.html" %}
 
-{% block title %}添加文章{% endblock %}
+{% block title %}修改头像{% endblock %}
 
 {% block content %}
-<div class="container1">
-    <form class="form" action="setmineimage" method="post">
-        <h4>修改头像</h4>
-        <input class="input" type="text" name="image" placeholder="头像图片（已上传）">
-        <a href="{{url_for('oters.upload')}}">还没上传？ >>戳这<< </a>
-        <button class="button" type="submit">提交</button>
-    </form>   
+<div class="container mt-5" style="background-color: white;">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h4>修改头像</h4>
+                </div>
+                <div class="card-body">
+                    <form action="setmineimage" method="post">
+                        <div class="form-group">
+                            <label for="image">头像图片（已上传）</label>
+                            <input type="text" class="form-control" id="image" name="image" placeholder="头像图片（已上传）" required>
+                        </div>
+                        <a href="{{url_for('others.upload')}}" class="btn btn-link">还没上传？ >>戳这<< </a>
+                        <button type="submit" class="btn btn-primary btn-block">提交</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock %}

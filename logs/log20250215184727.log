@@ -1,0 +1,25 @@
+[33m[2025-02-15  18:47:28.093] _internal.py -> _log line:97 [WARNING] :  * Debugger is active![0m
+[32m[2025-02-15  18:47:28.106] _internal.py -> _log line:97 [INFO] :  * Debugger PIN: 141-439-431[0m
+[32m[2025-02-15  18:47:30.957] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [15/Feb/2025 18:47:30] "GET /about HTTP/1.1" 200 -[0m
+[32m[2025-02-15  18:47:31.557] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [15/Feb/2025 18:47:31] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-15  18:47:31.581] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [15/Feb/2025 18:47:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-15  18:47:31.583] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [15/Feb/2025 18:47:31] "[36mGET /static/js/quill.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-15  18:47:31.617] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [15/Feb/2025 18:47:31] "[36mGET /static/js/ajax.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-15  18:47:31.619] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [15/Feb/2025 18:47:31] "[36mGET /static/js/TrianglesMosaicBg.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-15  18:47:31.629] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [15/Feb/2025 18:47:31] "[36mGET /static/js/popper.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-15  18:47:31.634] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [15/Feb/2025 18:47:31] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-15  18:47:31.645] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [15/Feb/2025 18:47:31] "[36mGET /static/js/jquery.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-15  18:47:31.661] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [15/Feb/2025 18:47:31] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-15  18:47:31.763] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [15/Feb/2025 18:47:31] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-15  18:47:31.784] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [15/Feb/2025 18:47:31] "[36mGET /static/editormd/editormd.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-15  18:47:32.406] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [15/Feb/2025 18:47:32] "GET /api/get/userimage HTTP/1.1" 200 -[0m
+[32m[2025-02-15  18:47:32.417] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [15/Feb/2025 18:47:32] "GET /api/get/userimage/ HTTP/1.1" 200 -[0m
+[32m[2025-02-15  18:47:32.429] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [15/Feb/2025 18:47:32] "GET /mail/ HTTP/1.1" 200 -[0m
+[32m[2025-02-15  18:47:32.549] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [15/Feb/2025 18:47:32] "GET /static/editormd/editormd.min.js?_=1739616452103 HTTP/1.1" 200 -[0m
+[32m[2025-02-15  18:47:32.595] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [15/Feb/2025 18:47:32] "GET /static/js/quill.js?_=1739616452104 HTTP/1.1" 200 -[0m
+[32m[2025-02-15  18:47:32.632] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [15/Feb/2025 18:47:32] "GET /static/js/ajax.js?_=1739616452105 HTTP/1.1" 200 -[0m
+[32m[2025-02-15  18:47:32.680] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [15/Feb/2025 18:47:32] "GET /static/js/TrianglesMosaicBg.min.js?_=1739616452109 HTTP/1.1" 200 -[0m
+[32m[2025-02-15  18:47:32.703] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [15/Feb/2025 18:47:32] "GET /static/js/popper.js?_=1739616452110 HTTP/1.1" 200 -[0m
+[36m[2025-02-15  18:47:32.735] massage.py -> messages line:82 [DEBUG] : /messages,get a requrest,return[][0m
+[32m[2025-02-15  18:47:32.819] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [15/Feb/2025 18:47:32] "[35m[1mGET /mail/messages HTTP/1.1[0m" 500 -[0m
+[32m[2025-02-15  18:47:58.399] _internal.py -> _log line:97 [INFO] :  * Detected change in 'C:\\Users\\xiaoxuan\\OneDrive\\桌面\\programming\\python\\blog\\routes\\massage.py', reloading[0m

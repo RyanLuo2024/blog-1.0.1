@@ -3,9 +3,9 @@
 {% block title %}消息{% endblock %}
 
 {% block content %}
-<div class="container2">
+<div class="container mt-5" style="background-color: white;">
     <h1>消息 - {{ req }}</h1>
-    <div class="message-window" id="messageWindow">
+    <div class="message-window border p-3" id="messageWindow" style="height: 600px; overflow-y: auto;">
         <div class="message-list" id="messageList">
             <!-- 消息列表将被动态加载 -->
         </div>
@@ -21,16 +21,19 @@
                     $.each(data, function(index, message) {
                         if (message.id == {{ req }}){
                             messageList.append(
-                                    '<p><strong>Date:</strong> ' + message.date + '</p>' +
-                                    '<p><strong>From:</strong> ' + message.from_user + '</p>' +
-                                    '<p><strong>To:</strong> ' + message.to_user + '</p>' +
-                                    '<p><strong>Subject:</strong> ' + message.subject + '</p>' +
-                                    '<p><strong>Type:</strong> ' + message.type_ + '</p>' +
-                                    '<p><strong>Body:</strong> <br>' + message.body + '</p>' +
-                                    '<a href="/mail/delete/'+message.id+'"">删除</a>'
+                                '<div class="card mb-3">' +
+                                    '<div class="card-body">' +
+                                        '<p><strong>Date:</strong> ' + message.date + '</p>' +
+                                        '<p><strong>From:</strong> ' + message.from_user + '</p>' +
+                                        '<p><strong>To:</strong> ' + message.to_user + '</p>' +
+                                        '<p><strong>Subject:</strong> ' + message.subject + '</p>' +
+                                        '<p><strong>Type:</strong> ' + message.type_ + '</p>' +
+                                        '<p><strong>Body:</strong> <br>' + message.body + '</p>' +
+                                        '<a href="/mail/delete/'+message.id+'" class="btn btn-danger">删除</a>' +
+                                    '</div>' +
+                                '</div>'
                             );
                         }
-                        
                     });
                 });
             }
@@ -38,4 +41,5 @@
             loadMessages();
         });
     </script>
+</div>
 {% endblock %}

@@ -1,0 +1,8 @@
+[33m[2025-02-14  21:28:10.239] _internal.py -> _log line:97 [WARNING] :  * Debugger is active![0m
+[32m[2025-02-14  21:28:10.252] _internal.py -> _log line:97 [INFO] :  * Debugger PIN: 141-439-431[0m
+[32m[2025-02-14  21:28:18.920] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [14/Feb/2025 21:28:18] "[35m[1mPOST /user_login HTTP/1.1[0m" 500 -[0m
+[32m[2025-02-14  21:28:19.238] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [14/Feb/2025 21:28:19] "GET /user_login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -[0m
+[32m[2025-02-14  21:28:19.243] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [14/Feb/2025 21:28:19] "GET /user_login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -[0m
+[32m[2025-02-14  21:28:19.283] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [14/Feb/2025 21:28:19] "GET /user_login?__debugger__=yes&cmd=resource&f=console.png&s=Af8Sg6gWZd2iflrtOVG1 HTTP/1.1" 200 -[0m
+[32m[2025-02-14  21:28:19.342] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [14/Feb/2025 21:28:19] "GET /user_login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -[0m
+[32m[2025-02-14  21:28:41.436] _internal.py -> _log line:97 [INFO] :  * Detected change in 'c:\\Users\\xiaoxuan\\OneDrive\\桌面\\programming\\python\\blog\\routes\\auth.py', reloading[0m

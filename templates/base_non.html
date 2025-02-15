@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/static/css/style.css">
     <link rel="stylesheet" href="/static/css/blogcss.css">
+    <link rel="/static/bootstrap/css/bootstrap.min.css">
     <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="{{ url_for('static',filename='editormd/css/editormd.css') }}"/>
     <script src="{{ url_for('static',filename='editormd/editormd.min.js') }}"></script>
@@ -15,6 +16,11 @@
     <script src="https://google.github.io/traceur-compiler/bin/BrowserSystem.js"></script>
     <script src="https://google.github.io/traceur-compiler/src/bootstrap.js"></script>
     <script src="/static/js/TrianglesMosaicBg.min.js"></script>
+    <script src="/static/js/popper.js"></script>
+    <link rel="stylesheet" href="https://cdn.staticfile.net/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+	<script src="https://cdn.staticfile.net/jquery/2.1.1/jquery.min.js"></script>
+    <!-- <script src="/static/bootstrap/js/bootstrap.min.js"></script> -->
+    <script src="https://cdn.staticfile.net/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>{% block title %}{% endblock %}</title>
     <style>
         /* 弹窗样式 */
@@ -69,7 +75,20 @@
             display: table;
             clear: both;
         }
-        
+        #mail-content {
+            width: 250px;
+            position: absolute;
+            overflow: auto;  /* 如果内容超出容器，允许滚动 */
+        }
+        #mail-content_ {
+            width: 250px;
+            height: 1000px;
+            right: 0px;
+            position: absolute;
+            display: block;
+            top: 50px;
+            overflow: auto;  /* 如果内容超出容器，允许滚动 */
+        }
     </style>
 </head>
 <body >

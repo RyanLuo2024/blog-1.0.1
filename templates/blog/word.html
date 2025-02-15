@@ -3,124 +3,103 @@
 {% block title %}blog文章 - {{ title }}{% endblock %}
 
 {% block content %}
-
-<div class="container2">
-    <!-- <script src="/static/js/vue.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <script src="/static/js/jquery.min.js"></script>
-    <script src="/static/editormd/lib/marked.min.js"></script>
-    <script src="/static/editormd/lib/prettify.min.js"></script>
-    <script src="/static/editormd/lib/raphael.min.js"></script>
-    <script src="/static/editormd/lib/underscore.min.js"></script>
-    <script src="/static/editormd/lib/sequence-diagram.min.js"></script>
-    <script src="/static/editormd/lib/flowchart.min.js"></script>
-    <script src="/static/editormd/lib/jquery.flowchart.min.js"></script>
-    <script src="/static/editormd/editormd.js"></script>
-    <link rel="stylesheet" href="/static/css/github-markdown-light.min.css">
-    <div>
-        <style>
-            img {
-            max-width: 100%;
-            max-height: 100%;
-            }
-        </style>
-        <div class="word_header">
-            <div class="titleimage" >
-                <img src="{{ img }}" style="max-height: 100%;max-width: 100%;display: flex;    justify-content: center;align-items: center;  ">
+<div class="container2" style="display: inline-block;justify-content: center;">
+    <div class="card">
+        <div class="card-body">
+            <div class="word_header">
+                <div class="titleimage text-center">
+                    <img src="{{ img }}" class="img-fluid" alt="Title Image">
+                </div>
+                <hr>
+                <h1>{{ title }}</h1>
+                <a href="/me/{{ user }}">by - {{ user }}</a>
+                {% if a != "" %}
+                <a href="/removeword/{{ wordid }}" class="btn btn-danger btn-sm">删除本文</a>
+                {% endif %}
+                <h6>本文id(wordid): {{ wordid }}</h6>
             </div>
-            <br>
-            <hr />
-            <br>
-            <h1> {{ title }} </h1> 
-            <a href="/me/{{ user }}">by - {{ user }}</a>
-            {% if a != ""%}
-                <a href="/removeword/{{ wordid }}">删除本文</a>
-            {% endif %}
-            <h6>本文id(wordid): {{ wordid }} </h6>       
+            <div id="test-editormd" style="background-color: rgb(243, 242, 242);">
+                <textarea style="display:none;" placeholder="markdown语言">{{ markdown }}</textarea>
+            </div>
+            <hr>
+            <textarea id="$t" style="display:none">{{ markdown }}</textarea>
         </div>
-        <!-- <div id="$m" class="markdown-body">{{ markdown }}</div> -->
-        <div style="width: 100%;background-color: rgb(243, 242, 242);" id="test-editormd">
-            <textarea style="display:none;" placeholder="markdown语言">{{ markdown }}</textarea>
+    </div>
+    <br>
+    <div class="mt-5">
+        <h2>添加评论</h2>
+        <form action="{{ url_for('blog.add_comment') }}" method="post">
+            <input type="hidden" id="word" name="word" value="{{ wordid }}">
+            <input type="hidden" id="touser" name="touser">
+            <div class="form-group">
+                <label for="content">评论:</label>
+                <textarea maxlength="400" @input="monitorInput" v-model="textareaContent" id="content" class="form-control" placeholder="写点东西吧..." name="content"></textarea>
+                <small class="form-text text-muted">剩余字数：<span id="remainingChars">400</span></small>
+            </div>
+            <button type="submit" class="btn btn-primary">提交</button>
+        </form>
+    </div>
+    <br>
+    <div class="mt-5">
+        <h2>评论列表</h2>
+        {% for comment in comments %}
+        <div class="card mb-3">
+            <div class="card-body">
+                <p class="card-text"><strong>内容:</strong> {{ comment['content'] }}</p>
+                <p class="card-text text-right"><strong>By - </strong> {{ comment['user'] }}</p>
+            </div>
         </div>
-        <hr />
-        <textarea id="$t" style="display:none">
-            {{ markdown }}
-        </textarea>
-        <script>
-        var vm = new Vue({
+        {% endfor %}
+        没有更多了
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="/static/js/jquery.min.js"></script>
+<script src="/static/editormd/lib/marked.min.js"></script>
+<script src="/static/editormd/lib/prettify.min.js"></script>
+<script src="/static/editormd/lib/raphael.min.js"></script>
+<script src="/static/editormd/lib/underscore.min.js"></script>
+<script src="/static/editormd/lib/sequence-diagram.min.js"></script>
+<script src="/static/editormd/lib/flowchart.min.js"></script>
+<script src="/static/editormd/lib/jquery.flowchart.min.js"></script>
+<script src="/static/editormd/editormd.js"></script>
+<link rel="stylesheet" href="/static/css/github-markdown-light.min.css">
+<style>
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+</style>
+<script>
+    var vm = new Vue({
         el: '#test-editormd',
         data: {
-            textareaContent:'',
+            textareaContent: '',
             num: 200,
         },
         methods: {
             monitorInput() {
-            var txtVal = this.textareaContent.length;
-            this.num = 200 - txtVal;
+                var txtVal = this.textareaContent.length;
+                this.num = 200 - txtVal;
             }
         },
+    });
+    editormd.markdownToHTML("test-editormd", {
+        htmlDecode: "style,script,iframe",
+        emoji: true,
+        taskList: true,
+        tex: true,
+        flowChart: true,
+        sequenceDiagram: true
+    });
+    $(document).ready(function() {
+        var maxChars = 400;
+        $('#content').on('input', function() {
+            var currentLength = $(this).val().length;
+            var remaining = maxChars - currentLength;
+            $('#remainingChars').text(remaining);
         });
-        // $m.innerHTML = marked.parse($t.value);
-        editormd.markdownToHTML("test-editormd", {
-            htmlDecode      : "style,script,iframe",  
-            emoji           : true,
-            taskList        : true,
-            tex             : true,  // 默认不解析
-            flowChart       : true,  // 默认不解析
-            sequenceDiagram : true  // 默认不解析
-        });
-        </script>
-    </div>
-</div>
-<br>
-<div class="container3">
-    <div class="fadd">
-        <h1>添加评论</h1>
-        <form action="{{ url_for('blog.add_comment') }}" method="post">
-            <script>
-            $(document).ready(function() {
-            // 设置最大字数限制
-            var maxChars = 400;
-            // 监听textarea的input事件
-            $('#content').on('input', function() {
-                var currentLength = $(this).val().length;
-                var remaining = maxChars - currentLength;
-                $('#remainingChars').text(remaining);
-            });
-            });
-            </script>
-            <input type="text" id="word" name="word" style="display: none;"  value=" "+wordid+" "><br>
-            <input type="text" id="touser" name="touser" style="display: none;"><br>
-            <div><label for="content">评论:</label></div>
-            <textarea maxlength="400" @input="monitorInput" v-model="textareaContent" id="content" placeholder="写点东西吧..." name="content"></textarea>
-            <div>剩余字数：<span id="remainingChars">400</span></div>
-            <br>
-            <div class="inputBox">
-                <input type="submit" value="提交">
-            </div>
-        </form>
-        <br>
-    </div>
-    <div class="clear"></div>
-    </div>
-    <br>
-    <div class="container3">
-        <div class="list">
-            <h2>评论列表</h2>
-            <br>
-            {% for comment in comments %}
-             <div class="cushy-box2">
-                <br style="font-size: 5px;">
-                <div class="pinguser">
-                    <strong>内容:</strong><br> {{ comment['content'] }}
-                </div>
-                <div class="pingtext" style="width: 700px;text-align: right;font-size:12px;">
-                    <strong>By - </strong> {{ comment['user'] }}
-                </div>
-                <br style="font-size: 5px;">
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</div>
+    });
+</script>
 {% endblock %}

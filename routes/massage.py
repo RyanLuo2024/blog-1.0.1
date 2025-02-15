@@ -79,8 +79,10 @@ def messages():
     c = conn.cursor()
     c.execute('SELECT * FROM message WHERE (fromcansee = 1 AND from_user=?) OR (tocansee = 1 AND to_user=?)', (request.cookies.get("cookieid"), request.cookies.get("cookieid")))
     messages = [dict(row) for row in c.fetchall()]
-    messages[0]['date'] = models.wordid().jiexi(messages[0]['id']).strftime("%Y-%m-%d %H:%M:%S")
     logging.debug(f"/messages,get a requrest,return{messages}")
+    try:
+        messages[0]['date'] = models.wordid().jiexi(messages[0]['id']).strftime("%Y-%m-%d %H:%M:%S")
+    except: pass
     conn.close()
     return jsonify(messages)
 

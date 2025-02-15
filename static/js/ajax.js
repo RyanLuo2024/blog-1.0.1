@@ -16,7 +16,12 @@ function reqst()
   {
     if (xmlhttp.readyState==4 && xmlhttp.status==200)
     {
-      myArr = JSON.parse(this.responseText);
+      try{
+        myArr = JSON.parse(this.responseText);
+      } catch (e) {
+
+      }
+      
       $(document).ready(function(){
         $(".profile-pic").html("<img src=\""+myArr.data.image+"\" alt=\"Profile\">")
     })
@@ -45,10 +50,12 @@ function reqst_user()
   {
     if (xmlhttp.readyState==4 && xmlhttp.status==200)
     {
-      myArr = JSON.parse(this.responseText);
-      $(document).ready(function(){
+
+      try{ myArr = JSON.parse(this.responseText);}catch(e){} 
+      try{ $(document).ready(function(){
         $(".profile-pic-me").html("<img src=\""+myArr.data.image+"\" alt=\"Profile\">")
-    })
+    })}catch(e){} 
+      
     }
   }
   $(document).ready(function() {
@@ -61,8 +68,8 @@ function reqst_user()
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  reqst();
-  reqst_user();
+  // reqst();
+  try{ reqst_user();}catch(e){} 
 });
 function machimage(id,class_) {
   reqst();
@@ -92,3 +99,8 @@ function machimage(id,class_) {
           imageContainer.innerHTML = "<p>加载图片失败，请检查图片ID是否正确。</p>";
       });
 }
+
+
+// document.addEventListener('touchstart', handler, { passive: true });
+// document.addEventListener('touchmove', handler, { passive: true });
+// document.addEventListener('mousewheel', handler, { passive: true });

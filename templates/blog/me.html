@@ -3,25 +3,25 @@
 {% block title %}个人中心{% endblock %}
 
 {% block content %}
-<div class="container4" style="background-color: rgba(255, 255, 255, 0);">
-    <div>
-        <div class="information" style="display: grid;grid-template-columns: 1fr 1fr 1fr;">
-            <div class="profile-pic-me-div" style="display:grid block;grid-template-columns: 2fr 2fr 2fr;" >
-                <a class="profile-pic-me" id="profile-pic-me" style="width: 80px;height: 80px;" {% if isme %} href="/api/setmineimage" {% endif %}></a>
-                <p class="profile-pic-me-id" id="profile-pic-me-ids" style="display: none;">{{ username_show }}</p>
-            <!-- </div>
-            <div class="user-username-show" style="display: block;width: auto;height: 80;"> -->
-                <h1 style="font-family:'Microsoft Yahei', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;color: white;">
-<pre style="font-family:'Microsoft Yahei', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">    {{ username_show }}
-    uid(userid): {{ userid }}
-    {{fengjing}}</pre>
-            </div>  
-        </div>      
+<div class="container4me" style="background-color: rgba(255, 255, 255, 0);">
+    <div style="display: flex; align-items: center; background-color: #f0f0f0; padding: 10px; border-radius: 5px; position: relative;float: left;">
+        <div class="profile-pic-me-div" style="width: 80px; height: 80px;z-index: 1;">
+            <a class="profile-pic-me" id="profile-pic-me" style="width: 80px; height: 80px;" href="/api/setmineimage" style="width: 50px; height: 50px; border-radius: 50%;"></a>
+        </div>
+        <div class="user-info" style="z-index: 1;margin-left: 30px;">
+            <h2 style="margin: 0; font-family:'Microsoft Yahei', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: #333;">
+                {{ username_show }} <!-- 修改3：直接使用变量显示用户名 -->
+            </h2>
+            <p style="margin: 5px 0 0 0; font-family:'Microsoft Yahei', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: #666;">
+                uid(userid): {{ userid }} <!-- 修改4：直接使用变量显示用户ID -->
+            </p>
+        </div>
     </div>
 </div>
 <br>
 <br>
 <div class="container2">
+    <p class="profile-pic-me-id" id="profile-pic-me-ids" style="margin-top: 5px; color: white;">{{ username_show }}</p>
     <h1>{{ cenghu }}的文章</h1>
         <div id="list">
             {% for item in posts %}

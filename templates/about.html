@@ -3,15 +3,17 @@
 {% block title %}关于本站{% endblock %}
 
 {% block content %}
-<div class="container2">
-    <div class="form">
-        <h1>本网站由 flask & python 所写</h1><br>
-        <b>备案号：{{beian}}</b><br>
-        由{{yunying}}运营<br>
-        Copyright © 2024 Ryan. All rights reserved.<br>
-        本代码被GPL-v3版权所守护！<br>
-        <a href="https://github.com/RyanLuo2024/blog-1.0.1/">->本网站全部源代码(github)<-</a><br>
-        联系作者：xiaoxuanwangwin102@outlook.com,诈骗、推广等非为此网站话题勿扰！（扰乱加入黑名单！）
+<div class="container mt-5" style="background-color: white;">
+    <div class="card">
+        <div class="card-body">
+            <h1 class="card-title">本网站由 Flask & Python 所写</h1>
+            <p class="card-text"><b>备案号：</b>{{ beian }}</p>
+            <p class="card-text">由{{ yunying }}运营</p>
+            <p class="card-text">Copyright © 2024 Ryan. All rights reserved.</p>
+            <p class="card-text">本代码被GPL-v3版权所守护！</p>
+            <a href="https://github.com/RyanLuo2024/blog-1.0.1/" class="btn btn-link">->本网站全部源代码(github)<-</a>
+            <p class="card-text">联系作者：xiaoxuanwangwin102@outlook.com，诈骗、推广等非为此网站话题勿扰！（扰乱加入黑名单！）</p>
+        </div>
     </div>
 </div>
 {% endblock %}

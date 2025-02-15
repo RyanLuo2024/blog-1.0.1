@@ -1,17 +1,15 @@
 {% extends "base.html" %}
 
-{% block title %}登录{% endblock %}
+{% block title %}错误{% endblock %}
 
 {% block content %}
-<div class="container">
-    <div class="form">
-        <h2>登录</h2>
-        <form method="POST">
-            错误！
-            {% if message %}
-                {{ message }}
-            {% endif %}
-        </form>
+<div class="container mt-5" style="background-color: white;">
+    <div class="alert alert-danger">
+        <h2>错误</h2>
+        <p>错误！</p>
+        {% if message %}
+            <p>{{ message }}</p>
+        {% endif %}
     </div>
 </div>
 {% endblock %}

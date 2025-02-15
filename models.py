@@ -4,6 +4,7 @@ import includes.admin as admins
 import includes.user as user
 import includes.admin as admin 
 import random
+import logging
 import datetime
 import hashlib
 import models as db
@@ -109,19 +110,6 @@ def is_null(username, password):
 def is_existed(username, password):
     from includes.dbget import db
     sql = db()
-    sql.execute("SELECT * FROM user WHERE username = ? AND password = ?", (username, password))
-    result = sql.get_return()
-    sql.close()
-    if len(result) == 0:
-        return False
-    else:
-        return True
-def md5_hash(text:str):
-    return hashlib.md5(text.encode('utf-8')).hexdigest()
-
-def exist_user(username, password):
-    from includes.dbget import db
-    sql = db()
     hashed_password = md5_hash(password)
     sql.execute("SELECT * FROM user WHERE username = ? AND (password = ? OR password = ?)", (username, password, hashed_password))
     result = sql.get_return()
@@ -130,14 +118,34 @@ def exist_user(username, password):
         return False
     else:
         return True
+def md5_hash(text:str):
+    logging.debug(f"login pass:{hashlib.md5(text.encode('utf-8')).hexdigest()}")
+    return hashlib.md5(text.encode('utf-8')).hexdigest()
 
-def add_user(username, password):
+def exist_user(username, password="", moding=0):
+    from includes.dbget import db
+    sql = db()
+    hashed_password = md5_hash(password)
+    logging.debug(f"login pass:{hashed_password}")
+    if moding == 0:
+        sql.execute("SELECT * FROM user WHERE username = ?", (username,))
+    else:
+        sql.execute("SELECT * FROM user WHERE username = ? AND (password = ? OR password = ?)", (username, password, hashed_password))
+    result = sql.get_return()
+    logging.debug(f"sql return:{result} len is {len(result)}")
+    sql.close()
+    if len(result) == 0:
+        return False
+    else:
+        return True
+
+def add_user(username, password, email):
     from includes.dbget import db
     sql = db()
     a = userid()
     hashed_password = md5_hash(password)
-    sqll = "INSERT INTO user(username, password, userid, type) VALUES (?, ?, ?, ?)"
-    sql.execute(sqll, (username, hashed_password, a.shengzheng(), "user"))
+    sqll = "INSERT INTO user(username, password, userid, usertype, email) VALUES (?, ?, ?, ?, ?)"
+    sql.execute(sqll, (username, hashed_password, a.shengzheng(), "user", email))
     sql.close()
 class messages:
     def __init__(self):

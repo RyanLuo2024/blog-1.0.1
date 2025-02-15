@@ -1,0 +1,4 @@
+[33m[2025-02-15  18:48:00.875] _internal.py -> _log line:97 [WARNING] :  * Debugger is active![0m
+[32m[2025-02-15  18:48:00.888] _internal.py -> _log line:97 [INFO] :  * Debugger PIN: 141-439-431[0m
+[32m[2025-02-15  18:48:10.261] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [15/Feb/2025 18:48:10] "GET /favicon.ico HTTP/1.1" 200 -[0m
+[32m[2025-02-15  18:57:34.408] _internal.py -> _log line:97 [INFO] :  * Detected change in 'C:\\Users\\xiaoxuan\\OneDrive\\桌面\\programming\\python\\blog\\routes\\others.py', reloading[0m

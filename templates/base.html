@@ -4,17 +4,41 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/static/css/style.css">
     <link rel="stylesheet" href="/static/css/blogcss.css">
-    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.staticfile.net/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ url_for('static',filename='editormd/css/editormd.css') }}"/>
-    <script src="{{ url_for('static',filename='editormd/editormd.min.js') }}"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/static/css/quill.snow.css" rel="stylesheet">
-    <script src="/static/js/quill.js"></script>
-    <script  src="/static/js/ajax.js"></script>
-    <script src="https://google.github.io/traceur-compiler/bin/traceur.js"></script>
-    <script src="https://google.github.io/traceur-compiler/bin/BrowserSystem.js"></script>
-    <script src="https://google.github.io/traceur-compiler/src/bootstrap.js"></script>
+    <link rel="stylesheet" href="/static/editormd/lib/codemirror/codemirror.min.css"/>
+    <link rel="stylesheet" href="/static/editormd/lib/codemirror/theme/monokai.css"/>
+    <link rel="stylesheet" href="/static/editormd/lib/codemirror/addon/display/fullscreen.css"/>
+    <!-- 引入CodeMirror核心文件 -->
+    <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/system.min.js"></script>
+    <script type="text/javascript" src="/static/editormd/lib/codemirror/lib/codemirror.js"></script>
+
+    <!-- CodeMirror支持不同语言，根据需要引入JS文件 -->
+    <!-- 因为HTML混合语言依赖Javascript、XML、CSS语言支持，所以都要引入 -->
+    <script type="text/javascript" src="/static/editormd/lib/codemirror/mode/javascript/javascript.js"></script>
+    <script type="text/javascript" src="/static/editormd/lib/codemirror/mode/xml/xml.js"></script>
+    <script type="text/javascript" src="/static/editormd/lib/codemirror/mode/css/css.js"></script>
+    <script type="text/javascript" src="/static/editormd/lib/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+
+    <!-- 下面分别为显示行数、括号匹配和全屏插件 -->
+    <script type="text/javascript" src="/static/editormd/lib/codemirror/addon/selection/active-line.js"></script>
+    <script type="text/javascript" src="/static/editormd/lib/codemirror/addon/edit/matchbrackets.js"></script>
+    <script type="text/javascript" src="/static/editormd/lib/codemirror/addon/display/fullscreen.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="/static/editormd/lib/marked.min.js"></script>
+    <script src="/static/editormd/lib/prettify.min.js"></script>
+    <script src="/static/editormd/lib/raphael.min.js"></script>
+    <script src="/static/editormd/lib/underscore.min.js"></script>
+    <script src="/static/editormd/lib/sequence-diagram.min.js"></script>
+    <script src="/static/editormd/lib/flowchart.min.js"></script>
+    <script src="/static/editormd/lib/jquery.flowchart.min.js"></script>
+    <script src="/static/js/popper.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/editormd/editormd.js"></script>
+    <script src="/static/js/ajax.js"></script>
     <script src="/static/js/TrianglesMosaicBg.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock %}</title>
     <style>
         /* 弹窗样式 */
@@ -85,36 +109,76 @@
         }
     </style>
 </head>
-<body >
+<div id = "box-114514" style="position: absolute;bottom: 0;width:100%;height: 100%;"></div>
+<body>
     <script type="module">
     // traceur.options.experimental = true;
     // import { TrianglesMosaicBg } from "/static/js/TrianglesMosaicBg.module.js"
 
     let colorbg = new Color4Bg.TrianglesMosaicBg({
-        dom: "box",
+        dom: "box-114514",
         colors: ["#212832","#3F4659","#3c4553","#282f3e","#212832","#3F4659"],
         loop: true
     })
     </script>
-    <header>
-        {% if username %}
-            <a href="/me/{{username}}" class="profile-pic" id="profile-pic" style="width: 30px;height: 30px;"></a>
-        {% else %}
-            <a href="/user_login" class="profile-pic" id="profile-pic" style="width: 30px;height: 30px;"><img src="/static/image/touxiang.png" alt="Profile"></a>
-        {% endif %}
-        <a href="/">主页</a>
-        <a href="/upload">上传文件</a>
-        <a href="/writeblog">写文章</a>
-        <a href="/mail/">消息</a>
-        <a href="/mail/writemail">写消息</a>
-        <a href="/about">关于本站</a>
-        {% if search_show %}
-            <form  method="GET" action="search" style="width: 200; height: 30;background-color: white;">
-                <input type="text" name="search" style="width: 150;"><input type="submit" style="width: 50;height: 30;" value="搜索">
-            </form>
-        {% endif %}
-    </header>
-    <section>
+    <script src="/static/js/jquery.min.js"></script>
+    <div class="modal text-center" tabindex="-1" role="dialog" id="messageLists" style="width: 610px;height: auto;overflow: auto;">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document" style="display: inline-block; width: 590px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title">消息列表</h1>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body" style="width: 570px;height: 570px;overflow: auto;">
+                    <div class="col-md-3" style="width: 550px;height: 550px;overflow: auto;">
+                        <div id="mail-content" class="border p-3" style="width: 530px;height: 530px;overflow: auto;">
+                            <!-- 邮件内容 -->
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+      </div>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+        <div class="navbar-header text-center">
+            <a class="navbar-brand">mineblog</a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/me/{{username}}">我的</a></li>
+                <li class="active"><a href="/">主页</a></li>
+                <li class="active"><a href="/upload">上传文件</a></li>
+                <li class="active"><a href="/writeblog">写文章</a></li>
+                <li class="active"><a href="/mail/writemail">写消息</a></li>
+                <li class="active"><a href="/about">关于本站</a></li>
+                <li class="active"><a data-toggle="modal" href="#messageLists">消息</a></li>
+                {% if search_show %}
+                    <li class="active">
+                        <div style="padding: 10px 10px 5px;" class="text-nowrap">
+                            <form  method="GET" action="search" class="bs-example bs-example-form" role="form">
+                                <!-- <input type="text" name="search" style="width: 150;"><input type="submit" style="width: 50;height: 30;" value="搜索"> -->
+                                    <form class="bs-example bs-example-form text-nowrap" role="form">
+                                        <div class="input-group text-nowrap">
+                                            <input type="text" name="search" class="form-control" placeholder="搜索关键词">
+                                            <button id="fat-btn" class="btn btn-primary" data-loading-text="Loading..." type="submit">搜索</button>
+                                        </div>
+                                    </form>
+                                    
+                            </form>
+                        </div>
+                    </li>
+                {% endif %}
+            </ul>
+        </div>
+        </div>
+    </nav><br>
+    <section style="display:flex; justify-content: center;">
         <script>
             $(document).ready(function() {
                 $.ajax({
@@ -130,11 +194,10 @@
                 });
             });
         </script>
-        <div id = "box" style="position: absolute;bottom: 0;width:100%;height: 100%;"></div>
+        <!--  -->
         <!-- 背景颜色 -->
         
         <div class="box" >
-            
             <!-- 背景圆
             <div class="circle" style="--x:0"></div>
             <div class="circle" style="--x:1"></div>
@@ -144,5 +207,8 @@
             <div style="grid-row: 2;">{% block content %}{% endblock %}</div>
         </div>
     </section>
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        Copyright © 2013-2025 Ryanluo All Rights Reserved. 
+    </div>
 </body>
 </html>

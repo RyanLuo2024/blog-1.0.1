@@ -3,16 +3,11 @@
 {% block title %}消息列表{% endblock %}
 
 {% block content %}
-<div class="container5" style="width: 170PX;height: auto;background-color: white;">
-    <h1>消息列表</h1><br>
-    <style>
-        pre{
-            color: gray;
-        }
-    </style>
-    <div class="message-window" id="messageWindow">
+<div class="container5">
+    <div class="message-window border p-3" id="messageWindow" style="height: 500px; overflow-y: auto;width: 500px;">
         <div class="message-list" id="messageList">
             <!-- 消息列表将被动态加载 -->
+             没有更多了
         </div>
     </div>
 
@@ -25,13 +20,13 @@
                     messageList.empty();
                     $.each(data, function(index, message) {
                         messageList.append(
-                            '<a href=/mail/mail/'+ message.id +'>'+
-                                '<div class="cushy-box2">' +
-                                    '<div style="display: block;left: 10px;">' +
-                                        '<p><strong>Date:</strong> <pre cass="pre">' + message.date + '   </pre></p>' +
-                                        '<p><strong>From:</strong> <pre cass="pre">' + message.from_user + '   </pre></p>\n' +
-                                    '</div>'+
-                                '</div>'+
+                            '<a href="/mail/mail/'+ message.id +'" class="text-decoration-none text-dark">' +
+                                '<div class="card mb-3">' +
+                                    '<div class="card-body cushy-box2">' +
+                                        '<p><strong>Date:</strong> ' + message.date + '</p><br>' +
+                                        '<p><strong>From:</strong> ' + message.from_user + '</p>' +
+                                    '</div>' +
+                                '</div>' +
                             '</a>'
                         );
                     });
@@ -41,4 +36,5 @@
             loadMessages();
         });
     </script>
+</div>
 {% endblock %}

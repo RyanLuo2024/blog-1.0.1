@@ -1,0 +1,8 @@
+[33m[2025-02-14  21:19:13.818] _internal.py -> _log line:97 [WARNING] :  * Debugger is active![0m
+[32m[2025-02-14  21:19:13.827] _internal.py -> _log line:97 [INFO] :  * Debugger PIN: 141-439-431[0m
+[32m[2025-02-14  21:19:16.928] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [14/Feb/2025 21:19:16] "[35m[1mPOST /regiser HTTP/1.1[0m" 500 -[0m
+[32m[2025-02-14  21:19:17.251] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [14/Feb/2025 21:19:17] "[36mGET /regiser?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-14  21:19:17.252] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [14/Feb/2025 21:19:17] "[36mGET /regiser?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-14  21:19:17.291] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [14/Feb/2025 21:19:17] "GET /regiser?__debugger__=yes&cmd=resource&f=console.png&s=zL4kth8o9LTQmLfBYDxk HTTP/1.1" 200 -[0m
+[32m[2025-02-14  21:19:17.362] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [14/Feb/2025 21:19:17] "[36mGET /regiser?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-14  21:20:38.125] _internal.py -> _log line:97 [INFO] :  * Detected change in 'c:\\Users\\xiaoxuan\\OneDrive\\桌面\\programming\\python\\blog\\models.py', reloading[0m
