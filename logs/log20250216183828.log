@@ -537,3 +537,4 @@
 [32m[2025-02-16  19:37:06.718] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:37:06] "GET /static/js/popper.js?_=1739705826080 HTTP/1.1" 200 -[0m
 [36m[2025-02-16  19:37:06.747] massage.py -> messages line:82 [DEBUG] : /messages,get a requrest,return[][0m
 [32m[2025-02-16  19:37:06.749] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:37:06] "GET /mail/messages HTTP/1.1" 200 -[0m
+[32m[2025-02-16  19:37:54.504] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:37:54] "GET /favicon.ico HTTP/1.1" 200 -[0m
