@@ -1,0 +1,7 @@
+[33m[2025-02-16  19:45:53.531] _internal.py -> _log line:97 [WARNING] :  * Debugger is active![0m
+[32m[2025-02-16  19:45:53.553] _internal.py -> _log line:97 [INFO] :  * Debugger PIN: 141-439-431[0m
+[32m[2025-02-16  19:45:54.037] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:45:54] "[36mGET /upload?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  19:45:54.056] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:45:54] "[36mGET /upload?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  19:45:54.098] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:45:54] "[36mGET /upload?__debugger__=yes&cmd=resource&f=console.png&s=31XpnLGpoXbT6xgH36H2 HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  19:45:54.176] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:45:54] "[36mGET /upload?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  19:46:21.782] _internal.py -> _log line:97 [INFO] :  * Detected change in 'c:\\Users\\xiaoxuan\\OneDrive\\桌面\\programming\\python\\blog\\routes\\others.py', reloading[0m

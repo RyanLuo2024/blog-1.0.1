@@ -1,0 +1,23 @@
+[33m[2025-02-16  19:46:26.124] _internal.py -> _log line:97 [WARNING] :  * Debugger is active![0m
+[32m[2025-02-16  19:46:26.139] _internal.py -> _log line:97 [INFO] :  * Debugger PIN: 141-439-431[0m
+[32m[2025-02-16  19:46:29.879] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:46:29] "GET /upload HTTP/1.1" 200 -[0m
+[32m[2025-02-16  19:46:30.372] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:46:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  19:46:30.557] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:46:30] "[36mGET /static/js/TrianglesMosaicBg.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  19:46:30.563] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:46:30] "[36mGET /static/js/popper.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  19:46:30.654] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:46:30] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  19:46:30.689] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:46:30] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  19:46:30.728] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:46:30] "[36mGET /static/editormd/lib/codemirror/codemirror.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  19:46:34.129] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:46:34] "GET /mail/ HTTP/1.1" 200 -[0m
+[32m[2025-02-16  19:46:34.472] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:46:34] "GET /favicon.ico HTTP/1.1" 200 -[0m
+[32m[2025-02-16  19:46:34.833] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:46:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  19:46:34.882] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:46:34] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  19:46:34.917] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:46:34] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  19:46:35.048] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:46:35] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  19:46:35.083] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:46:35] "GET /static/editormd/editormd.min.js?_=1739706392912 HTTP/1.1" 200 -[0m
+[32m[2025-02-16  19:46:35.144] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:46:35] "GET /static/js/quill.js?_=1739706392913 HTTP/1.1" 200 -[0m
+[32m[2025-02-16  19:46:35.269] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:46:35] "GET /static/js/ajax.js?_=1739706392914 HTTP/1.1" 200 -[0m
+[32m[2025-02-16  19:46:35.335] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:46:35] "GET /static/js/TrianglesMosaicBg.min.js?_=1739706392918 HTTP/1.1" 200 -[0m
+[32m[2025-02-16  19:46:35.376] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:46:35] "GET /static/js/popper.js?_=1739706392919 HTTP/1.1" 200 -[0m
+[36m[2025-02-16  19:46:35.492] massage.py -> messages line:82 [DEBUG] : /messages,get a requrest,return[][0m
+[32m[2025-02-16  19:46:35.499] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:46:35] "GET /mail/messages HTTP/1.1" 200 -[0m
+[32m[2025-02-16  19:46:46.350] _internal.py -> _log line:97 [INFO] :  * Detected change in 'c:\\Users\\xiaoxuan\\OneDrive\\桌面\\programming\\python\\blog\\routes\\others.py', reloading[0m

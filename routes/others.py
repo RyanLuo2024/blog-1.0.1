@@ -117,10 +117,9 @@ def upload():
         hash_object.update(b"11451411010103920829567876543234567898767865432345678765434567876543456")
         hash_object.update(b"13437r047jgfuri5tky5hjtgr8f9io4kt5thjue985iko4htu8i9knjuh98tkihgjrgnhjg")
         hash_object.update(b"13437r047jgfuri5tky5hjtgr8f9io4kt5thjue985iko4htu8i9knjuh98tkihgjrgnhjg")
-
-        if not os.path.exists(os.path.join(basepath, '../static/uploads', flask.request.cookies.get("cookieid"))): 
-            os.mkdir(os.path.join(basepath, '../static/uploads', flask.request.cookies.get("cookieid")))
-        upload_path = os.path.join(basepath, '../static/uploads',flask.request.cookies.get("cookieid"),hash_object.hexdigest()+f.filename)
+        if not os.path.exists(os.path.join('./static/uploads', flask.request.cookies.get("cookieid"))): 
+            os.mkdir(os.path.join('./static/uploads', flask.request.cookies.get("cookieid")))
+        upload_path = os.path.join('./static/uploads',flask.request.cookies.get("cookieid"),hash_object.hexdigest()+f.filename)
         f.save(upload_path)
         if flag == False:
             return """
@@ -133,7 +132,9 @@ def upload():
                     "url": "/static/uploads/"+hash_object.hexdigest()+f.filename
                 }
             }
-    files = os.listdir(os.path.join(basepath, '../static/uploads', 
+    if not os.path.exists(os.path.join('./static/uploads', flask.request.cookies.get("cookieid"))): 
+            os.mkdir(os.path.join('./static/uploads', flask.request.cookies.get("cookieid")))
+    files = os.listdir(os.path.join('./static/uploads', 
                      flask.request.cookies.get("cookieid")
                     ),)
     return flask.render_template(config.htmls.upload,username=flask.request.cookies.get("cookieid"), files=files)

@@ -1,0 +1,26 @@
+[33m[2025-02-16  19:44:06.735] _internal.py -> _log line:97 [WARNING] :  * Debugger is active![0m
+[32m[2025-02-16  19:44:06.763] _internal.py -> _log line:97 [INFO] :  * Debugger PIN: 141-439-431[0m
+[32m[2025-02-16  19:44:12.503] others.py -> index line:97 [INFO] : return blog list [(2025021618354005, '测试markdown', None, 'ryan', '{"list": "[\'\\u6d4b\\u8bd5\', \'markdown\']"}', '[]', '/static/uploads/root/2aa7370bb1288d5e4c18e02862de8f55capture_20240903143440735.bmp'), (2025021619363436, '测试markdown', '123', 'ryan', '{"list": "[\'\\u6d4b\\u8bd5\', \'markdown\']"}', '[]', '/static/uploads/root/2aa7370bb1288d5e4c18e02862de8f55capture_20240903143440735.bmp')][0m
+[32m[2025-02-16  19:44:12.568] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:44:12] "GET / HTTP/1.1" 200 -[0m
+[32m[2025-02-16  19:44:13.239] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:44:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  19:44:13.278] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:44:13] "[36mGET /static/js/TrianglesMosaicBg.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  19:44:13.437] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:44:13] "[36mGET /static/uploads/root/2aa7370bb1288d5e4c18e02862de8f55capture_20240903143440735.bmp HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  19:44:13.504] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:44:13] "[36mGET /static/js/popper.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  19:44:13.507] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:44:13] "[36mGET /static/editormd/lib/codemirror/codemirror.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  19:44:13.613] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:44:13] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  19:44:13.630] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:44:13] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  19:44:17.410] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:44:17] "GET /mail/ HTTP/1.1" 200 -[0m
+[32m[2025-02-16  19:44:17.541] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:44:17] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  19:44:17.545] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:44:17] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  19:44:17.567] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:44:17] "GET /static/editormd/editormd.min.js?_=1739706256826 HTTP/1.1" 200 -[0m
+[32m[2025-02-16  19:44:17.601] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:44:17] "GET /static/js/quill.js?_=1739706256827 HTTP/1.1" 200 -[0m
+[32m[2025-02-16  19:44:17.650] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:44:17] "GET /static/js/ajax.js?_=1739706256828 HTTP/1.1" 200 -[0m
+[32m[2025-02-16  19:44:17.708] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:44:17] "GET /static/js/TrianglesMosaicBg.min.js?_=1739706256832 HTTP/1.1" 200 -[0m
+[32m[2025-02-16  19:44:17.760] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:44:17] "GET /static/js/popper.js?_=1739706256833 HTTP/1.1" 200 -[0m
+[36m[2025-02-16  19:44:17.795] massage.py -> messages line:82 [DEBUG] : /messages,get a requrest,return[][0m
+[32m[2025-02-16  19:44:17.797] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:44:17] "GET /mail/messages HTTP/1.1" 200 -[0m
+[32m[2025-02-16  19:44:29.534] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:44:29] "[35m[1mGET /upload HTTP/1.1[0m" 500 -[0m
+[32m[2025-02-16  19:44:29.772] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:44:29] "GET /upload?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -[0m
+[32m[2025-02-16  19:44:29.790] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:44:29] "GET /upload?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -[0m
+[32m[2025-02-16  19:44:30.043] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 19:44:30] "GET /upload?__debugger__=yes&cmd=resource&f=console.png&s=ljFQYfh3ROrvMOKTaGEZ HTTP/1.1" 200 -[0m
+[32m[2025-02-16  19:44:53.825] _internal.py -> _log line:97 [INFO] :  * Detected change in 'c:\\Users\\xiaoxuan\\OneDrive\\桌面\\programming\\python\\blog\\routes\\others.py', reloading[0m
