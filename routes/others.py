@@ -93,6 +93,8 @@ def index():
     import models
     cookie = flask.request.cookies.get("cookieid")
     blog = models.getblog()
+    import logging
+    logging.info(f"return blog list {blog}")
     # blog = blog[((page - 1) * 4):(page * 4 - 1)]
     return flask.render_template(config.htmls.blog.blog, posts=blog, username=cookie, search_show=True)
 

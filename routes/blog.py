@@ -117,3 +117,6 @@ def removeword(wordid):
     return """
 <h1>你无权删除该文章！</h1>
 """, 403
+@blog.route("/editormd")
+def editor():
+    return flask.render_template("blog/editormd.html")

@@ -2,41 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="https://cdn.staticfile.net/jquery/2.2.4/jquery.min.js"></script>
     <link rel="stylesheet" href="/static/css/style.css">
     <link rel="stylesheet" href="/static/css/blogcss.css">
     <link rel="stylesheet" href="https://cdn.staticfile.net/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{ url_for('static',filename='editormd/css/editormd.css') }}"/>
-    <link rel="stylesheet" href="/static/editormd/lib/codemirror/codemirror.min.css"/>
-    <link rel="stylesheet" href="/static/editormd/lib/codemirror/theme/monokai.css"/>
-    <link rel="stylesheet" href="/static/editormd/lib/codemirror/addon/display/fullscreen.css"/>
-    <!-- 引入CodeMirror核心文件 -->
-    <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/system.min.js"></script>
-    <script type="text/javascript" src="/static/editormd/lib/codemirror/lib/codemirror.js"></script>
-
-    <!-- CodeMirror支持不同语言，根据需要引入JS文件 -->
-    <!-- 因为HTML混合语言依赖Javascript、XML、CSS语言支持，所以都要引入 -->
-    <script type="text/javascript" src="/static/editormd/lib/codemirror/mode/javascript/javascript.js"></script>
-    <script type="text/javascript" src="/static/editormd/lib/codemirror/mode/xml/xml.js"></script>
-    <script type="text/javascript" src="/static/editormd/lib/codemirror/mode/css/css.js"></script>
-    <script type="text/javascript" src="/static/editormd/lib/codemirror/mode/htmlmixed/htmlmixed.js"></script>
-
-    <!-- 下面分别为显示行数、括号匹配和全屏插件 -->
-    <script type="text/javascript" src="/static/editormd/lib/codemirror/addon/selection/active-line.js"></script>
-    <script type="text/javascript" src="/static/editormd/lib/codemirror/addon/edit/matchbrackets.js"></script>
-    <script type="text/javascript" src="/static/editormd/lib/codemirror/addon/display/fullscreen.js"></script>
-    <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <script src="/static/editormd/lib/marked.min.js"></script>
-    <script src="/static/editormd/lib/prettify.min.js"></script>
-    <script src="/static/editormd/lib/raphael.min.js"></script>
-    <script src="/static/editormd/lib/underscore.min.js"></script>
-    <script src="/static/editormd/lib/sequence-diagram.min.js"></script>
-    <script src="/static/editormd/lib/flowchart.min.js"></script>
-    <script src="/static/editormd/lib/jquery.flowchart.min.js"></script>
+    <script src="/static/editormd/lib/codemirror/codemirror.min.js"></script>
     <script src="/static/js/popper.js"></script>
     <script src="/static/js/bootstrap.min.js"></script>
-    <script src="/static/editormd/editormd.js"></script>
-    <script src="/static/js/ajax.js"></script>
+    <!-- <script src="/static/js/ajax.js"></script> -->
     <script src="/static/js/TrianglesMosaicBg.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock %}</title>
@@ -121,7 +94,6 @@
         loop: true
     })
     </script>
-    <script src="/static/js/jquery.min.js"></script>
     <div class="modal text-center" tabindex="-1" role="dialog" id="messageLists" style="width: 610px;height: auto;overflow: auto;">
         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document" style="display: inline-block; width: 590px;">
             <div class="modal-content">

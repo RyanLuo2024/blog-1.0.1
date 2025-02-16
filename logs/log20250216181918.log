@@ -1,0 +1,159 @@
+[33m[2025-02-16  18:19:18.860] _internal.py -> _log line:97 [WARNING] :  * Debugger is active![0m
+[32m[2025-02-16  18:19:18.875] _internal.py -> _log line:97 [INFO] :  * Debugger PIN: 141-439-431[0m
+[32m[2025-02-16  18:29:45.701] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:29:45] "GET / HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:29:46.368] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:29:46] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:29:46.387] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:29:46] "[36mGET /static/editormd/lib/codemirror/codemirror.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:29:46.551] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:29:46] "[36mGET /static/js/popper.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:29:46.578] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:29:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:29:46.585] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:29:46] "[36mGET /static/js/TrianglesMosaicBg.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:29:46.609] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:29:46] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:29:49.140] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:29:49] "GET /mail/ HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:29:49.276] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:29:49] "GET /static/editormd/editormd.min.js?_=1739701788676 HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:29:49.278] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:29:49] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:29:49.316] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:29:49] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:29:49.361] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:29:49] "GET /static/js/quill.js?_=1739701788677 HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:29:49.499] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:29:49] "GET /static/js/ajax.js?_=1739701788678 HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:29:49.555] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:29:49] "GET /static/js/TrianglesMosaicBg.min.js?_=1739701788682 HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:29:49.616] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:29:49] "GET /static/js/popper.js?_=1739701788683 HTTP/1.1" 200 -[0m
+[36m[2025-02-16  18:29:49.709] massage.py -> messages line:82 [DEBUG] : /messages,get a requrest,return[][0m
+[32m[2025-02-16  18:29:49.757] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:29:49] "GET /mail/messages HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:29:53.561] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:29:53] "GET /editormd HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:29:53.776] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:29:53] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:29:53.792] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:29:53] "GET /static/editormd/editormd.min.js HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:29:59.271] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:29:59] "GET /static/editormd/lib/codemirror/addon/dialog/dialog.css HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:29:59.274] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:29:59] "[36mGET /static/editormd/lib/codemirror/codemirror.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:29:59.287] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:29:59] "GET /static/editormd/images/loading.gif HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:29:59.315] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:29:59] "GET /static/editormd/lib/codemirror/codemirror.min.css HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:29:59.323] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:29:59] "GET /static/editormd/lib/codemirror/addon/search/matchesonscrollbar.css HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:29:59.521] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:29:59] "GET /static/editormd/lib/codemirror/modes.min.js HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:29:59.798] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:29:59] "GET /static/editormd/lib/codemirror/addons.min.js HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:30:00.275] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:30:00] "GET /static/editormd/fonts/fontawesome-webfont.woff2?v=4.3.0 HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:30:00.443] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:30:00] "GET /static/editormd/lib/marked.min.js HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:30:00.614] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:30:00] "GET /static/editormd/lib/prettify.min.js HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:30:00.907] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:30:00] "GET /favicon.ico HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:30:10.266] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:30:10] "GET /static/editormd/plugins/emoji-dialog/emoji-dialog.js HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:30:10.403] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:30:10] "GET /static/editormd/plugins/emoji-dialog/emoji.json?temp=0.8845057998493031 HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:30:50.512] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:30:50] "GET /writeblog HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:30:50.629] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:30:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:30:50.649] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:30:50] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:30:50.652] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:30:50] "[36mGET /static/editormd/lib/codemirror/codemirror.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:30:50.672] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:30:50] "[36mGET /static/js/popper.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:30:50.686] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:30:50] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:30:50.697] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:30:50] "[36mGET /static/js/TrianglesMosaicBg.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:30:50.699] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:30:50] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:30:50.717] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:30:50] "[36mGET /static/js/quill.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:30:52.284] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:30:52] "GET /editormd HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:30:52.695] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:30:52] "GET /mail/ HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:30:52.786] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:30:52] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:30:52.791] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:30:52] "[36mGET /static/editormd/editormd.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:30:53.000] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:30:52] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:30:53.005] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:30:53] "GET /static/editormd/editormd.min.js?_=1739701852147 HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:30:53.085] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:30:53] "GET /static/js/quill.js?_=1739701852148 HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:30:53.177] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:30:53] "GET /static/js/ajax.js?_=1739701852149 HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:30:53.218] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:30:53] "GET /static/js/TrianglesMosaicBg.min.js?_=1739701852153 HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:30:53.276] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:30:53] "GET /static/js/popper.js?_=1739701852154 HTTP/1.1" 200 -[0m
+[36m[2025-02-16  18:30:53.343] massage.py -> messages line:82 [DEBUG] : /messages,get a requrest,return[][0m
+[32m[2025-02-16  18:30:53.349] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:30:53] "GET /mail/messages HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:30:56.691] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:30:56] "[36mGET /static/editormd/lib/codemirror/addon/dialog/dialog.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:30:56.711] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:30:56] "[36mGET /static/editormd/lib/codemirror/codemirror.min.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:30:56.721] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:30:56] "[36mGET /static/editormd/lib/codemirror/addon/search/matchesonscrollbar.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:30:56.759] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:30:56] "[36mGET /static/editormd/lib/codemirror/codemirror.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:30:56.889] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:30:56] "[36mGET /static/editormd/images/loading.gif HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:30:57.005] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:30:57] "[36mGET /static/editormd/lib/codemirror/modes.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:30:57.146] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:30:57] "[36mGET /static/editormd/lib/codemirror/addons.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:30:57.281] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:30:57] "[36mGET /static/editormd/fonts/fontawesome-webfont.woff2?v=4.3.0 HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:30:57.319] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:30:57] "[36mGET /static/editormd/lib/marked.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:30:57.556] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:30:57] "[36mGET /static/editormd/lib/prettify.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:31:00.606] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:31:00] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:31:00.623] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:31:00] "[36mGET /static/editormd/lib/codemirror/codemirror.min.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:31:00.630] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:31:00] "[36mGET /static/editormd/lib/codemirror/addon/search/matchesonscrollbar.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:31:00.631] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:31:00] "[36mGET /static/editormd/lib/codemirror/addon/dialog/dialog.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:31:00.645] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:31:00] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:31:01.387] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:31:01] "GET /static/css/quill.snow.css.map HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:31:01.420] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:31:01] "GET /static/css/quill.snow.css.map HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:31:01.965] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:31:01] "[36mGET /static/editormd/plugins/emoji-dialog/emoji-dialog.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:31:02.060] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:31:02] "GET /static/editormd/plugins/emoji-dialog/emoji.json?temp=0.4937499311460132 HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:31:05.699] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:31:05] "GET /static/js/popper.js.map HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:31:26.077] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:31:26] "GET /favicon.ico HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:31:36.162] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:31:36] "GET /writeblog HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:31:36.696] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:31:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:31:36.722] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:31:36] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:31:36.728] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:31:36] "[36mGET /static/editormd/lib/codemirror/codemirror.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:31:36.758] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:31:36] "[36mGET /static/js/TrianglesMosaicBg.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:31:36.780] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:31:36] "[36mGET /static/js/popper.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:31:36.781] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:31:36] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:31:36.790] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:31:36] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:31:36.859] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:31:36] "[36mGET /static/js/quill.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:31:39.427] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:31:39] "GET /editormd HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:31:39.780] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:31:39] "GET /mail/ HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:31:39.839] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:31:39] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:31:39.849] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:31:39] "[36mGET /static/editormd/editormd.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:31:39.902] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:31:39] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:31:39.919] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:31:39] "GET /static/editormd/editormd.min.js?_=1739701899294 HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:31:39.955] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:31:39] "GET /static/js/quill.js?_=1739701899295 HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:31:40.132] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:31:40] "GET /static/js/ajax.js?_=1739701899296 HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:31:40.161] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:31:40] "GET /static/js/TrianglesMosaicBg.min.js?_=1739701899300 HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:31:40.189] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:31:40] "GET /static/js/popper.js?_=1739701899301 HTTP/1.1" 200 -[0m
+[36m[2025-02-16  18:31:40.211] massage.py -> messages line:82 [DEBUG] : /messages,get a requrest,return[][0m
+[32m[2025-02-16  18:31:40.214] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:31:40] "GET /mail/messages HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:31:43.656] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:31:43] "[36mGET /static/editormd/lib/codemirror/codemirror.min.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:31:43.669] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:31:43] "[36mGET /static/editormd/lib/codemirror/addon/dialog/dialog.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:31:43.679] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:31:43] "[36mGET /static/editormd/lib/codemirror/addon/search/matchesonscrollbar.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:31:43.689] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:31:43] "[36mGET /static/editormd/lib/codemirror/codemirror.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:31:43.697] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:31:43] "[36mGET /static/editormd/images/loading.gif HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:31:43.779] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:31:43] "[36mGET /static/editormd/lib/codemirror/modes.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:31:43.902] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:31:43] "[36mGET /static/editormd/lib/codemirror/addons.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:31:44.062] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:31:44] "[36mGET /static/editormd/lib/marked.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:31:44.096] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:31:44] "[36mGET /static/editormd/fonts/fontawesome-webfont.woff2?v=4.3.0 HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:31:44.180] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:31:44] "[36mGET /static/editormd/lib/prettify.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:31:48.244] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:31:48] "GET /static/editormd/fonts/editormd-logo.woff?-5y8q6h HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:32:00.077] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:32:00] "GET /favicon.ico HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:32:04.845] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:32:04] "GET /static/editormd/plugins/code-block-dialog/code-block-dialog.js HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:32:37.146] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:32:37] "GET /static/editormd/plugins/goto-line-dialog/goto-line-dialog.js HTTP/1.1" 200 -[0m
+[36m[2025-02-16  18:35:38.765] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.extra".[0m
+[36m[2025-02-16  18:35:38.795] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".[0m
+[36m[2025-02-16  18:35:38.800] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".[0m
+[36m[2025-02-16  18:35:38.801] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".[0m
+[36m[2025-02-16  18:35:38.805] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.def_list.DefListExtension".[0m
+[36m[2025-02-16  18:35:38.813] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.tables.TableExtension".[0m
+[36m[2025-02-16  18:35:38.826] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".[0m
+[36m[2025-02-16  18:35:38.834] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".[0m
+[36m[2025-02-16  18:35:38.835] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.extra.ExtraExtension".[0m
+[36m[2025-02-16  18:35:38.837] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.codehilite".[0m
+[36m[2025-02-16  18:35:38.839] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.codehilite.CodeHiliteExtension".[0m
+[36m[2025-02-16  18:35:38.841] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.tables".[0m
+[36m[2025-02-16  18:35:38.848] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.tables.TableExtension".[0m
+[36m[2025-02-16  18:35:38.865] core.py -> build_extension line:226 [DEBUG] : Successfully imported extension module "markdown.extensions.toc".[0m
+[36m[2025-02-16  18:35:38.868] core.py -> registerExtensions line:182 [DEBUG] : Successfully loaded extension "markdown.extensions.toc.TocExtension".[0m
+[36m[2025-02-16  18:35:38.892] __init__.py -> initialize line:113 [DEBUG] : Building prefix dict from the default dictionary ...[0m
+[36m[2025-02-16  18:35:38.899] __init__.py -> initialize line:132 [DEBUG] : Loading model from cache C:\Users\xiaoxuan\AppData\Local\Temp\jieba.cache[0m
+[36m[2025-02-16  18:35:40.484] __init__.py -> initialize line:164 [DEBUG] : Loading model cost 1.589 seconds.[0m
+[36m[2025-02-16  18:35:40.488] __init__.py -> initialize line:166 [DEBUG] : Prefix dict has been built successfully.[0m
+[32m[2025-02-16  18:35:40.493] blog.py -> handle line:88 [INFO] : 拆分列表：['测试', 'markdown'][0m
+[32m[2025-02-16  18:35:40.658] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:35:40] "POST /handle HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:35:40.820] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:35:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:35:40.834] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:35:40] "[36mGET /static/css/blogcss.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:35:40.859] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:35:40] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:35:40.865] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:35:40] "[36mGET /static/js/TrianglesMosaicBg.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:35:40.876] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:35:40] "[36mGET /static/js/popper.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:35:40.904] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:35:40] "[36mGET /static/editormd/lib/codemirror/codemirror.min.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:35:46.398] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:35:46] "GET /mail/ HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:35:46.454] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:35:46] "[36mGET /static/editormd/css/editormd.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:35:46.463] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:35:46] "[36mGET /static/css/quill.snow.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:35:46.465] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:35:46] "GET /static/editormd/editormd.min.js?_=1739702146135 HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:35:46.497] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:35:46] "GET /static/js/quill.js?_=1739702146136 HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:35:46.541] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:35:46] "GET /static/js/ajax.js?_=1739702146137 HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:35:46.563] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:35:46] "GET /static/js/TrianglesMosaicBg.min.js?_=1739702146141 HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:35:46.581] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:35:46] "GET /static/js/popper.js?_=1739702146142 HTTP/1.1" 200 -[0m
+[36m[2025-02-16  18:35:46.611] massage.py -> messages line:82 [DEBUG] : /messages,get a requrest,return[][0m
+[32m[2025-02-16  18:35:46.613] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:35:46] "GET /mail/messages HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:35:48.747] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:35:48] "[35m[1mGET / HTTP/1.1[0m" 500 -[0m
+[32m[2025-02-16  18:35:48.922] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:35:48] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:35:49.008] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:35:49] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:35:49.140] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:35:49] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=uBFbCHrtlEgWwEqCfYx1 HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:35:49.201] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:35:49] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -[0m
+[32m[2025-02-16  18:36:07.492] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:36:07] "[35m[1mGET / HTTP/1.1[0m" 500 -[0m
+[32m[2025-02-16  18:36:07.621] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:36:07] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:36:07.669] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:36:07] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:36:07.815] _internal.py -> _log line:97 [INFO] : 127.0.0.1 - - [16/Feb/2025 18:36:07] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=uBFbCHrtlEgWwEqCfYx1 HTTP/1.1[0m" 304 -[0m
+[32m[2025-02-16  18:38:24.505] _internal.py -> _log line:97 [INFO] :  * Detected change in 'c:\\Users\\xiaoxuan\\OneDrive\\桌面\\programming\\python\\blog\\routes\\others.py', reloading[0m

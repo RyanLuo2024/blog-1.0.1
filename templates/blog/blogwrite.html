@@ -3,7 +3,9 @@
 {% block title %}写文章{% endblock %}
 
 {% block content %}
-<script src="https://cdn.staticfile.net/jquery/1.10.2/jquery.min.js"></script>
+<link href="/static/css/quill.snow.css" rel="stylesheet">
+<script src="/static/js/quill.js"></script>
+
 <div class="container2">
     <form action="handle" method="post">
         <h4>添加文章</h4>
@@ -15,28 +17,11 @@
             <label for="titleimage">封面</label>
             <input type="text" class="form-control" id="titleimage" name="titleimage" placeholder="封面url(uplaod页复制),无则默认">
         </div>
-        <div id="test-editormd" style="width: 700;">
-            <textarea id="my-editormd-markdown-doc" name="markdown" style="display:none;"></textarea>
-            <textarea id="my-editormd-html-code" name="html" style="display:none;"></textarea>
-        </div>
+        <textarea id="mark" name="markdown" style="display: none;"></textarea>
+        <textarea id="html" name="html" style="display: none;"></textarea>
+        <iframe src="/editormd" width="1000" height="1000" id="iframe">
+        </iframe>
         <button type="submit" class="btn btn-primary btn-block">提交</button>
     </form>
 </div>
-
-<script type="text/javascript">
-    var testEditor;
-    $(function () {
-        testEditor = editormd("test-editormd", {
-            width: "100%",
-            height: 800,
-            syncScrolling: "single",
-            path: "/static/editormd/editormd.min.js",
-            saveHTMLToTextarea: true,
-            imageUpload: true,
-            imageFormats: ["jpg", "jpeg", "gif", "png", "bmp", "webp"],
-            imageUploadURL: "/api/post/editormd_uplaodimg",
-            emoji: true
-        });
-    });
-</script>
 {% endblock %}

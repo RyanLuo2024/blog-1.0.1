@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <script src="https://cdn.staticfile.net/jquery/2.2.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="{{ url_for('static',filename='editormd/css/editormd.css') }}"/>
+        <script src="{{ url_for('static',filename='editormd/editormd.min.js') }}"></script>
+    </head>
+    <body>
+        <div id="test-editormd" style="width: 700;">
+            <textarea id="my-editormd-markdown-doc" name="markdown" style="display:none;" onchange="$('#mark',  window.parent.document).text($('#my-editormd-markdown-doc').text());"></textarea>
+            <textarea id="my-editormd-html-code" name="html" style="display:none;"></textarea>
+        </div>
+        <script type="text/javascript">
+            var testEditor;
+            $(function () {
+                testEditor = editormd("test-editormd", {
+                    width: "100%",
+                    height: 800,
+                    syncScrolling: "single",
+                    path: "{{ url_for('static',filename='editormd/lib/') }}",
+                    saveHTMLToTextarea: true,
+                    imageUpload: true,
+                    imageFormats: ["jpg", "jpeg", "gif", "png", "bmp", "webp"],
+                    imageUploadURL: "/api/post/editormd_uplaodimg",
+                    emoji: true
+                });
+            });
+            $("#test-editormd").change(function(){
+                $("#mark",  window.parent.document).text($("#my-editormd-markdown-doc").text());
+                $("#html",  window.parent.document).text($("#my-editormd-html-code").text());
+            })
+        </script>
+    </body>
+</html>
+

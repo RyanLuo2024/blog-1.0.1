@@ -12,7 +12,7 @@
             {% for item in posts %}
                 <!--{{item}}-->
                 <a href="/post/{{item[0]}}">
-                    <div class="cushy-box">
+                    <div class="cushy-box" style="overflow: hidden;white-space: nowrap;text-overflow: ellipsis;">
                         <div class="image-container" class="list-cr-{{item[0]}}" onload="machimage('{{item[0]}}','list-cr-{{item[0]}}')">
                             {% if item[6] %}
                                 <img src="{{ item[6] }}">
@@ -24,9 +24,7 @@
                         <div class="title" style="height: 100%;width: 60%;display:flexbox;">
                             <h1>{{item[1]}}</h1>
                             <br>
-                            <h4>{{item[2][0:50]}}</h4>
-                            <h4>{{item[2][51:100]}}</h4>
-                            <h4>{{item[2][101:150]}}</h4>
+                            <h4>{{item[2]}}</h4>
                         </div>
                     </div>
                 </a>
