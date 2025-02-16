@@ -8,6 +8,7 @@ def setmineimage():
         im = flask.request.form["image"]
         im = "."+im
         cookie = flask.request.cookies.get("cookieid")
+        if (flask.request.cookies.get("cookieid") == None): return flask.redirect(flask.url_for("auth.user_login"))
         # image = Image.open(im)
         # resized_image = image.resize((80, 80))
         # resized_image.save(im)
@@ -19,12 +20,12 @@ def setmineimage():
     
 @api.route("/api/setadmin",methods=['POST','GET'])
 def settings():
-    if (flask.request.method == 'POST' and flask.request.cookies.get("cookieid")):
+    if (flask.request.method == 'POST' and flask.request.cookies.get("cookieid") == "root"):
         sql = db()
         sql.execute("UPDATE user SET usertype=\"admin\" WHERE username=?;" , (flask.request.form["username"]))
         sql.close()
         return flask.render_template(config.htmls.index)
-    elif flask.request.method=='GET' and flask.request.cookies.get("cookieid"):
+    elif flask.request.method=='GET' and flask.request.cookies.get("cookieid") == "root":
         return flask.render_template(config.htmls.settings)
     
 @api.route("/api/get/userimage",methods=['GET'])

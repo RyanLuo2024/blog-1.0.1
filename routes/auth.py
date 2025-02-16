@@ -46,6 +46,7 @@ def register():
 """http://host:port/logout 退出登录 ###cookie###"""
 @auth.route("/logout")
 def logout():
+    if (flask.request.cookies.get("cookieid") == None): return flask.redirect(flask.url_for("auth.user_login"))
     response = flask.make_response(flask.redirect(flask.url_for('auth.user_login')))
     response.delete_cookie('cookieid')
     return response

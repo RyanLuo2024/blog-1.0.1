@@ -1,5 +1,5 @@
 from flask import Flask, Blueprint, render_template, request, redirect, url_for, jsonify
-import sqlite3,logging,models,datetime
+import sqlite3,logging,models,datetime,flask
 
 mail_blueprint = Blueprint('mail', __name__, template_folder='templates')
 
@@ -10,6 +10,7 @@ def db_connection():
 
 @mail_blueprint.route('/writemail')
 def index():
+    if (flask.request.cookies.get("cookieid") == None): return flask.redirect(flask.url_for("auth.user_login"))
     conn = db_connection()
     c = conn.cursor()
     c.execute('SELECT * FROM message WHERE (fromcansee = 1 AND from_user=?) OR (tocansee = 1 AND to_user=?)', (request.cookies.get("cookieid"), request.cookies.get("cookieid")))
@@ -19,6 +20,7 @@ def index():
 
 @mail_blueprint.route('/mail/<id>')
 def mail_mail(id):
+    if (flask.request.cookies.get("cookieid") == None): return flask.redirect(flask.url_for("auth.user_login"))
     conn = db_connection()
     c = conn.cursor()
     c.execute(f'SELECT * FROM message WHERE id={id}')
@@ -28,6 +30,7 @@ def mail_mail(id):
 
 @mail_blueprint.route('/send', methods=['POST'])
 def send():
+    if (flask.request.cookies.get("cookieid") == None): return flask.redirect(flask.url_for("auth.user_login"))
     from_user = request.cookies.get("cookieid")
     to_user = request.form['to']
     subject = request.form['subject']
@@ -49,6 +52,7 @@ def send():
 
 @mail_blueprint.route('/delete/<int:message_id>', methods=['GET'])
 def delete(message_id):
+    if (flask.request.cookies.get("cookieid") == None): return flask.redirect(flask.url_for("auth.user_login"))
     current_user = request.cookies.get("cookieid")
     
     conn = db_connection()
@@ -75,6 +79,7 @@ def delete(message_id):
 
 @mail_blueprint.route('/messages')
 def messages():
+    if (flask.request.cookies.get("cookieid") == None): return flask.redirect(flask.url_for("auth.user_login"))
     conn = db_connection()
     c = conn.cursor()
     c.execute('SELECT * FROM message WHERE (fromcansee = 1 AND from_user=?) OR (tocansee = 1 AND to_user=?)', (request.cookies.get("cookieid"), request.cookies.get("cookieid")))

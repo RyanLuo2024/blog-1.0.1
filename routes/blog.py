@@ -46,6 +46,7 @@ def post(postid):
 
 @blog.route('/add_comment', methods=['POST'])
 def add_comment():
+    if (flask.request.cookies.get("cookieid") == None): return flask.redirect(flask.url_for("auth.user_login"))
     if addheimindan.get(flask.request.cookies.get("cookieid")) != False and \
        addheimindan.get(flask.request.cookies.get("cookieid"))['quanxian']['add_comment'] == False: 
         return "您已被封禁，无法经行该操作",403
@@ -64,6 +65,7 @@ def add_comment():
 """http://host:port/writeblog 写文章 ###cookie###"""
 @blog.route("/writeblog")
 def writeblog():
+    if (flask.request.cookies.get("cookieid") == None): return flask.redirect(flask.url_for("auth.user_login"))
     if addheimindan.get(flask.request.cookies.get("cookieid")) != False and \
        addheimindan.get(flask.request.cookies.get("cookieid"))['quanxian']['writeblog'] == False: 
         return "您已被封禁，无法经行该操作",403
@@ -73,6 +75,7 @@ def writeblog():
 """http://host:port/handle 处理文章 ###cookie###"""
 @blog.route('/handle', methods=['POST'])
 def handle(): 
+    if (flask.request.cookies.get("cookieid") == None): return flask.redirect(flask.url_for("auth.user_login"))
     if addheimindan.get(flask.request.cookies.get("cookieid")) != False and \
        addheimindan.get(flask.request.cookies.get("cookieid"))['quanxian']['handle'] == False: 
         return "您已被封禁，无法经行该操作",403
@@ -99,6 +102,7 @@ def handle():
 """http://host:port/removeword/<wordid> 删除文章 ###cookie###"""
 @blog.route("/removeword/<wordid>")
 def removeword(wordid):
+    if (flask.request.cookies.get("cookieid") == None): return flask.redirect(flask.url_for("auth.user_login"))
     if addheimindan.get(flask.request.cookies.get("cookieid")) != False and \
        addheimindan.get(flask.request.cookies.get("cookieid"))['quanxian']['handle'] == False: 
         return "您已被封禁，无法经行该操作",403
